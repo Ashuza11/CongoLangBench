@@ -1,6 +1,18 @@
-# DRC Language Data Collection Worksheets
+# CongoLangBitextEval: Congolese Language Text Evaluation
 
-Evidence-audited, copy-ready worksheets for bitexts, bilingual lexicons, and monolingual corpora. Last checked: **2026-07-20**.
+CongoLangBitextEval is a text-evaluation initiative that curates high-quality datasets for all available Congolese languages and evaluates how state-of-the-art language models perform on them. Its primary focus is bilingual text (bitext) and machine translation, supported by monolingual corpora and bilingual lexicons where available. The project gives careful attention to language identity, provenance, licensing, and data quality.
+
+## Project goal
+
+The goal of this project is to build an inclusive, reproducible text-evaluation benchmark for Congolese languages by:
+
+1. discovering and documenting available text resources for national, regional, and under-resourced Congolese languages;
+2. collecting, cleaning, aligning, and validating monolingual text, parallel text, and bilingual lexicons where reuse is permitted;
+3. preserving metadata about language variety, geographic origin, source, licence, and translation method;
+4. creating carefully reviewed evaluation sets that avoid source overlap and train–test contamination; and
+5. evaluating state-of-the-art language models on bilingual text and related language tasks to identify capabilities, performance gaps, and priorities for future data collection.
+
+The current repository contains evidence-audited, copy-ready data-collection worksheets and an initial Mashi–French extraction and evaluation workflow. Resource inventory last checked: **2026-07-20**.
 
 ## Group 1 — The four national languages
 
