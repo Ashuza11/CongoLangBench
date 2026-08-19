@@ -1,5 +1,12 @@
 # CongoLangBitextEval: Congolese Language Text Evaluation
 
+[![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](#project-goal)
+[![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](#project-goal)
+[![Language Coverage](https://img.shields.io/badge/coverage-13_language_tracks-007ec6)](#group-1--the-four-national-languages)
+[![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](#evidence-labels)
+[![Provenance](https://img.shields.io/badge/provenance-evidence_audited-2ea44f)](#collection-rules)
+[![Licensing](https://img.shields.io/badge/licensing-source_specific-e05d44)](#evidence-labels)
+
 CongoLangBitextEval is a text-evaluation initiative that curates high-quality datasets for all available Congolese languages and evaluates how state-of-the-art language models perform on them. Its primary focus is bilingual text (bitext) and machine translation, supported by monolingual corpora and bilingual lexicons where available. The project gives careful attention to language identity, provenance, licensing, and data quality.
 
 ## Project goal
