@@ -9,6 +9,12 @@
 
 CongoLangBitextEval is a text-evaluation initiative that curates high-quality datasets for all available Congolese languages and evaluates how state-of-the-art language models perform on them. Its primary focus is bilingual text (bitext) and machine translation, supported by monolingual corpora and bilingual lexicons where available. The project gives careful attention to language identity, provenance, licensing, and data quality.
 
+## Quick links
+
+- [Mashi data extraction notebook on GitHub](DataExtractionAfricompling.ipynb)
+- [Open the Mashi notebook in Google Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/DataExtractionAfricompling.ipynb)
+- [Mashi–French extracted datasets](language_resources/mashi-shr/data/)
+
 ## Project goal
 
 The goal of this project is to build an inclusive, reproducible text-evaluation benchmark for Congolese languages by:
