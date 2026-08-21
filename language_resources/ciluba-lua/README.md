@@ -1,5 +1,10 @@
 # Ciluba / Tshiluba / Luba-Kasai (`lua`)
 
+## Project files
+
+- [Raw SMOL lexicon](data/raw/)
+- [SMOL metadata](metadata/smol.md)
+
 Do not mix `lua` with Luba-Katanga (`lub`) or results about the Lua programming language.
 
 ## Verified and evaluated data

@@ -48,6 +48,13 @@ SMOL provides Kituba (`ktu`) sentence and document translations under CC BY 4.0,
 - [Kituba metadata](language_resources/kituba-ktu/metadata/smol.md)
 - [Kituba preparation script](language_resources/kituba-ktu/scripts/prepare_smol.py)
 
+### Ciluba/Tshiluba acquisition
+
+SMOL currently provides a CC BY 4.0 GATITOS lexicon for `lua`, but no sentence- or document-level SMOL file. The lexicon is preserved as supporting data and is not counted toward the 1,500-sentence target. The Ciluba sentence track remains open while we verify `multi-open`, Bible alignment, or community sources.
+
+- [Ciluba raw lexicon](language_resources/ciluba-lua/data/raw/)
+- [Ciluba source metadata](language_resources/ciluba-lua/metadata/smol.md)
+
 ### Congo Swahili acquisition
 
 The first national-language acquisition is the CLEAR Global Gamayun Congo Swahili collection:
