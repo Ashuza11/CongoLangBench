@@ -16,6 +16,7 @@ CongoLangBitextEval is a text-evaluation initiative that curates high-quality da
 - [Mashi–French extracted datasets](language_resources/mashi-shr/data/)
 - [Project specification](PROJECT_SPEC.md)
 - [Phase 0 tooling note](TOOLING_NOTE.md)
+- [Language registry](registry/languages.csv)
 
 ## Project goal
 
