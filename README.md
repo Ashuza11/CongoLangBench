@@ -15,6 +15,8 @@ CongoLangBitextEval is a text-evaluation initiative that curates high-quality da
 - [Open the Mashi notebook in Google Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/notebooks/mashi_data_extraction.ipynb)
 - [LLM bitext evaluation notebook](notebooks/llm_bitext_evaluation.ipynb)
 - [Mashi–French extracted datasets](language_resources/mashi-shr/data/)
+- [Congo Swahili raw bitext](language_resources/congo-swahili-swc/data/raw/)
+- [Congo Swahili acquisition metadata](language_resources/congo-swahili-swc/metadata/gamayun_kits.md)
 - [Project specification](docs/PROJECT_SPEC.md)
 - [Phase 0 tooling note](docs/TOOLING_NOTE.md)
 - [Language registry](registry/languages.csv)
