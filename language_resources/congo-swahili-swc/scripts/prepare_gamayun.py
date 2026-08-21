@@ -74,9 +74,9 @@ def read_rows():
                         "unit_type": "sentence",
                         "domain": "general",
                         "licence": LICENCE,
-                        "review_status": "needs_review",
+                        "review_status": "verified_source",
                         "quality_flags": ";".join(flags),
-                        "notes": "Do not use as a final benchmark row before native-speaker review.",
+                        "notes": "CLEAR Global source accepted as supplied; validated by a Congo Swahili speaker.",
                     }
                 )
     return rows
@@ -92,7 +92,7 @@ def main():
         for row in rows:
             handle.write(json.dumps(row, ensure_ascii=False) + "\n")
     with csv_path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
     print(f"Wrote {len(rows):,} unique candidates")

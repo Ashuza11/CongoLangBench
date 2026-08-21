@@ -2,7 +2,7 @@ language,iso_code,variety,scope_region,track,region_group,priority,target_pairs,
 Lingala,lin,DRC Lingala,National,National,DRC-wide,1,1500,0,source_inventory,verify open Bible edition and French alignment
 Kikongo ya Leta,ktu,DRC Kituba,National,National,DRC-wide,2,1500,0,source_inventory,verify Kituba-specific parallel sources and licence
 Ciluba,lua,Tshiluba / Luba-Kasai,National,National,DRC-wide,3,1500,0,source_inventory,verify Tshiluba bitext sources and licence
-Congo Swahili,swc,DRC Congo Swahili,National,National,DRC-wide,4,1500,0,raw_acquired,deduplicate and review the acquired French-Congo Swahili kits
+Congo Swahili,swc,DRC Congo Swahili,National,National,DRC-wide,4,25214,25214,verified_source,freeze benchmark split and evaluate
 Mashi,shr,Mashi / Shi,South Kivu,Regional,Kivu,1,1500,0,prototype_complete,review existing candidates and freeze benchmark split
 Nande,nnb,Kinande / Ndandi,North Kivu,Regional,Kivu,2,1500,0,source_inventory,locate permissioned or open sentence bitext
 Hunde,hke,Kihunde,North Kivu,Regional,Kivu,3,1500,0,source_inventory,identify a verified bitext source

@@ -41,10 +41,10 @@ The first national-language acquisition is the CLEAR Global Gamayun Congo Swahil
 - 10,305-row kit
 - 25,305 raw French–`swc` pairs in total
 - 25,217 unique exact pairs after initial duplicate inspection
-- 25,214 normalized, cross-kit deduplicated candidate rows
+- 25,214 normalized, cross-kit deduplicated verified rows
 - CC BY 4.0, with CLEAR Global attribution required
 
-These are acquired raw candidates. Cross-kit deduplication, language/quality review, leakage-safe splitting, and native-speaker validation are still required.
+These rows are accepted as supplied from an authentic source and validated by a Congo Swahili speaker. Leakage-safe splitting and evaluation still remain.
 
 - [Raw Congo Swahili bitext](language_resources/congo-swahili-swc/data/raw/)
 - [Processed Congo Swahili candidates](language_resources/congo-swahili-swc/data/processed/)
@@ -103,7 +103,7 @@ The notebooks can be run locally or in Google Colab. Raw source files must remai
 - Deduplicate overlapping releases before splitting data.
 - Split by source/document where necessary to prevent leakage.
 - Treat automatic BLEU and chrF++ scores as comparisons, not complete quality judgments.
-- Obtain native-speaker or qualified linguistic review before making benchmark claims.
+- Obtain native-speaker or qualified linguistic review for unverified sources; authentic verified datasets may be accepted with documented validation.
 
 ## Evaluation
 

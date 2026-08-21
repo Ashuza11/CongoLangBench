@@ -9,6 +9,6 @@ Ciluba,lua,Google SMOL gatitos__en_lua,lexicon,OPEN,CC BY 4.0,about 4000 lexical
 Ciluba,lua,multi-open English-Tshiluba,parallel text,GATED,licence other,reported large,verification_required,inspect card provenance and request access
 Ciluba,lua,TSHILUBA.co,dictionary / examples,TERMS,permission required,manual export only,permission_required,request CSV or JSON export
 Ciluba,lua,eBible / Scripture sources,Bible text / convertible bitext,MIXED,edition-specific,1500+ possible,verification_required,identify exact edition and compatible French source
-Congo Swahili,swc,CLEAR Global / Gamayun French-Congo Swahili kits,parallel text,OPEN,CC BY 4.0,25305 pairs,raw_acquired,perform cross-kit deduplication and native-speaker review
+Congo Swahili,swc,CLEAR Global / Gamayun French-Congo Swahili kits,parallel text,OPEN,CC BY 4.0,25305 pairs,verified_source,freeze benchmark split and evaluate
 Congo Swahili,swc,Tatoeba Congo Swahili,sentence bitext,OPEN/VERIFY,current terms to confirm,unknown,supplementary_candidate,verify current swc labels and licence
 Congo Swahili,swc,IWSLT Congolese Swahili task,speech/text evaluation,CATALOG/TERMS,registration and task terms,unknown,catalog_lead,locate current files and terms

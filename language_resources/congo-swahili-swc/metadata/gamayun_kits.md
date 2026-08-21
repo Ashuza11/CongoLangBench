@@ -29,10 +29,10 @@ The three kits contain 25,305 rows in total. Kit selections are independent; `ki
 - French sentences overlap across kits; split assignment must happen after cross-kit deduplication.
 - `swc_clean` differs from `swc` in 857 rows; retain both and document which field is evaluated.
 
-These are raw acquired candidates, not yet reviewed benchmark rows. The next steps are cross-kit deduplication, language/quality review, source-aware splitting, and native-speaker validation.
+The source is accepted as an authentic, professionally/volunteer-translated dataset under its stated licence. It has also been checked by a Congo Swahili speaker on this project. The rows therefore do not require an additional language-review gate. Cross-kit deduplication and source-aware split construction still apply.
 
 ## Processed candidate export
 
-`data/processed/congo-swahili-french_candidates.jsonl` and `.csv` contain **25,214** unique candidates after Unicode/whitespace normalization and cross-kit exact-pair deduplication. The processed rows use the repository-wide metadata schema and remain marked `needs_review`. The `swc_clean` field is used as the evaluation target while the original `swc` value is retained as `target_text_raw`.
+`data/processed/congo-swahili-french_candidates.jsonl` and `.csv` contain **25,214** unique candidates after Unicode/whitespace normalization and cross-kit exact-pair deduplication. The processed rows use the repository-wide metadata schema and are marked `verified_source`. The `swc_clean` field is used as the evaluation target while the original `swc` value is retained as `target_text_raw`.
 
 The preparation script is [scripts/prepare_gamayun.py](../scripts/prepare_gamayun.py). Run it from the repository root with `venv/bin/python` to regenerate the processed files.
