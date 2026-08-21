@@ -1,117 +1,114 @@
-# CongoLangBitextEval: Congolese Language Text Evaluation
+# CongoLangBitextEval
 
-[![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](#project-goal)
-[![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](#project-goal)
-[![Language Coverage](https://img.shields.io/badge/coverage-13_language_tracks-007ec6)](#group-1--the-four-national-languages)
-[![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](#evidence-labels)
-[![Provenance](https://img.shields.io/badge/provenance-evidence_audited-2ea44f)](#collection-rules)
-[![Licensing](https://img.shields.io/badge/licensing-source_specific-e05d44)](#evidence-labels)
+[![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](docs/PROJECT_SPEC.md)
+[![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](docs/PROJECT_SPEC.md)
+[![Coverage](https://img.shields.io/badge/coverage-13_language_tracks-007ec6)](registry/languages.csv)
+[![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](registry/national_sources.csv)
+[![Licence](https://img.shields.io/badge/licensing-source_specific-e05d44)](docs/PROJECT_SPEC.md)
 
-CongoLangBitextEval is a text-evaluation initiative that curates high-quality datasets for all available Congolese languages and evaluates how state-of-the-art language models perform on them. Its primary focus is bilingual text (bitext) and machine translation, supported by monolingual corpora and bilingual lexicons where available. The project gives careful attention to language identity, provenance, licensing, and data quality.
+CongoLangBitextEval is a reproducible text-evaluation project for languages spoken in the Democratic Republic of Congo. It curates documented bilingual text, validates language and licence provenance, and evaluates language models on comparable translation tasks.
 
-## Quick links
+## Current project roadmap
 
-- [Mashi data extraction notebook on GitHub](notebooks/mashi_data_extraction.ipynb)
-- [Open the Mashi notebook in Google Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/notebooks/mashi_data_extraction.ipynb)
-- [LLM bitext evaluation notebook](notebooks/llm_bitext_evaluation.ipynb)
-- [Mashi–French extracted datasets](language_resources/mashi-shr/data/)
-- [Congo Swahili raw bitext](language_resources/congo-swahili-swc/data/raw/)
+The work is deliberately staged:
+
+1. Complete the four national-language tracks: Lingala, Kikongo ya Leta, Ciluba/Tshiluba, and Congo Swahili.
+2. Select and document up to five feasible bitext-supported local languages per major DRC region.
+3. Focus on a dedicated Kivu expansion, extending the existing Mashi, Nande, Hunde, Fuliiru, Tembo, Havu, Nyanga, and Lega work.
+4. Add further languages whenever credible bitext, provenance, licensing, and review support become available.
+
+The target for each completed language is at least **1,500 reviewed bilingual sentence pairs**, followed by a reproducible evaluation run and saved outputs.
+
+The full plan is in [docs/PROJECT_SPEC.md](docs/PROJECT_SPEC.md).
+
+## Current status
+
+### Mashi prototype
+
+The Mashi track demonstrates the extraction and evaluation workflow. It contains candidate Mashi–French material from eBible Exodus, a contextual dictionary PDF, and murhula.com. The candidates still require linguistic review before they become an official benchmark split.
+
+- [Mashi extraction notebook](notebooks/mashi_data_extraction.ipynb)
+- [Open Mashi notebook in Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/notebooks/mashi_data_extraction.ipynb)
+- [Mashi candidate data](language_resources/mashi-shr/data/)
+- [Mashi source files](language_resources/mashi-shr/sources/)
+
+### Congo Swahili acquisition
+
+The first national-language acquisition is the CLEAR Global Gamayun Congo Swahili collection:
+
+- 5,000-row kit
+- 10,000-row kit
+- 10,305-row kit
+- 25,305 raw French–`swc` pairs in total
+- 25,217 unique exact pairs after initial duplicate inspection
+- CC BY 4.0, with CLEAR Global attribution required
+
+These are acquired raw candidates. Cross-kit deduplication, language/quality review, leakage-safe splitting, and native-speaker validation are still required.
+
+- [Raw Congo Swahili bitext](language_resources/congo-swahili-swc/data/raw/)
 - [Congo Swahili acquisition metadata](language_resources/congo-swahili-swc/metadata/gamayun_kits.md)
-- [Project specification](docs/PROJECT_SPEC.md)
+- [Congo Swahili source worksheet](language_resources/congo-swahili-swc/README.md)
+
+## National-language source plan
+
+The four national tracks are:
+
+| Language | ISO 639-3 | Target | Current stage |
+|---|---:|---:|---|
+| Lingala | `lin` | 1,500 reviewed pairs | Source verification |
+| Kikongo ya Leta / DRC Kituba | `ktu` | 1,500 reviewed pairs | Source verification |
+| Ciluba / Tshiluba | `lua` | 1,500 reviewed pairs | Source verification |
+| Congo Swahili | `swc` | 1,500 reviewed pairs | Raw data acquired |
+
+See the [national source table](registry/national_sources.csv) and [national source plan](registry/national_sources.md).
+
+## Regional selection
+
+The provisional regional table contains up to five priority candidates per major region. A candidate is not counted as an active dataset track until a usable bitext source, exact language variety, DRC provenance, licence, and review route are confirmed.
+
+- [Regional candidate shortlist](registry/regional_candidates.csv)
+- [Regional selection rules](registry/regional_candidates.md)
+- [Central language registry](registry/languages.csv)
+
+## Repository structure
+
+```text
+docs/                       Project specification and tooling notes
+notebooks/                  Extraction and evaluation notebooks
+language_resources/         Per-language worksheets, data, and sources
+registry/                   Language, source, and regional tracking tables
+requirements.txt            Reproducible Python dependency list
+```
+
+## Reproducibility
+
+Use the existing project environment:
+
+```bash
+source venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+The notebooks can be run locally or in Google Colab. Raw source files must remain separate from processed and benchmark files. Do not use provisional or quarantined rows for final evaluation.
+
+## Data and quality rules
+
+- Keep ISO codes and language varieties explicit; do not merge related varieties silently.
+- Preserve source URL, edition, retrieval date, licence, attribution, and contributor information.
+- Keep raw, normalized, reviewed, and benchmark files separate.
+- Keep native, human-translated, mined, machine-translated, and synthetic text labelled separately.
+- Deduplicate overlapping releases before splitting data.
+- Split by source/document where necessary to prevent leakage.
+- Treat automatic BLEU and chrF++ scores as comparisons, not complete quality judgments.
+- Obtain native-speaker or qualified linguistic review before making benchmark claims.
+
+## Evaluation
+
+[llm_bitext_evaluation.ipynb](notebooks/llm_bitext_evaluation.ipynb) provides the initial model-evaluation workflow. Each completed language track should save its model version, prompts, predictions, references, BLEU/chrF++ scores, and error analysis.
+
+## Tooling
+
+Phase 0 investigated [`africa-bitext-builder`](https://pypi.org/project/africa-bitext-builder/). It can discover indexed African-language Bible versions and build verse-aligned CSV corpora, but its output still requires this project’s provenance, licence, language, and human-review checks.
+
 - [Phase 0 tooling note](docs/TOOLING_NOTE.md)
-- [Language registry](registry/languages.csv)
-- [Regional top-five candidate shortlist](registry/regional_candidates.csv)
-- [National-language source plan](registry/national_sources.md)
-
-Install the documented Python dependencies with `venv/bin/pip install -r requirements.txt`.
-
-## Project goal
-
-The goal of this project is to build an inclusive, reproducible text-evaluation benchmark for Congolese languages by:
-
-1. discovering and documenting available text resources for national, regional, and under-resourced Congolese languages;
-2. collecting, cleaning, aligning, and validating monolingual text, parallel text, and bilingual lexicons where reuse is permitted;
-3. preserving metadata about language variety, geographic origin, source, licence, and translation method;
-4. creating carefully reviewed evaluation sets that avoid source overlap and train–test contamination; and
-5. evaluating state-of-the-art language models on bilingual text and related language tasks to identify capabilities, performance gaps, and priorities for future data collection.
-
-The current repository contains evidence-audited, copy-ready data-collection worksheets and an initial Mashi–French extraction and evaluation workflow. Resource inventory last checked: **2026-07-20**.
-
-## Group 1 — The four national languages
-
-| Constitutional name | Data-collection target | ISO 639-3 | Worksheet |
-|---|---|---:|---|
-| Lingala | Lingala | `lin` | [Lingala](language_resources/lingala-lin/README.md) |
-| Ciluba | Ciluba / Tshiluba / Luba-Kasai | `lua` | [Ciluba](language_resources/ciluba-lua/README.md) |
-| Kikongo | **Kikongo ya Leta / DRC Kituba** | `ktu` | [Kikongo ya Leta](language_resources/kituba-ktu/README.md) |
-| Swahili | **Congo Swahili from the DRC only** | `swc` | [Congo Swahili](language_resources/congo-swahili-swc/README.md) |
-
-The Constitution names “Kikongo,” but the national lingua franca commonly meant in present-day DRC is Kikongo ya Leta (DRC Kituba, `ktu`). The Kongo macrolanguage code `kon`, Koongo `kng`, and Angolan San Salvador Kongo `kwy` are not interchangeable with `ktu`.
-
-The Swahili worksheet excludes generic/standard Swahili (`swa`, `swh`, `sw`). “Kingwana” is retained as a search term for northern/Ituri varieties, not as a synonym for every `swc` resource.
-
-## Group 2 — Eastern DRC regional languages
-
-These are languages, not collectively “dialects.”
-
-| Language | ISO 639-3 | Core area | Worksheet |
-|---|---:|---|---|
-| Mashi / Shi | `shr` | Bukavu hinterland; Walungu, Kabare, Kalehe | [Mashi](language_resources/mashi-shr/README.md) |
-| Nande / Kinande | `nnb` | Beni and Lubero; also neighboring areas | [Nande](language_resources/nande-nnb/README.md) |
-| Hunde / Kihunde | `hke` | Masisi, Rutshuru, Walikale and nearby areas | [Hunde](language_resources/hunde-hke/README.md) |
-| Fuliiru / Kifuliiru | `flr` | Uvira Plain and Uvira Territory | [Fuliiru](language_resources/fuliiru-flr/README.md) |
-| Tembo / Kitembo | `tbt` | Kalehe, Masisi and Walikale | [Tembo](language_resources/tembo-tbt/README.md) |
-| Havu / Kihavu | `hav` | Idjwi and Kalehe | [Havu](language_resources/havu-hav/README.md) |
-| Nyanga / Kinyanga | `nyj` | Walikale | [Nyanga](language_resources/nyanga-nyj/README.md) |
-| Lega-Mwenga | `leg` | Mwenga | [Lega](language_resources/rega-leg/README.md) |
-| Lega-Shabunda | `lea` | Shabunda and Pangi | [Lega](language_resources/rega-leg/README.md) |
-
-## Evidence labels
-
-- **VERIFIED DATASET**: files, language identity, access route, and licence checked.
-- **CONVERTIBLE SOURCE**: real content exists, but alignment, extraction, or permission is needed.
-- **CATALOG RECORD**: proves a resource exists; it is not itself a corpus.
-- **CONTACT LEAD**: plausible holder or creator, not confirmed data.
-- **UNVERIFIED / DO NOT INGEST**: provenance, identity, size, or licence is insufficient.
-
-Every data-bearing entry states type (**BITEXT**, **LEXICON**, **MONOLINGUAL**, **SPEECH**), access (**OPEN**, **GATED**, **TERMS**, **CLOSED**), licence, and quality caveats. “Free to read,” “downloadable,” and “available in an app” do not mean open-data reuse. A Bible becomes bitext only after verse alignment with a legally compatible translation.
-
-## Best concrete source found for each language
-
-| Language | Most actionable source now |
-|---|---|
-| Lingala | [Open.Bible full Bible](https://preview.open.bible/bibles/lingala-biblica-text-bible): direct USFM/USX/Word, CC BY-SA 4.0 |
-| Tshiluba | [TSHILUBA.co](https://tshiluba.co/wordindex.html): about 800 web-indexed trilingual entries; [SMOL](https://huggingface.co/datasets/google/smol) adds an open English lexicon |
-| Kikongo ya Leta | [SMOL](https://huggingface.co/datasets/google/smol): downloadable English–`ktu` lexicon, sentences, and documents, CC BY 4.0 |
-| Congo Swahili | [CLEAR Global](https://mozilladatacollective.com/datasets/cmosl07v400w9nu07g3puif2t): downloadable French–`swc` TSV, 25,305 pairs, CC BY 4.0 |
-| Mashi | [eBible Mashi](https://ebible.org/find/details.php?id=shr): full Bible/developer formats, CC BY 4.0; plus a [Mashi–Hebrew–French contextual dictionary](https://nyabangere.com/wp-content/uploads/2025/08/deuteronome-dictionnaire-contextuel-mashi-hebreu-francais.pdf) |
-| Nande | [ASJP wordlist](https://asjp.clld.org/languages/J42_NANDE), CC BY 4.0; larger Kinande–French dictionary requires library/rightsholder contact |
-| Hunde | [Kihunde Living Dictionary](https://livingdictionaries.app/kihunde): multilingual entries and audio; request export/permission |
-| Fuliiru | [Kifuliiru Dictionary](https://dictionary.kifuliiru.net/dictionary): Kifuliiru–Swahili–English–French plus audio; request export/permission |
-| Tembo | [YouVersion Tembo](https://www.bible.com/languages/tbt) plus [Glosbe Tembo–French](https://fr.glosbe.com/tbt/fr); permission required for bulk extraction |
-| Havu | [eBible Havu New Testament](https://ebible.org/hav/index.htm): downloadable formats, CC BY-SA 4.0 |
-| Nyanga | [Kinyanga audio app](https://play.google.com/store/apps/details?id=com.kinyanga.goma.rdc): Kinyanga–French/Swahili verse display and synchronized audio; permission required for extraction |
-| Lega-Shabunda | [Kilega Bible record/app](https://find.bible/bibles/LEAUFM/): full Bible with parallel French/Swahili app; permission required |
-| Lega-Mwenga | No concrete bulk text/lexicon verified; community and publisher outreach is required |
-
-## General resources and cautions
-
-- [Google SMOL](https://huggingface.co/datasets/google/smol): professionally translated multilingual lexical, sentence, and document resources, CC BY 4.0. Confirm which component exists per language.
-- [FLORES](https://github.com/facebookresearch/flores): small human-translated **evaluation** sets, not training-scale corpora.
-- [eBible Corpus](https://github.com/BibleNLP/ebible): verse-indexed translations with edition-specific licences.
-- [JHU Bible Corpus](https://github.com/christos-c/bible-corpus): aligned religious text; retain source-edition provenance and rights metadata.
-- [OPUS](https://opus.nlpl.eu/) and [MTData](https://github.com/thammegowda/mtdata): indexes/downloaders with corpus-specific licences and quality.
-- **JW300:** **historical lead only**. [OPUS](https://opus.nlpl.eu/) withdrew the corpus download after rights concerns; do not cite an obsolete corpus URL as available data.
-- [Hugging Face](https://huggingface.co/datasets), [GitHub](https://github.com/search), [ACL Anthology](https://aclanthology.org/), and [arXiv](https://arxiv.org/) are discovery platforms, not quality or licence guarantees.
-- [ASJP](https://asjp.clld.org/): small standardized wordlists, CC BY 4.0; useful for lexical comparison, not sentence MT.
-- [PanLex](https://panlex.org/), [Wiktionary dumps](https://dumps.wikimedia.org/), and [Kaikki](https://kaikki.org/): confirm actual exact-language coverage before claiming data.
-- [OSCAR](https://oscar-project.github.io/documentation/), [CC-100](https://data.statmt.org/cc-100/), and [Wikipedia dumps](https://dumps.wikimedia.org/): validate automatic language identification for closely related Bantu varieties.
-
-## Collection rules
-
-1. Preserve URL, retrieval date, ISO code, regional variety, edition, licence, and attribution.
-2. Never merge `ktu`, `kon`, `kng`, or `kwy` merely because a page says “Kikongo.”
-3. Never merge `leg` and `lea` without community/linguist validation.
-4. For Congo Swahili, require explicit DRC provenance; generic Swahili is outside scope.
-5. Keep native, human-translated, mined, machine-translated, and LLM-generated data separate.
-6. Deduplicate Bible verses and overlapping releases before reporting totals.
+- [Project specification](docs/PROJECT_SPEC.md)
