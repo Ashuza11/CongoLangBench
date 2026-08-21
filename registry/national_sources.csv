@@ -4,6 +4,7 @@ Lingala,lin,CLEAR Global Gamayun French-Lingala kit,parallel text,OPEN,CC BY 4.0
 Lingala,lin,Google SMOL gatitos__en_lin,lexicon,OPEN,CC BY 4.0,lexicon_only,verified_supporting_source,keep separate from sentence benchmark
 Lingala,lin,multi-open English-Lingala,parallel text,GATED,terms to inspect,reported large,verification_required,inspect card and request access/licence
 Kikongo ya Leta,ktu,Google SMOL English-Kituba resources,lexicon / sentences / documents,OPEN,CC BY 4.0,verify component counts,verification_required,confirm exact ktu components and export format
+Kikongo ya Leta,ktu,Google SMOL en_ktu SmolSent + SmolDoc,parallel text,OPEN,CC BY 4.0,1500+ after document flattening,verified_source,retain known SMOL Kituba quality warning and freeze curation
 Kikongo ya Leta,ktu,YouVersion / Scripture sources,Bible text / convertible bitext,TERMS,permission required,1500+ possible,permission_required,request verse-keyed text and reuse terms
 Kikongo ya Leta,ktu,multi-open English-Kituba,parallel text,GATED,terms to inspect,reported large,verification_required,inspect card and request access/licence
 Ciluba,lua,Google SMOL gatitos__en_lua,lexicon,OPEN,CC BY 4.0,about 4000 lexical items,verified_supporting_source,keep separate from sentence benchmark

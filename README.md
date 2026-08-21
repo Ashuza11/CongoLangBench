@@ -40,6 +40,14 @@ The CLEAR Global Gamayun collection also provides a 5,000-row French–Lingala k
 - [Processed Lingala candidates](language_resources/lingala-lin/data/processed/)
 - [Lingala acquisition metadata](language_resources/lingala-lin/metadata/gamayun_kit.md)
 
+### Kikongo ya Leta acquisition
+
+SMOL provides Kituba (`ktu`) sentence and document translations under CC BY 4.0, plus a separate lexicon. Sentence data is being curated separately from the lexicon, and the source’s documented Kituba quality warning is retained in row metadata.
+
+- [Kituba raw data](language_resources/kituba-ktu/data/raw/)
+- [Kituba metadata](language_resources/kituba-ktu/metadata/smol.md)
+- [Kituba preparation script](language_resources/kituba-ktu/scripts/prepare_smol.py)
+
 ### Congo Swahili acquisition
 
 The first national-language acquisition is the CLEAR Global Gamayun Congo Swahili collection:
@@ -67,7 +75,7 @@ The four national tracks are:
 | Language | ISO 639-3 | Target | Current stage |
 |---|---:|---:|---|
 | Lingala | `lin` | 1,500 curated pairs | Verified source; 4,999 processed |
-| Kikongo ya Leta / DRC Kituba | `ktu` | 1,500 curated pairs | Source verification |
+| Kikongo ya Leta / DRC Kituba | `ktu` | 1,500 curated pairs | Verified source; 2,469 processed |
 | Ciluba / Tshiluba | `lua` | 1,500 curated pairs | Source verification |
 | Congo Swahili | `swc` | 1,500 curated pairs | Verified source; 25,214 processed |
 
