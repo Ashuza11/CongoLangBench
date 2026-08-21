@@ -50,7 +50,7 @@ SMOL provides Kituba (`ktu`) sentence and document translations under CC BY 4.0,
 
 ### Ciluba/Tshiluba acquisition
 
-SMOL currently provides a CC BY 4.0 GATITOS lexicon for `lua`, but no sentence- or document-level SMOL file. The lexicon is preserved as supporting data and is not counted toward the 1,500-sentence target. The Ciluba sentence track remains open while we verify `multi-open`, Bible alignment, or community sources.
+SMOL currently provides a CC BY 4.0 GATITOS lexicon for `lua`, but no sentence- or document-level SMOL file. The lexicon is preserved as supporting data and is not counted toward the 1,500-sentence target. The gated African Languages Lab `multi-open` collection is the strongest sentence-level lead, but its access conditions and licence must be accepted and inspected before any rows are counted.
 
 - [Ciluba raw lexicon](language_resources/ciluba-lua/data/raw/)
 - [Ciluba source metadata](language_resources/ciluba-lua/metadata/smol.md)

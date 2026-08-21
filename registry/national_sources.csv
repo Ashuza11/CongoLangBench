@@ -8,7 +8,7 @@ Kikongo ya Leta,ktu,Google SMOL en_ktu SmolSent + SmolDoc,parallel text,OPEN,CC 
 Kikongo ya Leta,ktu,YouVersion / Scripture sources,Bible text / convertible bitext,TERMS,permission required,1500+ possible,permission_required,request verse-keyed text and reuse terms
 Kikongo ya Leta,ktu,multi-open English-Kituba,parallel text,GATED,terms to inspect,reported large,verification_required,inspect card and request access/licence
 Ciluba,lua,Google SMOL gatitos__en_lua,lexicon,OPEN,CC BY 4.0,about 4000 lexical items,lexicon_only,keep separate from sentence benchmark
-Ciluba,lua,multi-open English-Tshiluba,parallel text,GATED,licence other,reported large,source_needed,inspect card provenance and request access
+Ciluba,lua,multi-open English-Tshiluba,parallel text,GATED,licence other,reported large,access_request,accept conditions and inspect licence before counting rows
 Ciluba,lua,TSHILUBA.co,dictionary / examples,TERMS,permission required,manual export only,permission_required,request CSV or JSON export
 Ciluba,lua,eBible / Scripture sources,Bible text / convertible bitext,MIXED,edition-specific,1500+ possible,source_needed,identify exact edition and compatible French source
 Congo Swahili,swc,CLEAR Global / Gamayun French-Congo Swahili kits,parallel text,OPEN,CC BY 4.0,25305 pairs,verified_source,freeze benchmark split and evaluate
