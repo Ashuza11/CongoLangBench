@@ -13,3 +13,11 @@ Rules:
 - `current_pairs` counts only reviewed benchmark pairs, not raw candidates or catalogue records.
 - Update `status` as a track moves through discovery, extraction, review, and evaluation.
 - Add new languages as new rows rather than changing an existing language’s identity.
+
+## Regional phase entry
+
+The first regional track is South Kivu. Mashi currently has 1,168 curated
+French–Mashi candidates, so it remains below the 1,500-pair target. Its next
+action is to add a compatible, permissioned or openly licensed source. Nande
+(`nnb`) is the next discovery candidate, followed by Havu, Fuliiru, Tembo, and
+Nyanga as sources are verified.
