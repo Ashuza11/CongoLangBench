@@ -1,0 +1,9 @@
+# Core extraction and evaluation dependencies
+africa-bitext-builder==0.1.13
+beautifulsoup4
+pandas>=2.0
+pypdf
+requests
+sacrebleu
+tqdm
+transformers

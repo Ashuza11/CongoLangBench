@@ -204,7 +204,9 @@ evaluations/
 registry/
   languages.csv
   regional_candidates.csv
-PROJECT_SPEC.md
+docs/
+  PROJECT_SPEC.md
+  TOOLING_NOTE.md
 ```
 
 The current repository may be migrated toward this layout incrementally. Existing Mashi files remain valid source artifacts while the shared schema is introduced.

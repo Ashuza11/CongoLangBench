@@ -11,14 +11,17 @@ CongoLangBitextEval is a text-evaluation initiative that curates high-quality da
 
 ## Quick links
 
-- [Mashi data extraction notebook on GitHub](DataExtractionAfricompling.ipynb)
-- [Open the Mashi notebook in Google Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/DataExtractionAfricompling.ipynb)
+- [Mashi data extraction notebook on GitHub](notebooks/mashi_data_extraction.ipynb)
+- [Open the Mashi notebook in Google Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/notebooks/mashi_data_extraction.ipynb)
+- [LLM bitext evaluation notebook](notebooks/llm_bitext_evaluation.ipynb)
 - [Mashi–French extracted datasets](language_resources/mashi-shr/data/)
-- [Project specification](PROJECT_SPEC.md)
-- [Phase 0 tooling note](TOOLING_NOTE.md)
+- [Project specification](docs/PROJECT_SPEC.md)
+- [Phase 0 tooling note](docs/TOOLING_NOTE.md)
 - [Language registry](registry/languages.csv)
 - [Regional top-five candidate shortlist](registry/regional_candidates.csv)
 - [National-language source plan](registry/national_sources.md)
+
+Install the documented Python dependencies with `venv/bin/pip install -r requirements.txt`.
 
 ## Project goal
 

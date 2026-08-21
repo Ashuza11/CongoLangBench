@@ -1,1 +1,6 @@
 venv/
+
+# Generated extraction and evaluation outputs
+*.log
+outputs/
+results/
