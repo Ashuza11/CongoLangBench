@@ -2,6 +2,8 @@
 
 `languages.csv` is the central tracker for language identity, project scope, pair targets, current status, and next actions.
 
+`regional_candidates.csv` is the provisional top-five-per-region shortlist. Its `bitext_status` must be changed from `source_to_verify` only after a usable, permissioned or openly licensed bitext source has been confirmed.
+
 Rules:
 
 - Keep ISO codes and varieties explicit.

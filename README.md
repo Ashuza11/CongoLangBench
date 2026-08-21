@@ -17,6 +17,7 @@ CongoLangBitextEval is a text-evaluation initiative that curates high-quality da
 - [Project specification](PROJECT_SPEC.md)
 - [Phase 0 tooling note](TOOLING_NOTE.md)
 - [Language registry](registry/languages.csv)
+- [Regional top-five candidate shortlist](registry/regional_candidates.csv)
 
 ## Project goal
 

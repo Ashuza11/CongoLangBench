@@ -2,7 +2,7 @@
 
 ## 1. Project purpose
 
-Build a reproducible text-evaluation benchmark for languages spoken in the Democratic Republic of Congo (DRC). The first deliverable is a minimum of **1,500 reviewed bilingual sentence pairs per national language**, followed by the same process for selected regional languages. Each completed language track must produce a documented dataset, a repeatable evaluation run, and saved results that can be compared across languages.
+Build a reproducible text-evaluation benchmark for languages spoken in the Democratic Republic of Congo (DRC). The first collection program covers a minimum of **1,500 reviewed bilingual sentence pairs per national language** plus up to five feasible bitext-supported local languages per major region. Each completed language track must produce a documented dataset, a repeatable evaluation run, and saved results that can be compared across languages.
 
 The project focuses on text and bitext evaluation. Monolingual corpora, dictionaries, and speech resources may support discovery, normalization, and future work, but they are not counted as bilingual sentence pairs unless they have a valid alignment and reuse permission.
 
@@ -21,9 +21,9 @@ The initial tracks are:
 
 Generic Kongo, generic Standard Swahili, and unrelated Luba or Kikongo varieties must not be silently merged into these tracks. Every record must retain its exact variety and ISO code.
 
-### Phase 2 — Regional language selection
+### Phase 1B — Regional top-five language tracks
 
-Select additional languages by DRC region. The target is up to **five languages per region**, but a language is added only when a usable bitext source can be identified and its variety, provenance, and licence can be documented.
+Alongside the four national languages, identify up to **five local languages per major DRC region** for which a usable bitext source can be identified. A language is selected only when its variety, provenance, licence, and at least one credible bitext route can be documented. Population estimates guide prioritization but do not substitute for data availability or language validation.
 
 The regional shortlist must be based on:
 
@@ -34,15 +34,15 @@ The regional shortlist must be based on:
 5. permission or a compatible open licence; and
 6. feasibility of native-speaker review.
 
-The shortlist is a research output, not an assumption. Record candidate languages, rejected candidates, evidence, and the reason for each decision in a regional selection table.
+The shortlist is a research output, not an assumption. Record candidate languages, rejected candidates, evidence, bitext status, and the reason for each decision in `registry/regional_candidates.csv`.
 
 Potential regional groupings to investigate include Western/Greater Kinshasa, Kongo Central, Kasai, Katanga, North Kivu, South Kivu, Ituri, Maniema, and other areas supported by evidence. Boundaries and language membership must be validated against sources and speakers rather than inferred from province names alone.
 
-### Phase 3 — Kivu expansion
+### Phase 2 — Kivu expansion
 
 After the national-language benchmark and the broader regional top-five selection are complete, focus specifically on the Kivu regions. Extend the existing Mashi, Nande, Hunde, Fuliiru, Tembo, Havu, Nyanga, and Lega work where data is available, and add additional Kivu languages discovered through the regional process. Kivu additions must use the same 1,500-pair target, review rules, and evaluation protocol; they are an expansion of the benchmark, not a replacement for the national or regional tracks.
 
-### Phase 4 — Continuous expansion
+### Phase 3 — Continuous expansion
 
 Add further Congolese languages whenever credible data is found. New languages follow the same intake, licence, schema, review, split, evaluation, and reporting process. No language is excluded merely because it is not in the initial list; it is placed in a documented queue until evidence and data are available.
 
@@ -123,7 +123,7 @@ Every language follows these stages:
 
 **Exit criterion:** a short tooling note, a reproducible installation, and a decision on how the package fits the pipeline.
 
-### Phase 1 — National-language benchmark
+### Phase 1A — National-language benchmark
 
 Work in this order: Lingala, Kikongo ya Leta, Ciluba, and Congo Swahili. The order may change if source access makes another track substantially more ready.
 
@@ -138,9 +138,9 @@ For each language:
 7. run model evaluation in both directions where possible; and
 8. save the dataset card, scores, outputs, and error analysis.
 
-**Exit criterion:** four language tracks meeting the definition of done, or a documented shortfall with the reason and next data-collection action.
+**Exit criterion:** four national language tracks meeting the definition of done, or a documented shortfall with the reason and next data-collection action.
 
-### Phase 2 — Regional selection and collection
+### Phase 1B — Regional top-five selection and collection
 
 1. Build a regional candidate table.
 2. Rank candidates using population/importance, representation gap, source availability, licensing, and review feasibility.
@@ -149,9 +149,9 @@ For each language:
 5. Apply the common pipeline and 1,500-pair target.
 6. Evaluate each completed language independently.
 
-**Exit criterion:** a defensible regional shortlist and the first completed regional language tracks.
+**Exit criterion:** a defensible top-five-per-region shortlist and the first completed regional language tracks with usable bitext.
 
-### Phase 3 — Kivu expansion
+### Phase 2 — Kivu expansion
 
 1. Consolidate the existing Kivu language tracks and identify their remaining data gaps.
 2. Add new Kivu languages from the regional candidate table where credible bitext exists.
@@ -160,7 +160,7 @@ For each language:
 
 **Exit criterion:** an evaluated Kivu-focused expansion that clearly documents what was added to the existing Kivu coverage.
 
-### Phase 4 — Continuous expansion
+### Phase 3 — Continuous expansion
 
 - Add newly discovered languages through the same intake form.
 - Version datasets when sources or review decisions change.
@@ -226,5 +226,6 @@ The current repository may be migrated toward this layout incrementally. Existin
 3. Package the current Mashi workflow as the reference adapter.
 4. Start the Lingala source inventory and target 1,500 reviewed pairs.
 5. Repeat for Kikongo ya Leta, Ciluba, and Congo Swahili.
-6. Create the regional candidate table after the national tracks are underway.
-7. Begin the dedicated Kivu expansion only after the national and broader regional phases are complete.
+6. Create and rank the top-five-per-region candidate table while the national tracks are underway.
+7. Collect and evaluate the selected regional languages with verified usable bitext.
+8. Begin the dedicated Kivu expansion only after the national and broader regional tracks are complete.

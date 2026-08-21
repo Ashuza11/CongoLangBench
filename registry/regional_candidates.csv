@@ -1,0 +1,51 @@
+region,rank,language,iso_code,planning_basis,bitext_status,selection_status,next_action
+North Kivu,1,Nande / Kinande,nnb,large regional language,package_or_source_to_verify,candidate,verify usable bitext and licence
+North Kivu,2,Hunde / Kihunde,hke,large regional language,source_to_verify,candidate,identify permissioned or open parallel text
+North Kivu,3,Nyanga / Kinyanga,nyj,regional language with Bible materials,source_to_verify,candidate,verify extractable aligned text and rights
+North Kivu,4,Tembo / Kitembo,tbt,regional Kivu language,source_to_verify,candidate,confirm publisher access and bitext rights
+North Kivu,5,Kinyarwanda,kin,large bilingual community,source_to_verify,candidate,restrict to DRC-provenanced data and verify variety
+South Kivu,1,Mashi / Shi,shr,large regional language,existing_candidates,candidate,review existing candidates and freeze benchmark split
+South Kivu,2,Havu / Kihavu,hav,large regional language,package_or_source_to_verify,candidate,align compatible open editions
+South Kivu,3,Bembe / Kibembe,,substantial regional community,source_to_verify,candidate,identify DRC-specific bitext and ISO code
+South Kivu,4,Fuliiru / Kifuliiru,flr,regional language with dictionary and Bible materials,source_to_verify,candidate,request export and reuse permission
+South Kivu,5,Lega / Kilega,leg;lea,large language continuum,source_to_verify,candidate,keep Mwenga and Shabunda varieties separate
+Ituri,1,Lendu / Kilendu,,large local language,source_to_verify,candidate,identify aligned text and validate language code
+Ituri,2,Alur / Dho-Alur,,large cross-border community,source_to_verify,candidate,restrict to DRC provenance and verify code
+Ituri,3,Ngiti,,large local language,source_to_verify,candidate,find reviewed bilingual source
+Ituri,4,Hema,,regional community,source_to_verify,candidate,identify DRC-specific text and language metadata
+Ituri,5,Bila,,forest-region language,source_to_verify,candidate,locate community or scripture bitext
+Maniema,1,Lega / Kilega,leg;lea,large language continuum,source_to_verify,candidate,do not merge varieties without validation
+Maniema,2,Kusu,,large local language,source_to_verify,candidate,find a usable bilingual source
+Maniema,3,Bangubangu,,substantial regional community,source_to_verify,candidate,identify source and ISO code
+Maniema,4,Bembe / Kibembe,,substantial regional community,source_to_verify,candidate,find DRC-specific bitext
+Maniema,5,Songola / Songoora,,regional language,source_to_verify,candidate,identify aligned text and language code
+Tshopo,1,Lokele,,major Kisangani-area language,source_to_verify,candidate,find local or scripture bitext
+Tshopo,2,Topoke / Poke,,regional language,source_to_verify,candidate,identify source and ISO code
+Tshopo,3,Mbole,,regional language,source_to_verify,candidate,locate bilingual text
+Tshopo,4,Lengola,,regional language,source_to_verify,candidate,locate bilingual text
+Tshopo,5,Enya-Kisangani,,regional language,source_to_verify,candidate,distinguish from Enya-Kindu and find bitext
+Katanga,1,Luba-Katanga / Kiluba,lub,major regional language,source_to_verify,candidate,keep distinct from Tshiluba and find aligned text
+Katanga,2,Tabwa / Kitabwa,,large regional community,source_to_verify,candidate,identify DRC-specific bitext and code
+Katanga,3,Sanga,,large regional community,source_to_verify,candidate,identify bilingual source
+Katanga,4,Aushi,,substantial regional community,source_to_verify,candidate,find source and verify variety
+Katanga,5,Lunda,,cross-border regional language,source_to_verify,candidate,restrict to DRC provenance and identify code
+Kasai,1,Tshiluba / Luba-Kasai,lua,major regional language,package_or_source_to_verify,candidate,build national-language track first
+Kasai,2,Luba-Lulua,,major western Kasai variety,source_to_verify,candidate,keep distinct from Tshiluba and find bitext
+Kasai,3,Kanyok / Kanyoka,,regional language,source_to_verify,candidate,identify source and ISO code
+Kasai,4,Tetela,tll,Sankuru and Kasai transition language,source_to_verify,candidate,find DRC-specific bilingual text
+Kasai,5,Kuba / Bushoong,,major Kasai community,source_to_verify,candidate,identify community or scripture bitext
+Western DRC,1,Kituba / Kikongo ya Leta,ktu,national lingua franca,package_or_source_to_verify,candidate,build national-language track first
+Western DRC,2,Yaka,,large Kwango language,source_to_verify,candidate,find aligned text and ISO code
+Western DRC,3,Pende / Phende,,large Kwango-Kwilu language,source_to_verify,candidate,identify usable bitext
+Western DRC,4,Yansi / Yanzi,,regional Kwilu language,source_to_verify,candidate,find source and validate variety
+Western DRC,5,Yombe / Kiyombe,,major Kongo variety,source_to_verify,candidate,keep distinct from Kituba and find bitext
+Northwestern Congo Basin,1,Mongo / Lonkundo,,large regional language group,source_to_verify,candidate,find aligned text and code
+Northwestern Congo Basin,2,Ngombe,,substantial regional community,source_to_verify,candidate,identify bilingual sources
+Northwestern Congo Basin,3,Budza / Budja,,large regional community,source_to_verify,candidate,find source and verify code
+Northwestern Congo Basin,4,Ngbaka,,large cross-border community,source_to_verify,candidate,restrict to DRC provenance
+Northwestern Congo Basin,5,Mbandja,,substantial regional community,source_to_verify,candidate,identify usable bitext
+Northern DRC,1,Zande / Pazande,,major northeastern language,source_to_verify,candidate,restrict to DRC provenance and find bitext
+Northern DRC,2,Ngbaka Ma'bo,,regional language,source_to_verify,candidate,identify source and ISO code
+Northern DRC,3,Ngbandi,,regional language group,source_to_verify,candidate,keep varieties separate and find bitext
+Northern DRC,4,Logo,,regional language,source_to_verify,candidate,identify bilingual source
+Northern DRC,5,Mangbetu,,major northeastern language,source_to_verify,candidate,find DRC-specific bitext
