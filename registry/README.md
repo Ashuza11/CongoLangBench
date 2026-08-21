@@ -4,6 +4,8 @@
 
 `regional_candidates.csv` is the provisional top-five-per-region shortlist. Its `bitext_status` must be changed from `source_to_verify` only after a usable, permissioned or openly licensed bitext source has been confirmed.
 
+`national_sources.csv` and `national_sources.md` track the Phase 1A source verification plan for the four national languages.
+
 Rules:
 
 - Keep ISO codes and varieties explicit.

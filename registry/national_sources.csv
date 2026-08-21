@@ -1,0 +1,14 @@
+language,iso_code,source,source_type,access,licence_or_terms,pair_potential,source_status,next_action
+Lingala,lin,Biblica Open Lingala Contemporary Bible,Bible text / convertible bitext,OPEN,CC BY-SA 4.0,1500+,strong_candidate,download USFM and identify compatible French edition
+Lingala,lin,Google SMOL gatitos__en_lin,lexicon,OPEN,CC BY 4.0,lexicon_only,verified_supporting_source,keep separate from sentence benchmark
+Lingala,lin,multi-open English-Lingala,parallel text,GATED,terms to inspect,reported large,verification_required,inspect card and request access/licence
+Kikongo ya Leta,ktu,Google SMOL English-Kituba resources,lexicon / sentences / documents,OPEN,CC BY 4.0,verify component counts,verification_required,confirm exact ktu components and export format
+Kikongo ya Leta,ktu,YouVersion / Scripture sources,Bible text / convertible bitext,TERMS,permission required,1500+ possible,permission_required,request verse-keyed text and reuse terms
+Kikongo ya Leta,ktu,multi-open English-Kituba,parallel text,GATED,terms to inspect,reported large,verification_required,inspect card and request access/licence
+Ciluba,lua,Google SMOL gatitos__en_lua,lexicon,OPEN,CC BY 4.0,about 4000 lexical items,verified_supporting_source,keep separate from sentence benchmark
+Ciluba,lua,multi-open English-Tshiluba,parallel text,GATED,licence other,reported large,verification_required,inspect card provenance and request access
+Ciluba,lua,TSHILUBA.co,dictionary / examples,TERMS,permission required,manual export only,permission_required,request CSV or JSON export
+Ciluba,lua,eBible / Scripture sources,Bible text / convertible bitext,MIXED,edition-specific,1500+ possible,verification_required,identify exact edition and compatible French source
+Congo Swahili,swc,CLEAR Global / Gamayun French-Congo Swahili kits,parallel text,OPEN,CC BY 4.0,25305 pairs,ready_candidate,download kits preserve IDs and deduplicate
+Congo Swahili,swc,Tatoeba Congo Swahili,sentence bitext,OPEN/VERIFY,current terms to confirm,unknown,supplementary_candidate,verify current swc labels and licence
+Congo Swahili,swc,IWSLT Congolese Swahili task,speech/text evaluation,CATALOG/TERMS,registration and task terms,unknown,catalog_lead,locate current files and terms
