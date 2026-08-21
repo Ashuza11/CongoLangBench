@@ -13,7 +13,7 @@ Do not mix `lua` with Luba-Katanga (`lub`) or results about the Lua programming 
 |---|---|---|---|
 | **LEXICON** | [Google SMOL](https://huggingface.co/datasets/google/smol), `gatitos__en_lua` | **OPEN**, CC BY 4.0 | About 4,000 professionally translated English–Tshiluba GATITOS entries. Mainly lexical; no `smolsent__en_lua` or `smoldoc__en_lua` was verified. |
 | **BITEXT (evaluation)** | [FLORES](https://github.com/facebookresearch/flores), `lua_Latn` | repository terms | Small human-translated evaluation set, not training-scale. |
-| **BITEXT** | [multi-open](https://huggingface.co/datasets/African-Languages-Lab/multi-open) | **GATED**, licence “other” | Card reports about 400,000 English–Tshiluba rows. Not open; inspect terms and provenance. |
+| **BITEXT** | [multi-open](https://huggingface.co/datasets/African-Languages-Lab/multi-open) | **GATED**, licence “other” | Accepted by project owner; local token still needs access. Card reports about 400,000 English–Tshiluba rows. |
 | **LEXICON** | [TSHILUBA.co](https://tshiluba.co/) | **TERMS / permission** | Searchable Tshiluba–French–English dictionary; request export instead of scraping. |
 
 ## Convertible sources and leads
@@ -26,7 +26,8 @@ Do not mix `lua` with Luba-Katanga (`lub`) or results about the Lua programming 
 ## Best sources you can use now
 
 1. **DATA — ONLINE TRILINGUAL DICTIONARY:** [TSHILUBA.co word index](https://tshiluba.co/wordindex.html) exposes about **800 indexed Tshiluba headword pages** with French and English fields/examples. It is immediately useful for manual lookup or a permission-based lexicon export.
-2. **DATA — OPEN LEXICON DOWNLOAD:** [Google SMOL](https://huggingface.co/datasets/google/smol), configuration `gatitos__en_lua`, supplies about 4,000 English–Tshiluba lexical items under CC BY 4.0.
+2. **DATA — GATED SENTENCE DOWNLOAD:** [multi-open](https://huggingface.co/datasets/African-Languages-Lab/multi-open), configuration `english-tshiluba`, supplies about 400,000 rows after local authentication. Run `scripts/prepare_multi_open.py` after placing the Parquet file in `data/raw/`.
+3. **DATA — OPEN LEXICON DOWNLOAD:** [Google SMOL](https://huggingface.co/datasets/google/smol), configuration `gatitos__en_lua`, supplies about 4,000 English–Tshiluba lexical items under CC BY 4.0.
 3. **DATA — SCRIPTURE TEXT LEAD:** [YouVersion Tshiluba search](https://www.bible.com/search/bible?q=Tshiluba) and [Scripture Earth](https://www.scriptureearth.org/) can identify exact editions. App/web access is usable for inspection; contact the publisher for bulk USFM or redistribution rights.
 4. **CONTACT:** ask TSHILUBA.co (`info@tshiluba.co`) for CSV/JSON/database export and explicit research/redistribution terms. This is preferable to scraping hundreds of pages.
 
