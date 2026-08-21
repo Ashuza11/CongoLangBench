@@ -2,7 +2,7 @@
 
 ## 1. Project purpose
 
-Build a reproducible text-evaluation benchmark for languages spoken in the Democratic Republic of Congo (DRC). The first collection program covers a minimum of **1,500 reviewed bilingual sentence pairs per national language** plus up to five feasible bitext-supported local languages per major region. Each completed language track must produce a documented dataset, a repeatable evaluation run, and saved results that can be compared across languages.
+Build a reproducible text-evaluation benchmark for languages spoken in the Democratic Republic of Congo (DRC). The first collection program covers a minimum of **1,500 curated bilingual sentence pairs per national language** plus up to five feasible bitext-supported local languages per major region. Each completed language track must produce a documented dataset and a frozen curation record before the evaluation phase begins.
 
 The project focuses on text and bitext evaluation. Monolingual corpora, dictionaries, and speech resources may support discovery, normalization, and future work, but they are not counted as bilingual sentence pairs unless they have a valid alignment and reuse permission.
 
@@ -100,10 +100,11 @@ Every language follows these stages:
 5. **Align:** align translations using stable IDs where available; otherwise use an auditable alignment method.
 6. **Normalize:** clean whitespace and encoding while preserving meaningful spelling and diacritics.
 7. **Filter:** remove duplicates, empty records, wrong-language records, and clearly invalid alignments.
-8. **Review:** conduct native-speaker or qualified linguistic review and quarantine uncertain rows.
+8. **Review:** conduct native-speaker or qualified linguistic review where needed, or record authenticated-source validation and quarantine uncertain rows.
 9. **Split:** create leakage-safe train/dev/test or evaluation-only partitions by source and document.
-10. **Evaluate:** run the same prompts, models, directions, metrics, and sampling rules.
-11. **Report:** save scores, outputs, metadata, limitations, and a short language summary.
+10. **Freeze:** record the curation version and confirm that the track has passed its source and quality gate.
+11. **Evaluate:** only after the all-language curation milestone, run the same prompts, models, directions, metrics, and sampling rules.
+12. **Report:** save scores, outputs, metadata, limitations, and a short language summary.
 
 ## 6. Phase plan
 
@@ -147,7 +148,7 @@ For each language:
 3. Select up to five feasible languages per region.
 4. Create a worksheet and source inventory for each selected language.
 5. Apply the common pipeline and 1,500-pair target.
-6. Evaluate each completed language independently.
+6. Freeze each curated language track; defer model evaluation until the all-language curation milestone.
 
 **Exit criterion:** a defensible top-five-per-region shortlist and the first completed regional language tracks with usable bitext.
 

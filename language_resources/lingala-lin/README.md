@@ -1,5 +1,12 @@
 # Lingala (`lin`)
 
+## Project files
+
+- [Raw Lingala–French bitext](data/raw/)
+- [Processed Lingala candidates](data/processed/)
+- [Gamayun acquisition metadata](metadata/gamayun_kit.md)
+- [Preparation script](scripts/prepare_gamayun.py)
+
 Search names/codes: Lingala, `lin`, `ln`, `lin_Latn`. “Ngala” is ambiguous and requires ISO verification.
 
 ## Verified and evaluated data

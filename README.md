@@ -17,7 +17,7 @@ The work is deliberately staged:
 3. Focus on a dedicated Kivu expansion, extending the existing Mashi, Nande, Hunde, Fuliiru, Tembo, Havu, Nyanga, and Lega work.
 4. Add further languages whenever credible bitext, provenance, licensing, and review support become available.
 
-The target for each completed language is at least **1,500 reviewed bilingual sentence pairs**, followed by a reproducible evaluation run and saved outputs.
+The target for each completed language is at least **1,500 curated bilingual sentence pairs**. Model evaluation is intentionally gated until the selected national and regional language datasets have been curated and frozen.
 
 The full plan is in [docs/PROJECT_SPEC.md](docs/PROJECT_SPEC.md).
 
@@ -31,6 +31,14 @@ The Mashi track demonstrates the extraction and evaluation workflow. It contains
 - [Open Mashi notebook in Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/notebooks/mashi_data_extraction.ipynb)
 - [Mashi candidate data](language_resources/mashi-shr/data/)
 - [Mashi source files](language_resources/mashi-shr/sources/)
+
+### Lingala acquisition
+
+The CLEAR Global Gamayun collection also provides a 5,000-row French–Lingala kit under CC BY 4.0. After removing one exact duplicate and normalizing whitespace, the track contains 4,999 verified-source rows.
+
+- [Raw Lingala bitext](language_resources/lingala-lin/data/raw/)
+- [Processed Lingala candidates](language_resources/lingala-lin/data/processed/)
+- [Lingala acquisition metadata](language_resources/lingala-lin/metadata/gamayun_kit.md)
 
 ### Congo Swahili acquisition
 
@@ -58,10 +66,10 @@ The four national tracks are:
 
 | Language | ISO 639-3 | Target | Current stage |
 |---|---:|---:|---|
-| Lingala | `lin` | 1,500 reviewed pairs | Source verification |
-| Kikongo ya Leta / DRC Kituba | `ktu` | 1,500 reviewed pairs | Source verification |
-| Ciluba / Tshiluba | `lua` | 1,500 reviewed pairs | Source verification |
-| Congo Swahili | `swc` | 1,500 reviewed pairs | Raw data acquired |
+| Lingala | `lin` | 1,500 curated pairs | Verified source; 4,999 processed |
+| Kikongo ya Leta / DRC Kituba | `ktu` | 1,500 curated pairs | Source verification |
+| Ciluba / Tshiluba | `lua` | 1,500 curated pairs | Source verification |
+| Congo Swahili | `swc` | 1,500 curated pairs | Verified source; 25,214 processed |
 
 See the [national source table](registry/national_sources.csv) and [national source plan](registry/national_sources.md).
 
@@ -107,7 +115,7 @@ The notebooks can be run locally or in Google Colab. Raw source files must remai
 
 ## Evaluation
 
-[llm_bitext_evaluation.ipynb](notebooks/llm_bitext_evaluation.ipynb) provides the initial model-evaluation workflow. Each completed language track should save its model version, prompts, predictions, references, BLEU/chrF++ scores, and error analysis.
+[llm_bitext_evaluation.ipynb](notebooks/llm_bitext_evaluation.ipynb) provides the initial model-evaluation workflow. After the curation milestone, each completed language track should save its model version, prompts, predictions, references, BLEU/chrF++ scores, and error analysis.
 
 ## Tooling
 

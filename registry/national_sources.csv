@@ -1,5 +1,6 @@
 language,iso_code,source,source_type,access,licence_or_terms,pair_potential,source_status,next_action
 Lingala,lin,Biblica Open Lingala Contemporary Bible,Bible text / convertible bitext,OPEN,CC BY-SA 4.0,1500+,strong_candidate,download USFM and identify compatible French edition
+Lingala,lin,CLEAR Global Gamayun French-Lingala kit,parallel text,OPEN,CC BY 4.0,5000 rows,verified_source,process and include in national curation set
 Lingala,lin,Google SMOL gatitos__en_lin,lexicon,OPEN,CC BY 4.0,lexicon_only,verified_supporting_source,keep separate from sentence benchmark
 Lingala,lin,multi-open English-Lingala,parallel text,GATED,terms to inspect,reported large,verification_required,inspect card and request access/licence
 Kikongo ya Leta,ktu,Google SMOL English-Kituba resources,lexicon / sentences / documents,OPEN,CC BY 4.0,verify component counts,verification_required,confirm exact ktu components and export format
