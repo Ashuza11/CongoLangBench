@@ -9,6 +9,8 @@ Do not mix `lua` with Luba-Katanga (`lub`) or results about the Lua programming 
 
 ## Verified and evaluated data
 
+The accepted `multi-open` split contains 400,000 raw rows. After whitespace normalization and exact English–Ciluba deduplication, the local curation output contains **397,971 verified-source sentence candidates**. Generated JSONL/CSV exports are intentionally not committed; regenerate them from the tracked Parquet with `scripts/prepare_multi_open.py`.
+
 | DATA | Resource | Access/licence | Evaluation |
 |---|---|---|---|
 | **LEXICON** | [Google SMOL](https://huggingface.co/datasets/google/smol), `gatitos__en_lua` | **OPEN**, CC BY 4.0 | About 4,000 professionally translated English–Tshiluba GATITOS entries. Mainly lexical; no `smolsent__en_lua` or `smoldoc__en_lua` was verified. |

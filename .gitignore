@@ -4,3 +4,7 @@ venv/
 *.log
 outputs/
 results/
+# Large generated curation exports; regenerate from the tracked Parquet.
+language_resources/ciluba-lua/data/processed/*.jsonl
+language_resources/ciluba-lua/data/processed/*.csv
+language_resources/ciluba-lua/scripts/__pycache__/
