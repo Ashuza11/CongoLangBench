@@ -38,7 +38,11 @@ The shortlist is a research output, not an assumption. Record candidate language
 
 Potential regional groupings to investigate include Western/Greater Kinshasa, Kongo Central, Kasai, Katanga, North Kivu, South Kivu, Ituri, Maniema, and other areas supported by evidence. Boundaries and language membership must be validated against sources and speakers rather than inferred from province names alone.
 
-### Phase 3 — Expansion
+### Phase 3 — Kivu expansion
+
+After the national-language benchmark and the broader regional top-five selection are complete, focus specifically on the Kivu regions. Extend the existing Mashi, Nande, Hunde, Fuliiru, Tembo, Havu, Nyanga, and Lega work where data is available, and add additional Kivu languages discovered through the regional process. Kivu additions must use the same 1,500-pair target, review rules, and evaluation protocol; they are an expansion of the benchmark, not a replacement for the national or regional tracks.
+
+### Phase 4 — Continuous expansion
 
 Add further Congolese languages whenever credible data is found. New languages follow the same intake, licence, schema, review, split, evaluation, and reporting process. No language is excluded merely because it is not in the initial list; it is placed in a documented queue until evidence and data are available.
 
@@ -147,7 +151,16 @@ For each language:
 
 **Exit criterion:** a defensible regional shortlist and the first completed regional language tracks.
 
-### Phase 3 — Continuous expansion
+### Phase 3 — Kivu expansion
+
+1. Consolidate the existing Kivu language tracks and identify their remaining data gaps.
+2. Add new Kivu languages from the regional candidate table where credible bitext exists.
+3. Apply the common pipeline, native-speaker review, and evaluation protocol.
+4. Compare Kivu results with the national and other regional tracks.
+
+**Exit criterion:** an evaluated Kivu-focused expansion that clearly documents what was added to the existing Kivu coverage.
+
+### Phase 4 — Continuous expansion
 
 - Add newly discovered languages through the same intake form.
 - Version datasets when sources or review decisions change.
@@ -214,3 +227,4 @@ The current repository may be migrated toward this layout incrementally. Existin
 4. Start the Lingala source inventory and target 1,500 reviewed pairs.
 5. Repeat for Kikongo ya Leta, Ciluba, and Congo Swahili.
 6. Create the regional candidate table after the national tracks are underway.
+7. Begin the dedicated Kivu expansion only after the national and broader regional phases are complete.
