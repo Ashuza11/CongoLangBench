@@ -1,5 +1,8 @@
 # Mashi / Shi (`shr`)
 
+Mashi is part of the current Eastern regional top five. It has 1,168 curated
+candidates and needs 332 additional usable pairs to reach the 1,500-pair target.
+
 Search Mashi, Shi, Kishi, Cishi, Bashi, Bushi, `shr`; “Shi” alone is noisy.
 
 ## Verified data

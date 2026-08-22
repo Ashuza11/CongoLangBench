@@ -22,8 +22,9 @@ Rules:
 The first regional track is South Kivu. Mashi currently has 1,168 curated
 French–Mashi candidates, so it remains below the 1,500-pair target. Its next
 action is to add a compatible, permissioned or openly licensed source. Nande
-(`nnb`) now has 14,949 public French--Nande pairs from CLEAR Global. Havu now
-has 3,224 public Havu--French verse pairs. Fuliiru has 30,546 technically
+(`nnb`) now has 14,949 public French--Nande pairs from CLEAR Global. Mashi is
+the second Eastern top-five track and needs 332 more pairs to reach 1,500. Havu
+has 3,224 public pairs reserved for the later Kivu expansion. Fuliiru has 30,546 technically
 aligned pairs but remains permission-required. Tembo has 7,932 technically
 aligned New Testament pairs and is also permission-required. Nyanga has 3,192
 technically aligned pairs with a licence conflict that must be resolved.

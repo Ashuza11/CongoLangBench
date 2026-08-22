@@ -3,12 +3,12 @@ Lingala,lin,DRC Lingala,National,National,DRC-wide,1,4999,4999,verified_source,c
 Kikongo ya Leta,ktu,DRC Kituba,National,National,DRC-wide,2,2469,2469,verified_source,complete source curation and freeze national dataset
 Ciluba,lua,Tshiluba / Luba-Kasai,National,National,DRC-wide,3,1500,397971,verified_source,freeze normalized multi-open candidates before evaluation
 Congo Swahili,swc,DRC Congo Swahili,National,National,DRC-wide,4,25214,25214,verified_source,freeze benchmark split and evaluate
-Mashi,shr,Mashi / Shi,South Kivu,Regional,Kivu,1,1500,1168,curation_in_progress,add permissioned/open aligned text to reach 1500 before freeze
+Mashi,shr,Mashi / Shi,South Kivu,Regional,Kivu,1,1500,1168,eastern_top5_in_progress,add permissioned/open aligned text to reach 1500 before freeze
 Nande,nnb,Kinande / Ndandi,North Kivu,Regional,Kivu,2,1500,14949,verified_source,freeze public CLEAR Global track after all-language curation
 Hunde,hke,Kihunde,North Kivu,Regional,Kivu,3,1500,0,source_inventory,identify a verified bitext source
 Fuliiru,flr,Kifuliiru,South Kivu,Regional,Kivu,4,1500,0,permission_required,request rights for package version 2355 with 30546 aligned verses
 Tembo,tbt,Kitembo,North Kivu,Regional,Kivu,5,1500,0,permission_required,request rights for package version 3997 with 7932 aligned verses
-Havu,hav,Kihavu,South Kivu,Regional,Kivu,6,1500,3224,verified_source,retain complete CC BY-SA 4.0 aligned track
+Havu,hav,Kihavu,South Kivu,Kivu expansion,Kivu,6,1500,3224,kivu_expansion_ready,retain complete CC BY-SA 4.0 track for later Kivu phase
 Nyanga,nyj,Kinyanga,North Kivu,Regional,Kivu,7,1500,0,licence_verification_required,resolve package public-domain flag against source terms for 3192 aligned verses
 Lega-Mwenga,leg,Kilega Mwenga,South Kivu,Regional,Kivu,8,1500,0,source_inventory,find a verified source and community contact
 Lega-Shabunda,lea,Kilega Shabunda,South Kivu,Regional,Kivu,9,1500,0,source_inventory,request parallel Bible text and reuse terms
