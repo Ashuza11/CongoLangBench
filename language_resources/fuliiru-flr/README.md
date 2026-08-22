@@ -2,6 +2,14 @@
 
 Search Fuliiru, Fuliru, Kifuliiru, Kifuliru, Ibufuliiru, `flr`. The principal DRC area is Uvira Plain/Uvira Territory; “Uvira, Fizi” overstates Fizi as a core area.
 
+## Curation status
+
+The package can technically produce **30,546 Fuliiru--French aligned verses**
+across 66 books, but Fuliiru version 2355 is marked non-public-domain and the
+official edition is all-rights-reserved. The track is therefore
+**permission-required**: its text is not stored or published in this repository.
+See the [source audit](metadata/source_audit.md).
+
 ## Verified and evaluated resources
 
 - **DATA — MONOLINGUAL / CONVERTIBLE BITEXT — TERMS, ALL RIGHTS RESERVED:** [Kifuliiru Bible on eBible](https://ebible.org/Bible/details.php?id=flr), complete Bible with downloadable/readable formats. The edition says “All rights reserved”; obtain permission for corpus redistribution/training and align only after that.
