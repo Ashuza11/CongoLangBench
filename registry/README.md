@@ -31,4 +31,5 @@ The Southeastern DRC/Katanga track is now in progress. Kiluba has 197,411
 open English pairs from MT560, and Tabwa has 5,039 open French pairs aligned
 from the CC BY-SA 4.0 Kitaabua edition. Sanga is identity-verified but requires
 digital source access and redistribution permission. Aushi and Lunda remain
-the next two source-discovery targets.
+the next two source-discovery targets. Aushi now has 1,226 open cross-border
+pairs from a Zambian edition and needs 274 more, preferably with DRC provenance.
