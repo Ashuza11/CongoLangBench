@@ -2,7 +2,7 @@
 
 [![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](docs/PROJECT_SPEC.md)
 [![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](docs/PROJECT_SPEC.md)
-[![Coverage](https://img.shields.io/badge/coverage-13_language_tracks-007ec6)](registry/languages.csv)
+[![Coverage](https://img.shields.io/badge/coverage-14_language_tracks-007ec6)](registry/languages.csv)
 [![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](registry/national_sources.csv)
 [![Licence](https://img.shields.io/badge/licensing-source_specific-e05d44)](docs/PROJECT_SPEC.md)
 
@@ -95,6 +95,10 @@ The provisional regional table contains up to five priority candidates per major
 - [Regional candidate shortlist](registry/regional_candidates.csv)
 - [Regional selection rules](registry/regional_candidates.md)
 - [Central language registry](registry/languages.csv)
+
+The Southeastern DRC/Katanga track currently includes 197,411 open
+English--Kiluba pairs and 5,039 open French--Tabwa pairs. The next selected
+languages for source discovery are Sanga, Aushi, and Lunda.
 
 ## Repository structure
 

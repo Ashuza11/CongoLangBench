@@ -26,3 +26,8 @@ has 3,224 public pairs reserved for the later Kivu expansion. Fuliiru has 30,546
 aligned pairs but remains permission-required. Tembo has 7,932 technically
 aligned New Testament pairs and is also permission-required. Nyanga has 3,192
 technically aligned pairs with a licence conflict that must be resolved.
+
+The Southeastern DRC/Katanga track is now in progress. Kiluba has 197,411
+open English pairs from MT560, and Tabwa has 5,039 open French pairs aligned
+from the CC BY-SA 4.0 Kitaabua edition. Sanga, Aushi, and Lunda remain the next
+three source-discovery targets.
