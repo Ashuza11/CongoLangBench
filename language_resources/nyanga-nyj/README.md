@@ -2,6 +2,15 @@
 
 Search Kinyanga, “Nyanga language,” Inyanga, Banyanga, Walikale, `nyj`; exclude Nyanja (`nya`) and place-name noise.
 
+## Curation status
+
+The package can technically produce **3,192 Nyanga--French aligned verses**
+from Matthew, Luke, John, and Colossians. Package metadata marks version 4564
+public-domain, but no explicit open redistribution licence was confirmed from
+the authoritative source page. The track is therefore
+**evaluation-only/licence-verification-required** and its text is not published.
+See the [source audit](metadata/source_audit.md).
+
 ## Verified and evaluated resources
 
 - **CONVERTIBLE SOURCE — MONOLINGUAL/BIBLE — TERMS:** [YouVersion Kinyanga](https://www.bible.com/versions/4564-nyj-traduction-bilbe-en-kinyanga) is readable/app-downloadable, but no open corpus licence was verified. Contact the named publisher/rightsholder.

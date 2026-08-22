@@ -6,6 +6,9 @@
 
 `national_sources.csv` and `national_sources.md` track the Phase 1A source verification plan for the four national languages.
 
+`eastern_top5.md` records the selected Eastern DRC top-five bitext tracks and
+separates them from the later dedicated Kivu expansion.
+
 Rules:
 
 - Keep ISO codes and varieties explicit.
@@ -22,5 +25,5 @@ action is to add a compatible, permissioned or openly licensed source. Nande
 (`nnb`) now has 14,949 public French--Nande pairs from CLEAR Global. Havu now
 has 3,224 public Havu--French verse pairs. Fuliiru has 30,546 technically
 aligned pairs but remains permission-required. Tembo has 7,932 technically
-aligned New Testament pairs and is also permission-required. Nyanga follows as
-sources are verified.
+aligned New Testament pairs and is also permission-required. Nyanga has 3,192
+technically aligned pairs with a licence conflict that must be resolved.
