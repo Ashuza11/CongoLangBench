@@ -24,7 +24,7 @@ Tshopo,2,Topoke / Poke,,regional language,source_to_verify,candidate,identify so
 Tshopo,3,Mbole,,regional language,source_to_verify,candidate,locate bilingual text
 Tshopo,4,Lengola,,regional language,source_to_verify,candidate,locate bilingual text
 Tshopo,5,Enya-Kisangani,,regional language,source_to_verify,candidate,distinguish from Enya-Kindu and find bitext
-Katanga,1,Luba-Katanga / Kiluba,lub,major regional language,source_to_verify,candidate,keep distinct from Tshiluba and find aligned text
+Katanga,1,Luba-Katanga / Kiluba,lub,major regional language,197411_open_pairs,selected,retain complete MT560 track
 Katanga,2,Tabwa / Kitabwa,,large regional community,source_to_verify,candidate,identify DRC-specific bitext and code
 Katanga,3,Sanga,,large regional community,source_to_verify,candidate,identify bilingual source
 Katanga,4,Aushi,,substantial regional community,source_to_verify,candidate,find source and verify variety

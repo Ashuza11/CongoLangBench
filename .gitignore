@@ -12,3 +12,6 @@ language_resources/nande-nnb/data/raw/nnb-fr-v1833-v93.csv
 language_resources/nande-nnb/data/processed/nande-french-curated.csv
 language_resources/nande-nnb/data/processed/nande-french-curated.jsonl
 language_resources/nande-nnb/scripts/__pycache__/
+language_resources/kiluba-lub/data/processed/*.csv
+language_resources/kiluba-lub/data/processed/*.jsonl
+language_resources/kiluba-lub/scripts/__pycache__/
