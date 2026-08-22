@@ -1,7 +1,10 @@
 # Mashi / Shi (`shr`)
 
-Mashi is part of the current Eastern regional top five. It has 1,168 curated
-candidates and needs 332 additional usable pairs to reach the 1,500-pair target.
+Mashi is part of the current Eastern regional top five. Its clean benchmark
+track now contains **1,500 verified-source Mashi--French pairs**, selected
+deterministically from 30,911 open aligned candidates. See the
+[curation metadata](metadata/eastern1500.md) and
+[preparation script](scripts/prepare_eastern1500.py).
 
 Search Mashi, Shi, Kishi, Cishi, Bashi, Bushi, `shr`; “Shi” alone is noisy.
 

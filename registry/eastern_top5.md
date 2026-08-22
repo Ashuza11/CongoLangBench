@@ -7,7 +7,7 @@ availability, not speaker count alone.
 | Language | ISO | Confirmed pairs | Publication status |
 |---|---:|---:|---|
 | Nande / Kinande | `nnb` | 14,949 | Public, CC BY 4.0 |
-| Mashi / Shi | `shr` | 1,168 | Public candidates; curation in progress to 1,500 |
+| Mashi / Shi | `shr` | 1,500 | Public, CC BY 4.0; target reached |
 | Fuliiru / Kifuliiru | `flr` | 30,546 | Evaluation-only; permission required |
 | Tembo / Kitembo | `tbt` | 7,932 | Evaluation-only; permission required |
 | Nyanga / Kinyanga | `nyj` | 3,192 | Evaluation-only; licence conflict to resolve |

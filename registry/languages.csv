@@ -3,7 +3,7 @@ Lingala,lin,DRC Lingala,National,National,DRC-wide,1,4999,4999,verified_source,c
 Kikongo ya Leta,ktu,DRC Kituba,National,National,DRC-wide,2,2469,2469,verified_source,complete source curation and freeze national dataset
 Ciluba,lua,Tshiluba / Luba-Kasai,National,National,DRC-wide,3,1500,397971,verified_source,freeze normalized multi-open candidates before evaluation
 Congo Swahili,swc,DRC Congo Swahili,National,National,DRC-wide,4,25214,25214,verified_source,freeze benchmark split and evaluate
-Mashi,shr,Mashi / Shi,South Kivu,Regional,Kivu,1,1500,1168,eastern_top5_in_progress,add permissioned/open aligned text to reach 1500 before freeze
+Mashi,shr,Mashi / Shi,South Kivu,Regional,Kivu,1,1500,1500,verified_source,freeze deterministic Eastern benchmark after all-language curation
 Nande,nnb,Kinande / Ndandi,North Kivu,Regional,Kivu,2,1500,14949,verified_source,freeze public CLEAR Global track after all-language curation
 Hunde,hke,Kihunde,North Kivu,Regional,Kivu,3,1500,0,source_inventory,identify a verified bitext source
 Fuliiru,flr,Kifuliiru,South Kivu,Regional,Kivu,4,1500,0,permission_required,request rights for package version 2355 with 30546 aligned verses
