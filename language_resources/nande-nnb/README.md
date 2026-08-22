@@ -1,5 +1,14 @@
 # Nande / Kinande (`nnb`)
 
+## Curation status
+
+A deterministic internal Nande--French set of **1,500 pairs** has been prepared
+from AfriSpeech Africa Corpus Nande version 1833 aligned with French Segond 1910
+version 93. The underlying Nande text is marked non-public-domain and the dataset
+licence is `other`, so raw and processed text are not committed while
+redistribution permission is unresolved. See [acquisition metadata](metadata/africa_corpus.md)
+and the reproducible [preparation script](scripts/prepare_africa_corpus.py).
+
 Search Nande, Kinande, Kinandi, Yira, Luyira, Orundande, `nnb`. The core DRC concentration is Beni and Lubero; “North Kivu, Ituri” should not imply equal distribution.
 
 ## Verified data and catalogs

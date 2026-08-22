@@ -8,3 +8,7 @@ results/
 language_resources/ciluba-lua/data/processed/*.jsonl
 language_resources/ciluba-lua/data/processed/*.csv
 language_resources/ciluba-lua/scripts/__pycache__/
+language_resources/nande-nnb/data/raw/*.csv
+language_resources/nande-nnb/data/processed/*.csv
+language_resources/nande-nnb/data/processed/*.jsonl
+language_resources/nande-nnb/scripts/__pycache__/
