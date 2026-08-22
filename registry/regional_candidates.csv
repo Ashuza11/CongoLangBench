@@ -2,7 +2,7 @@ region,rank,language,iso_code,planning_basis,bitext_status,selection_status,next
 North Kivu,1,Nande / Kinande,nnb,large regional language,14949_open_pairs,selected,retain complete CC BY 4.0 CLEAR Global track
 North Kivu,2,Hunde / Kihunde,hke,large regional language,source_to_verify,candidate,identify permissioned or open parallel text
 North Kivu,3,Nyanga / Kinyanga,nyj,regional language with Bible materials,source_to_verify,candidate,verify extractable aligned text and rights
-North Kivu,4,Tembo / Kitembo,tbt,regional Kivu language,source_to_verify,candidate,confirm publisher access and bitext rights
+North Kivu,4,Tembo / Kitembo,tbt,regional Kivu language,7932_restricted_pairs,permission_required,request redistribution and research permission from rightsholder
 North Kivu,5,Kinyarwanda,kin,large bilingual community,source_to_verify,candidate,restrict to DRC-provenanced data and verify variety
 South Kivu,1,Mashi / Shi,shr,large regional language,existing_candidates,curation_in_progress,add permissioned/open aligned text to reach 1500 before freeze
 South Kivu,2,Havu / Kihavu,hav,large regional language,3224_open_pairs,selected,retain complete CC BY-SA 4.0 aligned track

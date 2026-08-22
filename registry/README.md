@@ -21,5 +21,6 @@ French–Mashi candidates, so it remains below the 1,500-pair target. Its next
 action is to add a compatible, permissioned or openly licensed source. Nande
 (`nnb`) now has 14,949 public French--Nande pairs from CLEAR Global. Havu now
 has 3,224 public Havu--French verse pairs. Fuliiru has 30,546 technically
-aligned pairs but remains permission-required. Tembo and Nyanga follow as
+aligned pairs but remains permission-required. Tembo has 7,932 technically
+aligned New Testament pairs and is also permission-required. Nyanga follows as
 sources are verified.

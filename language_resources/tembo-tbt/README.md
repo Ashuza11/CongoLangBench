@@ -2,6 +2,14 @@
 
 Search all three names plus `tbt`, DRC, and Kivu; “Tembo” alone is ambiguous.
 
+## Curation status
+
+The package can technically produce **7,932 Tembo--French aligned verses**
+covering all 27 New Testament books. Tembo version 3997 is marked
+non-public-domain, so this track is **evaluation-only/permission-required** and
+its text is not stored or published here. See the
+[source audit](metadata/source_audit.md).
+
 ## Verified and evaluated resources
 
 - **CATALOG RECORD — BIBLE — TERMS:** [YouVersion Tembo](https://www.bible.com/languages/tbt) lists *Echilaano Chiyayaya* from Wycliffe. Reading/app availability is not an open corpus licence.
