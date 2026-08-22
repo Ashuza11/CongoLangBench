@@ -2,6 +2,14 @@
 
 Search Havu, Haavu, Kihavu, Gihavu, Bahavu, Idjwi, `hav`.
 
+## Curation status
+
+The public track contains **3,224 unique Havu--French verse pairs** covering
+Matthew, Luke, and Acts. All available aligned rows are retained under CC BY-SA
+4.0 with attribution to The Seed Company. See the
+[alignment metadata](metadata/ebible_alignment.md) and reproducible
+[preparation script](scripts/prepare_ebible.py).
+
 ## Verified and evaluated resources
 
 - **DATA — MONOLINGUAL / CONVERTIBLE BITEXT — OPEN (CC BY-SA 4.0):** [Havu New Testament](https://ebible.org/find/details.php?id=hav) on eBible. Use developer/source formats when available, preserve attribution/share-alike terms, and align verse IDs with a compatible translation. The Havu edition alone is not bitext.
