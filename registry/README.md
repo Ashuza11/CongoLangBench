@@ -29,5 +29,6 @@ technically aligned pairs with a licence conflict that must be resolved.
 
 The Southeastern DRC/Katanga track is now in progress. Kiluba has 197,411
 open English pairs from MT560, and Tabwa has 5,039 open French pairs aligned
-from the CC BY-SA 4.0 Kitaabua edition. Sanga, Aushi, and Lunda remain the next
-three source-discovery targets.
+from the CC BY-SA 4.0 Kitaabua edition. Sanga is identity-verified but requires
+digital source access and redistribution permission. Aushi and Lunda remain
+the next two source-discovery targets.
