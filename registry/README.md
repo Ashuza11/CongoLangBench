@@ -33,3 +33,5 @@ from the CC BY-SA 4.0 Kitaabua edition. Sanga is identity-verified but requires
 digital source access and redistribution permission. Aushi and Lunda remain
 the next two source-discovery targets. Aushi now has 1,226 open cross-border
 pairs from a Zambian edition and needs 274 more, preferably with DRC provenance.
+Lunda now has a complete open MT560 track with 134,568 normalized candidates,
+also labelled as cross-border rather than DRC-specific.

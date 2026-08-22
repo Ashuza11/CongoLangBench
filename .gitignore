@@ -15,3 +15,6 @@ language_resources/nande-nnb/scripts/__pycache__/
 language_resources/kiluba-lub/data/processed/*.csv
 language_resources/kiluba-lub/data/processed/*.jsonl
 language_resources/kiluba-lub/scripts/__pycache__/
+language_resources/lunda-lun/data/processed/*.csv
+language_resources/lunda-lun/data/processed/*.jsonl
+language_resources/lunda-lun/scripts/__pycache__/
