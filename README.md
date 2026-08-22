@@ -99,8 +99,8 @@ The provisional regional table contains up to five priority candidates per major
 The Southeastern DRC/Katanga track currently includes 197,411 open
 English--Kiluba pairs and 5,039 open French--Tabwa pairs. The next selected
 language, Sanga (`sng`), is identity-verified but requires digital source and
-redistribution access. Aushi has 1,226 open cross-border pairs and needs 274
-more, preferably from a DRC source. Lunda has 134,568 open cross-border MT560
+redistribution access. Aushi has 1,900 open cross-border pairs and now exceeds
+the project minimum. Lunda has 134,568 open cross-border MT560
 pairs; DRC-specific comparison data remains desirable.
 
 ## Repository structure
