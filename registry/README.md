@@ -19,5 +19,5 @@ Rules:
 The first regional track is South Kivu. Mashi currently has 1,168 curated
 French–Mashi candidates, so it remains below the 1,500-pair target. Its next
 action is to add a compatible, permissioned or openly licensed source. Nande
-(`nnb`) is the next discovery candidate, followed by Havu, Fuliiru, Tembo, and
-Nyanga as sources are verified.
+(`nnb`) now has 14,949 public French--Nande pairs from CLEAR Global. Havu,
+Fuliiru, Tembo, and Nyanga follow as sources are verified.

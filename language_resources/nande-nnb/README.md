@@ -2,12 +2,15 @@
 
 ## Curation status
 
-A deterministic internal Nande--French set of **1,500 pairs** has been prepared
-from AfriSpeech Africa Corpus Nande version 1833 aligned with French Segond 1910
-version 93. The underlying Nande text is marked non-public-domain and the dataset
-licence is `other`, so raw and processed text are not committed while
-redistribution permission is unresolved. See [acquisition metadata](metadata/africa_corpus.md)
-and the reproducible [preparation script](scripts/prepare_africa_corpus.py).
+The public track contains **14,949 unique French--Nande sentence pairs** from
+CLEAR Global's independent 5,000- and 10,000-sentence Gamayun kits. All usable
+rows are retained and published under CC BY 4.0 with CLEAR Global attribution.
+See the [Gamayun metadata](metadata/gamayun_kits.md) and reproducible
+[preparation script](scripts/prepare_gamayun.py).
+
+The earlier 1,500-pair Bible sample generated through `africa-bitext-builder`
+remains local-only because its Nande edition is marked non-public-domain. It is
+documented as a supplementary restricted source, not part of the public track.
 
 Search Nande, Kinande, Kinandi, Yira, Luyira, Orundande, `nnb`. The core DRC concentration is Beni and Lubero; “North Kivu, Ituri” should not imply equal distribution.
 
@@ -19,7 +22,7 @@ Search Nande, Kinande, Kinandi, Yira, Luyira, Orundande, `nnb`. The core DRC con
 
 ## Corrections, searches, and contacts
 
-- Earlier Gamayun/CLEAR Global Nande kits have been reported, but no current direct package/card with pair, count, and licence was verified. Treat this as a **CONTACT LEAD**, not OPEN DATA.
+- **DATA — PARALLEL TEXT — OPEN (CC BY 4.0):** [CLEAR Global Gamayun French--Nande kits](https://huggingface.co/datasets/CLEAR-Global/Gamayun-kits) provide 15,000 raw general-domain rows across independent 5k and 10k kits. The repository publishes all 14,949 unique normalized pairs.
 - Generic PanLex/Wiktionary statements are leads until a specific `nnb` entry/export is confirmed.
 - **DATA — BILINGUAL DICTIONARY BOOK:** P. Guibert Baudet, [*Éléments de grammaire kinande; suivis d’un vocabulaire kinande–français et français–kinande*](https://catalogue.bnf.fr/ark:/12148/cb37017107x). The BnF record confirms both directions; it is a library/digitization lead, not a downloadable open corpus.
 - **DATA — SMALL WIKTIONARY:** [French Wiktionary Kinande category](https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:kinande) currently has only a small number of entries. Wiktionary content is downloadable under its open licence, but coverage is tiny.
@@ -29,7 +32,7 @@ No verified `nnb` LDC/Babel, OPUS, OSCAR, CC100, FLORES, TED, OpenSubtitles, or 
 
 ## Best workflow now
 
-1. Download the CC BY 4.0 [ASJP Nande wordlist](https://asjp.clld.org/languages/J42_NANDE).
-2. Locate the Baudet Kinande–French/French–Kinande volume through BnF/library loan and contact the publisher/rightsholder for OCR/reuse permission.
-3. Ask the publisher listed by [find.bible](https://find.bible/languages/nnb/) for verse-keyed USFM plus an explicit research licence.
-4. Treat the previously reported Gamayun kit as unavailable until CLEAR Global supplies a working package and licence.
+1. Use the complete public Gamayun track as the primary benchmark source.
+2. Use the CC BY 4.0 [ASJP Nande wordlist](https://asjp.clld.org/languages/J42_NANDE) for lexical cross-checking.
+3. Locate the Baudet Kinande–French/French–Kinande volume through BnF/library loan and contact the publisher/rightsholder for OCR/reuse permission.
+4. Ask the publisher listed by [find.bible](https://find.bible/languages/nnb/) for verse-keyed USFM plus an explicit research licence.

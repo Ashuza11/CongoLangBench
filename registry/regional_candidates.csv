@@ -1,5 +1,5 @@
 region,rank,language,iso_code,planning_basis,bitext_status,selection_status,next_action
-North Kivu,1,Nande / Kinande,nnb,large regional language,1500_internal_pairs,selected,request redistribution permission before publishing text
+North Kivu,1,Nande / Kinande,nnb,large regional language,14949_open_pairs,selected,retain complete CC BY 4.0 CLEAR Global track
 North Kivu,2,Hunde / Kihunde,hke,large regional language,source_to_verify,candidate,identify permissioned or open parallel text
 North Kivu,3,Nyanga / Kinyanga,nyj,regional language with Bible materials,source_to_verify,candidate,verify extractable aligned text and rights
 North Kivu,4,Tembo / Kitembo,tbt,regional Kivu language,source_to_verify,candidate,confirm publisher access and bitext rights
