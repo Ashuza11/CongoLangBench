@@ -111,6 +111,17 @@ longer part of the active top five.
 
 - [Kasai top-five plan](registry/kasai_top5.md)
 
+The Western DRC top five are Kituba, Yaka, Kikongo/Koongo, Yansi, and Yombe.
+Kituba reuses the completed national track. Yaka has 7,104 French pairs, Yansi
+has 7,951 French pairs, and Yombe has 10,408 French pairs. The African
+Languages Lab source supplies 330,000 raw English--Kikongo rows and 315,959
+unique normalized pairs; its broad Kikongo label is retained because it does
+not identify a specific DRC subvariety per row. Pende remains a priority
+acquisition backlog after searches across open non-religious corpora found no
+downloadable English or French sentence bitext.
+
+- [Western DRC top-five record](registry/western_top5.md)
+
 ## Repository structure
 
 ```text
