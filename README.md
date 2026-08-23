@@ -2,7 +2,7 @@
 
 [![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](docs/PROJECT_SPEC.md)
 [![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](docs/PROJECT_SPEC.md)
-[![Coverage](https://img.shields.io/badge/coverage-22_language_tracks-007ec6)](registry/languages.csv)
+[![Coverage](https://img.shields.io/badge/coverage-23_language_tracks-007ec6)](registry/languages.csv)
 [![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](registry/national_sources.csv)
 [![Licence](https://img.shields.io/badge/licensing-source_specific-e05d44)](docs/PROJECT_SPEC.md)
 
@@ -102,10 +102,12 @@ labelled cross-border sources; DRC-specific comparison data remains desirable.
 Sanga (`sng`) remains in the acquisition backlog because no redistributable
 bitext was found.
 
-The Kasai/Central DRC top five are Tshiluba, Tetela, Songe, Chokwe, and Ruund.
+The Kasai/Central DRC top five are Tshiluba, Tetela, Songe, Ruund, and Kanyok.
 Tshiluba reuses the completed national track; Tetela now has 222,212 processed
-English pairs, Songe has 51,069, and Chokwe has 35,765. Chokwe and Ruund are
-cross-border tracks whose source provenance will remain explicit.
+English pairs, and Songe has 51,069. Ruund has a confirmed open DRC-labelled
+source. Kanyok is DRC-specific and has a documented complete Bible pending text
+acquisition and reuse verification. The Angola-labelled Chokwe resource is no
+longer part of the active top five.
 
 - [Kasai top-five plan](registry/kasai_top5.md)
 

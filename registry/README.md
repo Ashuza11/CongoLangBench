@@ -46,6 +46,8 @@ The Kasai/Central DRC track is now in progress. Its feasible top five are
 Tshiluba, Tetela, Songe, Chokwe, and Ruund. Tshiluba reuses the completed
 national track. Tetela is the first newly curated regional resource, with
 222,212 normalized English--Tetela pairs from a DRC-labelled CC BY 4.0 source.
-Songe now has 51,069 normalized DRC-labelled English pairs. Chokwe has 35,765
-normalized pairs and is explicitly recorded as an Angola-labelled cross-border
-track. Ruund is the next curation target.
+Songe now has 51,069 normalized DRC-labelled English pairs. The active top five
+are restricted to DRC languages and varieties: Tshiluba, Tetela, Songe, Ruund,
+and Kanyok. Ruund is the next curation target. Kanyok has a documented complete
+DRC Bible whose digital text and reuse terms must be obtained. The curated
+Angola-labelled Chokwe source is retained only in the regional backlog.
