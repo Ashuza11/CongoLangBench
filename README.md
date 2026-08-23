@@ -2,7 +2,7 @@
 
 [![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](docs/PROJECT_SPEC.md)
 [![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](docs/PROJECT_SPEC.md)
-[![Coverage](https://img.shields.io/badge/coverage-20_language_tracks-007ec6)](registry/languages.csv)
+[![Coverage](https://img.shields.io/badge/coverage-21_language_tracks-007ec6)](registry/languages.csv)
 [![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](registry/national_sources.csv)
 [![Licence](https://img.shields.io/badge/licensing-source_specific-e05d44)](docs/PROJECT_SPEC.md)
 
@@ -104,8 +104,8 @@ bitext was found.
 
 The Kasai/Central DRC top five are Tshiluba, Tetela, Songe, Chokwe, and Ruund.
 Tshiluba reuses the completed national track; Tetela now has 222,212 processed
-English pairs. Chokwe and Ruund are cross-border tracks whose source provenance
-will remain explicit.
+English pairs, and Songe has 51,069. Chokwe and Ruund are cross-border tracks
+whose source provenance will remain explicit.
 
 - [Kasai top-five plan](registry/kasai_top5.md)
 

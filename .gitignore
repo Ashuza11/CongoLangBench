@@ -24,3 +24,6 @@ language_resources/bemba-bem/scripts/__pycache__/
 language_resources/tetela-tll/data/processed/*.csv
 language_resources/tetela-tll/data/processed/*.jsonl
 language_resources/tetela-tll/scripts/__pycache__/
+language_resources/songe-sop/data/processed/*.csv
+language_resources/songe-sop/data/processed/*.jsonl
+language_resources/songe-sop/scripts/__pycache__/
