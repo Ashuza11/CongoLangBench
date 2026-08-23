@@ -37,7 +37,7 @@ Kasai,5,Kanyok / Kanyoka,kny,major DRC Kasai-Lomami language,complete_bible_cata
 Western DRC,1,Kituba / Kikongo ya Leta,ktu,national lingua franca,package_or_source_to_verify,candidate,build national-language track first
 Western DRC,2,Yaka,,large Kwango language,source_to_verify,candidate,find aligned text and ISO code
 Western DRC,3,Pende / Phende,,large Kwango-Kwilu language,source_to_verify,candidate,identify usable bitext
-Western DRC,4,Yansi / Yanzi,,regional Kwilu language,source_to_verify,candidate,find source and validate variety
+Western DRC,4,Yansi / Yanzi,yns,regional Kwilu-Mai-Ndombe language,7951_open_drc_pairs,selected,retain complete public-domain French-Yansi track
 Western DRC,5,Yombe / Kiyombe,,major Kongo variety,source_to_verify,candidate,keep distinct from Kituba and find bitext
 Northwestern Congo Basin,1,Mongo / Lonkundo,,large regional language group,source_to_verify,candidate,find aligned text and code
 Northwestern Congo Basin,2,Ngombe,,substantial regional community,source_to_verify,candidate,identify bilingual sources
