@@ -9,6 +9,9 @@
 `eastern_top5.md` records the selected Eastern DRC top-five bitext tracks and
 separates them from the later dedicated Kivu expansion.
 
+`katanga_top5.md` records the completed bitext-feasible Southeastern DRC set
+and explains why Sanga remains in the acquisition backlog.
+
 Rules:
 
 - Keep ISO codes and varieties explicit.
@@ -29,9 +32,9 @@ technically aligned pairs with a licence conflict that must be resolved.
 
 The Southeastern DRC/Katanga track is now in progress. Kiluba has 197,411
 open English pairs from MT560, and Tabwa has 5,039 open French pairs aligned
-from the CC BY-SA 4.0 Kitaabua edition. Sanga is identity-verified but requires
-digital source access and redistribution permission. Aushi and Lunda remain
-the next two source-discovery targets. Aushi now has 1,900 open cross-border
+from the CC BY-SA 4.0 Kitaabua edition. Bemba replaces Sanga in the current
+top five because it has usable open bitext; Sanga remains identity-verified in
+the acquisition backlog. Aushi now has 1,900 open cross-border
 pairs from Zambian editions and exceeds the project minimum.
 Lunda now has a complete open MT560 track with 134,568 normalized candidates,
 also labelled as cross-border rather than DRC-specific.

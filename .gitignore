@@ -18,3 +18,6 @@ language_resources/kiluba-lub/scripts/__pycache__/
 language_resources/lunda-lun/data/processed/*.csv
 language_resources/lunda-lun/data/processed/*.jsonl
 language_resources/lunda-lun/scripts/__pycache__/
+language_resources/bemba-bem/data/processed/*.csv
+language_resources/bemba-bem/data/processed/*.jsonl
+language_resources/bemba-bem/scripts/__pycache__/

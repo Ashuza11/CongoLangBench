@@ -25,7 +25,9 @@
 
 ## Acquisition decision
 
-Keep Sanga selected, but mark it `source_acquisition_required`. Contact the
+Keep Sanga in the regional acquisition backlog and mark it
+`source_acquisition_required`. The current top-five slot is assigned to Bemba,
+which has open bitext. Contact the
 Trinitarian Bible Society or another documented rightsholder for a digital
 verse-keyed edition and explicit permission to redistribute an aligned
 French--Sanga or English--Sanga dataset. If an independently licensed open

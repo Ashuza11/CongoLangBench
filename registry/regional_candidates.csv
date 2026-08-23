@@ -26,7 +26,7 @@ Tshopo,4,Lengola,,regional language,source_to_verify,candidate,locate bilingual 
 Tshopo,5,Enya-Kisangani,,regional language,source_to_verify,candidate,distinguish from Enya-Kindu and find bitext
 Katanga,1,Luba-Katanga / Kiluba,lub,major regional language,197411_open_pairs,selected,retain complete MT560 track
 Katanga,2,Tabwa / Kitabwa,tap,large regional community,5039_open_pairs,selected,retain complete CC BY-SA 4.0 French-Tabwa track
-Katanga,3,Sanga,sng,large regional community,no_open_bitext_found,selected_source_acquisition,request digital Bible text and redistribution permission; never substitute Sango sag
+Katanga,3,Bemba,bem,major cross-border Katanga language,381259_open_cross_border_pairs,selected,retain complete MT560 track and seek DRC-specific comparison data
 Katanga,4,Aushi,auh,substantial regional community,1900_open_cross_border_pairs,selected,retain complete open track and seek DRC variety confirmation
 Katanga,5,Lunda,lun,cross-border regional language,134568_open_cross_border_pairs,selected,retain complete MT560 track and seek DRC-specific comparison data
 Kasai,1,Tshiluba / Luba-Kasai,lua,major regional language,package_or_source_to_verify,candidate,build national-language track first
