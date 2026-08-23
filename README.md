@@ -2,7 +2,7 @@
 
 [![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](docs/PROJECT_SPEC.md)
 [![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](docs/PROJECT_SPEC.md)
-[![Coverage](https://img.shields.io/badge/coverage-19_language_tracks-007ec6)](registry/languages.csv)
+[![Coverage](https://img.shields.io/badge/coverage-20_language_tracks-007ec6)](registry/languages.csv)
 [![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](registry/national_sources.csv)
 [![Licence](https://img.shields.io/badge/licensing-source_specific-e05d44)](docs/PROJECT_SPEC.md)
 
@@ -50,7 +50,7 @@ SMOL provides Kituba (`ktu`) sentence and document translations under CC BY 4.0,
 
 ### Ciluba/Tshiluba acquisition
 
-SMOL currently provides a CC BY 4.0 GATITOS lexicon for `lua`, but no sentence- or document-level SMOL file. The lexicon is preserved as supporting data and is not counted toward the 1,500-sentence target. The gated African Languages Lab `multi-open` collection is the strongest sentence-level lead, but its access conditions and licence must be accepted and inspected before any rows are counted.
+The accepted African Languages Lab `multi-open` collection provides the main English--Tshiluba track. After normalization and exact deduplication, it contains 397,971 usable pairs. The raw source artifact is tracked; large processed exports are reproducible locally. The separate SMOL GATITOS lexicon remains supporting data and is not counted as sentence bitext.
 
 - [Ciluba raw lexicon](language_resources/ciluba-lua/data/raw/)
 - [Ciluba source metadata](language_resources/ciluba-lua/metadata/smol.md)
@@ -83,7 +83,7 @@ The four national tracks are:
 |---|---:|---:|---|
 | Lingala | `lin` | 1,500 curated pairs | Verified source; 4,999 processed |
 | Kikongo ya Leta / DRC Kituba | `ktu` | 1,500 curated pairs | Verified source; 2,469 processed |
-| Ciluba / Tshiluba | `lua` | 1,500 curated pairs | Source verification |
+| Ciluba / Tshiluba | `lua` | 1,500 curated pairs | Verified source; 397,971 processed |
 | Congo Swahili | `swc` | 1,500 curated pairs | Verified source; 25,214 processed |
 
 See the [national source table](registry/national_sources.csv) and [national source plan](registry/national_sources.md).
@@ -101,6 +101,13 @@ Lunda. Each now has usable open bitext. Bemba, Aushi, and Lunda use explicitly
 labelled cross-border sources; DRC-specific comparison data remains desirable.
 Sanga (`sng`) remains in the acquisition backlog because no redistributable
 bitext was found.
+
+The Kasai/Central DRC top five are Tshiluba, Tetela, Songe, Chokwe, and Ruund.
+Tshiluba reuses the completed national track; Tetela now has 222,212 processed
+English pairs. Chokwe and Ruund are cross-border tracks whose source provenance
+will remain explicit.
+
+- [Kasai top-five plan](registry/kasai_top5.md)
 
 ## Repository structure
 
