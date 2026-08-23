@@ -27,3 +27,6 @@ language_resources/tetela-tll/scripts/__pycache__/
 language_resources/songe-sop/data/processed/*.csv
 language_resources/songe-sop/data/processed/*.jsonl
 language_resources/songe-sop/scripts/__pycache__/
+language_resources/chokwe-cjk/data/processed/*.csv
+language_resources/chokwe-cjk/data/processed/*.jsonl
+language_resources/chokwe-cjk/scripts/__pycache__/

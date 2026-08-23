@@ -9,10 +9,10 @@ duplicated as a second resource.
 | 1 | Tshiluba / Luba-Kasai | `lua` | 397,971 processed pairs | Reuse completed national track |
 | 2 | Tetela | `tll` | 222,212 processed pairs | Curated |
 | 3 | Songe / Kisonge | `sop` | 51,069 processed pairs | Curated |
-| 4 | Chokwe / Tshokwe | `cjk` | 35,767 source rows | Confirmed cross-border source |
+| 4 | Chokwe / Tshokwe | `cjk` | 35,765 processed pairs | Curated cross-border track |
 | 5 | Ruund / Uruund | `rnd` | Confirmed MT560 source | Inspect and curate |
 
-The next active track is Chokwe, followed by Ruund.
+The next active track is Ruund.
 
 Luba-Lulua, Kanyok/Kanyoka, and Kuba/Bushoong remain important acquisition
 candidates. They were not placed in the active five because no comparable open
