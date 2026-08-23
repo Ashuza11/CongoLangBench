@@ -38,7 +38,7 @@ Western DRC,1,Kituba / Kikongo ya Leta,ktu,national lingua franca,package_or_sou
 Western DRC,2,Yaka,yaf,large southwestern DRC and cross-border language,7104_open_drc_angola_pairs,selected,retain complete public-domain track with joint-country provenance
 Western DRC,3,Pende / Phende,,large Kwango-Kwilu language,source_to_verify,candidate,identify usable bitext
 Western DRC,4,Yansi / Yanzi,yns,regional Kwilu-Mai-Ndombe language,7951_open_drc_pairs,selected,retain complete public-domain French-Yansi track
-Western DRC,5,Yombe / Kiyombe,,major Kongo variety,source_to_verify,candidate,keep distinct from Kituba and find bitext
+Western DRC,5,Yombe / Kiyombe,yom,major DRC Kongo variety,10408_open_drc_pairs,selected,retain complete CC BY-SA 4.0 French-Yombe track
 Northwestern Congo Basin,1,Mongo / Lonkundo,,large regional language group,source_to_verify,candidate,find aligned text and code
 Northwestern Congo Basin,2,Ngombe,,substantial regional community,source_to_verify,candidate,identify bilingual sources
 Northwestern Congo Basin,3,Budza / Budja,,large regional community,source_to_verify,candidate,find source and verify code
