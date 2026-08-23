@@ -32,7 +32,7 @@ Katanga,5,Lunda,lun,cross-border regional language,134568_open_cross_border_pair
 Kasai,1,Tshiluba / Luba-Kasai,lua,major regional and national language,397971_open_pairs,selected_reuse_national,reference the completed national Ciluba track without duplicating it
 Kasai,2,Tetela,tll,Sankuru and Kasai transition language,222212_open_pairs,selected,retain complete DRC-labelled MT560 track
 Kasai,3,Songe / Kisonge,sop,major Kasai-Lomami transition language,51069_open_pairs,selected,retain complete DRC-labelled MT560 track
-Kasai,4,Ruund / Uruund,rnd,DRC Kasai-Lualaba language,open_drc_source_verified,selected,curate complete DRC-labelled MT560 track
+Kasai,4,Ruund / Uruund,rnd,DRC Kasai-Lualaba language,133626_open_pairs,selected,retain complete DRC-labelled MT560 track
 Kasai,5,Kanyok / Kanyoka,kny,major DRC Kasai-Lomami language,complete_bible_identified,selected_acquisition,obtain the 2008 complete Bible and confirm reuse terms
 Western DRC,1,Kituba / Kikongo ya Leta,ktu,national lingua franca,package_or_source_to_verify,candidate,build national-language track first
 Western DRC,2,Yaka,,large Kwango language,source_to_verify,candidate,find aligned text and ISO code

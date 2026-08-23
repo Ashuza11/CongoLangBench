@@ -13,6 +13,7 @@ Tetela,tll,Tetela,Kasai / Sankuru,Regional,Central DRC,2,1500,222212,verified_so
 Songe,sop,Songe / Kisonge,Kasai / Lomami,Regional,Central DRC,3,1500,51069,verified_source,retain complete MT560 track and freeze after all-language curation
 Chokwe,cjk,Chokwe (Angola source / DRC cross-border candidate),Kasai,Regional backlog,Central DRC,6,1500,35765,open_cross_border_backlog,exclude from DRC top five and retain only as a documented comparison source
 Kanyok,kny,Kanyok / Kanyoka,Kasai / Lomami,Regional,Central DRC,5,1500,0,source_acquisition_required,obtain the DRC complete Bible and confirm text reuse terms
+Ruund,rnd,Ruund / Uruund,Kasai / Lualaba,Regional,Central DRC,4,1500,133626,verified_source,retain complete DRC-labelled MT560 track and freeze after all-language curation
 Mashi,shr,Mashi / Shi,South Kivu,Regional,Kivu,1,1500,1500,verified_source,freeze deterministic Eastern benchmark after all-language curation
 Nande,nnb,Kinande / Ndandi,North Kivu,Regional,Kivu,2,1500,14949,verified_source,freeze public CLEAR Global track after all-language curation
 Hunde,hke,Kihunde,North Kivu,Regional,Kivu,3,1500,0,source_inventory,identify a verified bitext source

@@ -48,6 +48,6 @@ national track. Tetela is the first newly curated regional resource, with
 222,212 normalized English--Tetela pairs from a DRC-labelled CC BY 4.0 source.
 Songe now has 51,069 normalized DRC-labelled English pairs. The active top five
 are restricted to DRC languages and varieties: Tshiluba, Tetela, Songe, Ruund,
-and Kanyok. Ruund is the next curation target. Kanyok has a documented complete
-DRC Bible whose digital text and reuse terms must be obtained. The curated
+and Kanyok. Ruund now has 133,626 normalized DRC-labelled English pairs. Kanyok
+has a documented complete DRC Bible whose digital text and reuse terms must be obtained. The curated
 Angola-labelled Chokwe source is retained only in the regional backlog.
