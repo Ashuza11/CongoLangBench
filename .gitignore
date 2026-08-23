@@ -36,3 +36,6 @@ language_resources/ruund-rnd/scripts/__pycache__/
 language_resources/yansi-yns/data/processed/*.csv
 language_resources/yansi-yns/data/processed/*.jsonl
 language_resources/yansi-yns/scripts/__pycache__/
+language_resources/yaka-yaf/data/processed/*.csv
+language_resources/yaka-yaf/data/processed/*.jsonl
+language_resources/yaka-yaf/scripts/__pycache__/
