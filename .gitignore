@@ -45,3 +45,6 @@ language_resources/yombe-yom/scripts/__pycache__/
 language_resources/kikongo-kon/data/processed/*.csv
 language_resources/kikongo-kon/data/processed/*.jsonl
 language_resources/kikongo-kon/scripts/__pycache__/
+language_resources/ngombe-ngc/data/processed/*.csv
+language_resources/ngombe-ngc/data/processed/*.jsonl
+language_resources/ngombe-ngc/scripts/__pycache__/
