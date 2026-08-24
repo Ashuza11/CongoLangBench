@@ -122,6 +122,14 @@ downloadable English or French sentence bitext.
 
 - [Western DRC top-five record](registry/western_top5.md)
 
+The Northwestern Congo Basin top five are Mongo/Nkundo, Ngombe, Lingala,
+Ngbaka, and Lobala. Every track exceeds 1,500 pairs. Ngombe and the reused
+Lingala track are publishable open data; Mongo, Ngbaka, and Lobala are curated
+locally from authentic sources but remain Git-ignored because redistribution is
+not authorized. Budza and Mbandja remain documented acquisition backlogs.
+
+- [Northwestern Congo Basin top-five record](registry/northwestern_top5.md)
+
 ## Repository structure
 
 ```text

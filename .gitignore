@@ -58,3 +58,8 @@ language_resources/ngbaka-nga/data/raw/*.csv
 language_resources/ngbaka-nga/data/processed/*.csv
 language_resources/ngbaka-nga/data/processed/*.jsonl
 language_resources/ngbaka-nga/scripts/__pycache__/
+# Restricted Lobala text is local evaluation data only.
+language_resources/lobala-loq/data/raw/*.csv
+language_resources/lobala-loq/data/processed/*.csv
+language_resources/lobala-loq/data/processed/*.jsonl
+language_resources/lobala-loq/scripts/__pycache__/

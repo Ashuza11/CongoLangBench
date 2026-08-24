@@ -42,9 +42,11 @@ Western DRC,5,Yombe / Kiyombe,yom,major DRC Kongo variety,10408_open_drc_pairs,s
 Western DRC,6,Pende / Phende,pem,large Kwango-Kwilu DRC language,no_open_sentence_bitext_found,acquisition_backlog,seek open non-religious French or English bitext; retain religious material only as a licensed fallback
 Northwestern Congo Basin,1,Mongo / Lonkundo,lol,large DRC regional language,38815_unique_restricted_pairs,selected_restricted,use locally for evaluation; publish metadata and scripts pending redistribution permission
 Northwestern Congo Basin,2,Ngombe,ngc,substantial regional DRC community,12735_unique_open_multiedition_pairs,selected,retain all pairs from three public-domain DRC-labelled editions with edition provenance
-Northwestern Congo Basin,3,Budza / Budja,,large regional community,source_to_verify,candidate,find source and verify code
+Northwestern Congo Basin,3,Lingala,lin,largest Northwestern lingua franca and national language,4999_open_pairs,selected_reuse_national,reference the completed national Lingala track without duplicating it
 Northwestern Congo Basin,4,Ngbaka,nga,large DRC and cross-border community,29977_unique_restricted_pairs,selected_restricted,use locally for evaluation; publish metadata and scripts pending redistribution permission
-Northwestern Congo Basin,5,Mbandja,,substantial regional community,source_to_verify,candidate,identify usable bitext
+Northwestern Congo Basin,5,Lobala,loq,Northwestern DRC Congo Basin language,7920_unique_restricted_pairs,selected_restricted,use locally for evaluation; publish metadata and scripts pending redistribution permission
+Northwestern Congo Basin,6,Budza / Budja,bja,large DRC regional community,no_sentence_bitext_found,acquisition_backlog,seek open French or English humanitarian education dictionary and community text
+Northwestern Congo Basin,7,Mbandja,zmz,substantial DRC regional community,no_sentence_bitext_found,acquisition_backlog,seek open French or English aligned text
 Northern DRC,1,Zande / Pazande,,major northeastern language,source_to_verify,candidate,restrict to DRC provenance and find bitext
 Northern DRC,2,Ngbaka Ma'bo,,regional language,source_to_verify,candidate,identify source and ISO code
 Northern DRC,3,Ngbandi,,regional language group,source_to_verify,candidate,keep varieties separate and find bitext
