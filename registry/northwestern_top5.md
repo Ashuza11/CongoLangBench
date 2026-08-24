@@ -8,11 +8,12 @@ data.
 |---:|---|---|---:|---|
 | 1 | Mongo / Nkundo | `lol` | 38,815 French pairs | Local evaluation only; restricted text |
 | 2 | Ngombe | `ngc` | 12,735 French pairs | Public-domain text tracked |
-| 3 | Lingala | `lin` | 4,999 French pairs | Reuse completed open national track |
+| 3 | Northern Ngbandi | `ngb` | 7,887 French pairs | Local evaluation only; restricted text |
 | 4 | Ngbaka | `nga` | 29,977 French pairs | Local evaluation only; restricted text |
 | 5 | Lobala | `loq` | 7,920 French pairs | Local evaluation only; restricted text |
 
-All five tracks exceed the project minimum. Restricted text is stored locally
+All five local tracks exceed the project minimum. Lingala is excluded from this
+regional selection because it is already complete in the national track. Restricted text is stored locally
 and Git-ignored; only its source metadata, scripts, counts, and permitted future
 results are published.
 
@@ -23,4 +24,3 @@ web sources found word lists or descriptive material but no usable aligned
 French/English sentence corpus. Future acquisition should prioritize
 humanitarian, education, health, government, dictionary-example, subtitle, and
 community-publication data, not only Bible text.
-

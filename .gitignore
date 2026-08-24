@@ -63,3 +63,8 @@ language_resources/lobala-loq/data/raw/*.csv
 language_resources/lobala-loq/data/processed/*.csv
 language_resources/lobala-loq/data/processed/*.jsonl
 language_resources/lobala-loq/scripts/__pycache__/
+# Restricted Northern Ngbandi text is local evaluation data only.
+language_resources/northern-ngbandi-ngb/data/raw/*.csv
+language_resources/northern-ngbandi-ngb/data/processed/*.csv
+language_resources/northern-ngbandi-ngb/data/processed/*.jsonl
+language_resources/northern-ngbandi-ngb/scripts/__pycache__/
