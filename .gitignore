@@ -68,3 +68,8 @@ language_resources/northern-ngbandi-ngb/data/raw/*.csv
 language_resources/northern-ngbandi-ngb/data/processed/*.csv
 language_resources/northern-ngbandi-ngb/data/processed/*.jsonl
 language_resources/northern-ngbandi-ngb/scripts/__pycache__/
+# Restricted Zande text is local evaluation data only.
+language_resources/zande-zne/data/raw/*.csv
+language_resources/zande-zne/data/processed/*.csv
+language_resources/zande-zne/data/processed/*.jsonl
+language_resources/zande-zne/scripts/__pycache__/

@@ -47,7 +47,7 @@ Northwestern Congo Basin,4,Ngbaka,nga,large DRC and cross-border community,29977
 Northwestern Congo Basin,5,Lobala,loq,Northwestern DRC Congo Basin language,7920_unique_restricted_pairs,selected_restricted,use locally for evaluation; publish metadata and scripts pending redistribution permission
 Northwestern Congo Basin,6,Budza / Budja,bja,large DRC regional community,no_sentence_bitext_found,acquisition_backlog,seek open French or English humanitarian education dictionary and community text
 Northwestern Congo Basin,7,Mbandja,zmz,substantial DRC regional community,no_sentence_bitext_found,acquisition_backlog,seek open French or English aligned text
-Northern DRC,1,Zande / Pazande,,major northeastern language,source_to_verify,candidate,restrict to DRC provenance and find bitext
+Northern DRC,1,Zande / Pazande,zne,major Northern DRC and cross-border language,30865_unique_restricted_pairs,selected_restricted,use locally for evaluation and preserve joint-country provenance
 Northern DRC,2,Ngbaka Ma'bo,,regional language,source_to_verify,candidate,identify source and ISO code
 Northern DRC,3,Ngbandi,ngb,regional language group,assigned_to_northwestern_track,reselection_required,avoid counting Northern Ngbandi twice and select another data-supported Northern language
 Northern DRC,4,Logo,,regional language,source_to_verify,candidate,identify bilingual source
