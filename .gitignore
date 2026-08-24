@@ -48,3 +48,8 @@ language_resources/kikongo-kon/scripts/__pycache__/
 language_resources/ngombe-ngc/data/processed/*.csv
 language_resources/ngombe-ngc/data/processed/*.jsonl
 language_resources/ngombe-ngc/scripts/__pycache__/
+# Restricted Mongo text is available locally for evaluation but cannot be redistributed.
+language_resources/mongo-lol/data/raw/*.csv
+language_resources/mongo-lol/data/processed/*.csv
+language_resources/mongo-lol/data/processed/*.jsonl
+language_resources/mongo-lol/scripts/__pycache__/

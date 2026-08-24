@@ -40,7 +40,7 @@ Western DRC,3,Kikongo / Koongo,kon,major Western DRC language distinct from Kitu
 Western DRC,4,Yansi / Yanzi,yns,regional Kwilu-Mai-Ndombe language,7951_open_drc_pairs,selected,retain complete public-domain French-Yansi track
 Western DRC,5,Yombe / Kiyombe,yom,major DRC Kongo variety,10408_open_drc_pairs,selected,retain complete CC BY-SA 4.0 French-Yombe track
 Western DRC,6,Pende / Phende,pem,large Kwango-Kwilu DRC language,no_open_sentence_bitext_found,acquisition_backlog,seek open non-religious French or English bitext; retain religious material only as a licensed fallback
-Northwestern Congo Basin,1,Mongo / Lonkundo,,large regional language group,source_to_verify,candidate,find aligned text and code
+Northwestern Congo Basin,1,Mongo / Lonkundo,lol,large DRC regional language,38815_unique_restricted_pairs,selected_restricted,use locally for evaluation; publish metadata and scripts pending redistribution permission
 Northwestern Congo Basin,2,Ngombe,ngc,substantial regional DRC community,12735_unique_open_multiedition_pairs,selected,retain all pairs from three public-domain DRC-labelled editions with edition provenance
 Northwestern Congo Basin,3,Budza / Budja,,large regional community,source_to_verify,candidate,find source and verify code
 Northwestern Congo Basin,4,Ngbaka,,large cross-border community,source_to_verify,candidate,restrict to DRC provenance
