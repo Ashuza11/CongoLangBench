@@ -43,7 +43,7 @@ Western DRC,6,Pende / Phende,pem,large Kwango-Kwilu DRC language,no_open_sentenc
 Northwestern Congo Basin,1,Mongo / Lonkundo,lol,large DRC regional language,38815_unique_restricted_pairs,selected_restricted,use locally for evaluation; publish metadata and scripts pending redistribution permission
 Northwestern Congo Basin,2,Ngombe,ngc,substantial regional DRC community,12735_unique_open_multiedition_pairs,selected,retain all pairs from three public-domain DRC-labelled editions with edition provenance
 Northwestern Congo Basin,3,Budza / Budja,,large regional community,source_to_verify,candidate,find source and verify code
-Northwestern Congo Basin,4,Ngbaka,,large cross-border community,source_to_verify,candidate,restrict to DRC provenance
+Northwestern Congo Basin,4,Ngbaka,nga,large DRC and cross-border community,29977_unique_restricted_pairs,selected_restricted,use locally for evaluation; publish metadata and scripts pending redistribution permission
 Northwestern Congo Basin,5,Mbandja,,substantial regional community,source_to_verify,candidate,identify usable bitext
 Northern DRC,1,Zande / Pazande,,major northeastern language,source_to_verify,candidate,restrict to DRC provenance and find bitext
 Northern DRC,2,Ngbaka Ma'bo,,regional language,source_to_verify,candidate,identify source and ISO code

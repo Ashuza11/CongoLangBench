@@ -53,3 +53,8 @@ language_resources/mongo-lol/data/raw/*.csv
 language_resources/mongo-lol/data/processed/*.csv
 language_resources/mongo-lol/data/processed/*.jsonl
 language_resources/mongo-lol/scripts/__pycache__/
+# Restricted Ngbaka text is local evaluation data only.
+language_resources/ngbaka-nga/data/raw/*.csv
+language_resources/ngbaka-nga/data/processed/*.csv
+language_resources/ngbaka-nga/data/processed/*.jsonl
+language_resources/ngbaka-nga/scripts/__pycache__/
