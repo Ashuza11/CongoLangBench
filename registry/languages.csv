@@ -30,6 +30,7 @@ Ndo,ndp,Ndo / Kebu (DRC/Uganda source),Northern DRC,Regional,Northern DRC,5,1500
 Alur,alz,Alur / Dho-Alur (DRC-labelled dataset),Ituri,Regional,Ituri,2,1500,7567,verified_source,retain complete open MT560 dataset with mixed provenance
 Ngiti,niy,Ngiti (DRC/Uganda source),Ituri,Regional,Ituri,3,1500,7955,verified_source_restricted,use locally for evaluation while keeping text Git-ignored
 Kakwa,keo,Kakwa (DRC/South Sudan/Uganda source),Ituri,Regional,Ituri,4,1500,7950,verified_source_restricted,use locally for evaluation while keeping text Git-ignored
+Komo,kmw,Komo (DRC source),Ituri,Regional,Ituri,5,1500,7938,verified_source_restricted,use locally for evaluation while keeping text Git-ignored
 Ngbaka,nga,Ngbaka (DRC source edition),Northwestern DRC,Regional,Northwestern Congo Basin,4,1500,29977,verified_source_restricted,use locally for evaluation while keeping text Git-ignored
 Lobala,loq,Lobala (DRC/Congo source),Northwestern DRC,Regional,Northwestern Congo Basin,5,1500,7920,verified_source_restricted,use locally for evaluation while keeping text Git-ignored
 Mashi,shr,Mashi / Shi,South Kivu,Regional,Kivu,1,1500,1500,verified_source,freeze deterministic Eastern benchmark after all-language curation

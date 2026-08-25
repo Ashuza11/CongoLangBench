@@ -101,3 +101,7 @@ language_resources/kakwa-keo/data/raw/*.csv
 language_resources/kakwa-keo/data/processed/*.csv
 language_resources/kakwa-keo/data/processed/*.jsonl
 language_resources/kakwa-keo/scripts/__pycache__/
+language_resources/komo-kmw/data/raw/*.csv
+language_resources/komo-kmw/data/processed/*.csv
+language_resources/komo-kmw/data/processed/*.jsonl
+language_resources/komo-kmw/scripts/__pycache__/
