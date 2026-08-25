@@ -47,3 +47,6 @@ Tembo,tbt,Kitembo,North Kivu,Regional,Kivu,5,1500,0,permission_required,request 
 Havu,hav,Kihavu,South Kivu,Kivu expansion,Kivu,6,1500,3224,kivu_expansion_ready,retain complete CC BY-SA 4.0 track for later Kivu phase
 Nyanga,nyj,Kinyanga,North Kivu,Regional,Kivu,7,1500,0,licence_verification_required,resolve package public-domain flag against source terms for 3192 aligned verses
 Lega-Shabunda,lea,Kilega Shabunda / Pangi (DRC),Maniema / South Kivu,Regional,Maniema,2,1500,30703,verified_source_restricted,use complete official DRC edition locally and keep it separate from Lega-Mwenga
+Kele / Lokele,khy,Kele / Lokele (DRC),Tshopo,Regional,Tshopo,3,1500,7910,verified_source_restricted,use locally for evaluation while keeping copyrighted text Git-ignored
+Lengola,lej,Lengola (DRC),Tshopo,Regional,Tshopo,4,1500,5774,verified_source,retain complete CC BY-SA 4.0 English track with attribution
+Lombo / Turumbu,loo,Lombo / Turumbu (DRC),Tshopo,Regional,Tshopo,5,1500,1812,verified_source,retain complete CC BY-SA 4.0 French track with attribution

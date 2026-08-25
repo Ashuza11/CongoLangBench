@@ -156,6 +156,15 @@ remain explicit acquisition backlogs.
 
 - [Maniema top-five record](registry/maniema_top5.md)
 
+The Tshopo top five are Komo/Kumu, Ngombe, Kele/Lokele, Lengola, and
+Lombo/Turumbu. Komo and Ngombe reuse their existing curated tracks without
+copying the data. Kele has 7,910 restricted local French pairs; Lengola has
+5,774 open English pairs; and Lombo has 1,812 open French pairs. Topoke, Mbole,
+Mituku, Bali, and Enya-Kisangani remain explicit acquisition backlogs because
+the currently verified text is absent or below 1,500 pairs.
+
+- [Tshopo top-five record](registry/tshopo_top5.md)
+
 ## Repository structure
 
 ```text

@@ -26,11 +26,16 @@ Maniema,6,Kusu,ksv,large local language,no_sentence_bitext_found,acquisition_bac
 Maniema,7,Bangubangu,bnx,substantial regional community,official_portion_below_1500,acquisition_backlog,obtain more than the currently available limited official portion
 Maniema,8,Songola / Songoora,sod,regional language,official_mark_only_below_1500,acquisition_backlog,obtain additional official books or non-scripture bitext
 Maniema,9,Buyu,byi,DRC Maniema language with an official Luke edition,962_unique_restricted_pairs,acquisition_backlog,add at least 538 pairs from another authentic source
-Tshopo,1,Lokele,,major Kisangani-area language,source_to_verify,candidate,find local or scripture bitext
-Tshopo,2,Topoke / Poke,,regional language,source_to_verify,candidate,identify source and ISO code
-Tshopo,3,Mbole,,regional language,source_to_verify,candidate,locate bilingual text
-Tshopo,4,Lengola,,regional language,source_to_verify,candidate,locate bilingual text
-Tshopo,5,Enya-Kisangani,,regional language,source_to_verify,candidate,distinguish from Enya-Kindu and find bitext
+Tshopo,1,Komo / Kumu,kmw,large Tshopo transition language with an existing curated DRC track,7938_unique_restricted_pairs,selected_reuse_regional,reference the existing Ituri-transition track without duplicating text
+Tshopo,2,Ngombe,ngc,substantial Tshopo community with an existing curated DRC track,12735_unique_open_pairs,selected_reuse_regional,reference the existing Congo Basin track and retain non-territorial source caveat
+Tshopo,3,Kele / Lokele,khy,major Kisangani-area language with a complete official edition,7910_unique_restricted_pairs,selected_restricted,use locally for evaluation while keeping copyrighted text Git-ignored
+Tshopo,4,Lengola,lej,regional language with a sufficiently large open collection,5774_unique_open_pairs,selected,retain the CC BY-SA 4.0 English track with attribution
+Tshopo,5,Lombo / Turumbu,loo,Tshopo Isangi language with sufficient open portions,1812_unique_open_pairs,selected,retain the CC BY-SA 4.0 French track with attribution
+Tshopo,6,Topoke / Poke,pof,major regional language,open_portions_below_1500,acquisition_backlog,locate additional authentic written material
+Tshopo,7,Mbole,mdq,major regional language,no_sentence_bitext_found,acquisition_backlog,seek downloadable text beyond identified audio resources
+Tshopo,8,Mituku,zmq,regional language,open_mark_below_1500,acquisition_backlog,locate additional authentic written material
+Tshopo,9,Bali,bcp,regional language,official_portions_below_1500,acquisition_backlog,locate a complete authentic text edition
+Tshopo,10,Enya-Kisangani,,regional language,no_sentence_bitext_found,acquisition_backlog,distinguish from Enya-Kindu and locate aligned text
 Katanga,1,Luba-Katanga / Kiluba,lub,major regional language,197411_open_pairs,selected,retain complete MT560 track
 Katanga,2,Tabwa / Kitabwa,tap,large regional community,5039_open_pairs,selected,retain complete CC BY-SA 4.0 French-Tabwa track
 Katanga,3,Bemba,bem,major cross-border Katanga language,381259_open_cross_border_pairs,selected,retain complete MT560 track and seek DRC-specific comparison data

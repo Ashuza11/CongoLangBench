@@ -132,4 +132,11 @@ language_resources/lega-shabunda-lea/data/raw/*
 language_resources/lega-shabunda-lea/data/processed/*.csv
 language_resources/lega-shabunda-lea/data/processed/*.jsonl
 language_resources/lega-shabunda-lea/scripts/__pycache__/
+# Restricted Kele/Lokele text is local evaluation data only.
+language_resources/kele-khy/data/raw/*
+language_resources/kele-khy/data/processed/*.csv
+language_resources/kele-khy/data/processed/*.jsonl
+language_resources/kele-khy/scripts/__pycache__/
+language_resources/lengola-lej/scripts/__pycache__/
+language_resources/lombo-loo/scripts/__pycache__/
 scripts/__pycache__/
