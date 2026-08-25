@@ -14,6 +14,7 @@ Ituri,2,Alur / Dho-Alur,alz,large Ituri and cross-border community,7567_open_drc
 Ituri,3,Ngiti,niy,large Ituri language,7955_unique_restricted_pairs,selected_restricted,use locally for evaluation and preserve joint-country provenance
 Ituri,4,Hema,,regional community,source_to_verify,candidate,identify DRC-specific text and language metadata
 Ituri,5,Bila,,forest-region language,source_to_verify,candidate,locate community or scripture bitext
+Ituri,6,Kakwa,keo,substantial northeastern DRC border language with usable source,7950_unique_restricted_pairs,selected_restricted,use locally for evaluation and preserve joint-country provenance
 Maniema,1,Lega / Kilega,leg;lea,large language continuum,source_to_verify,candidate,do not merge varieties without validation
 Maniema,2,Kusu,,large local language,source_to_verify,candidate,find a usable bilingual source
 Maniema,3,Bangubangu,,substantial regional community,source_to_verify,candidate,identify source and ISO code
