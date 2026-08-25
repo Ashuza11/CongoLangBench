@@ -53,3 +53,4 @@ Northern DRC,3,Ngbandi,ngb,regional language group,assigned_to_northwestern_trac
 Northern DRC,4,Logo / Logoti,log,substantial Uele language with DRC provenance,9649_unique_restricted_pairs,selected_restricted,use all unique local pairs for evaluation and preserve joint-country provenance
 Northern DRC,5,Mangbetu,,major northeastern language,source_to_verify,candidate,find DRC-specific bitext
 Northern DRC,6,Mayogo,mdm,DRC-specific Uele language with usable source,7911_unique_restricted_pairs,selected_restricted,use locally for evaluation while preserving DRC provenance
+Northern DRC,7,Budu,buu,substantial DRC Uele-Mambasa language with usable source,17387_unique_restricted_pairs,selected_restricted,use all unique local pairs for evaluation with DRC-only provenance
