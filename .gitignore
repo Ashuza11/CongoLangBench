@@ -109,3 +109,7 @@ language_resources/amba-rwm/data/raw/*.csv
 language_resources/amba-rwm/data/processed/*.csv
 language_resources/amba-rwm/data/processed/*.jsonl
 language_resources/amba-rwm/scripts/__pycache__/
+language_resources/lega-mwenga-lgm/data/raw/*.csv
+language_resources/lega-mwenga-lgm/data/processed/*.csv
+language_resources/lega-mwenga-lgm/data/processed/*.jsonl
+language_resources/lega-mwenga-lgm/scripts/__pycache__/

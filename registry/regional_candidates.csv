@@ -17,7 +17,7 @@ Ituri,5,Amba,rwm,Ituri-Uganda border language with sufficient usable source,2074
 Ituri,6,Lendu / Kilendu,led,major Ituri language,no_sentence_bitext_found,acquisition_backlog,seek open French or English humanitarian education dictionary and community text
 Ituri,7,Hema,nix,major Ituri language,no_sentence_bitext_found,acquisition_backlog,seek authentic DRC-specific aligned text
 Ituri,8,Bila,bip,forest-region language,no_sentence_bitext_found,acquisition_backlog,locate community publications dictionary examples or aligned source text
-Maniema,1,Lega / Kilega,leg;lea,large language continuum,source_to_verify,candidate,do not merge varieties without validation
+Maniema,1,Lega-Mwenga,lgm,large Maniema-South Kivu language variety,7943_unique_restricted_pairs,selected_restricted,use exact variety locally and do not merge with Lega-Shabunda
 Maniema,2,Kusu,,large local language,source_to_verify,candidate,find a usable bilingual source
 Maniema,3,Bangubangu,,substantial regional community,source_to_verify,candidate,identify source and ISO code
 Maniema,4,Bembe / Kibembe,,substantial regional community,source_to_verify,candidate,find DRC-specific bitext
