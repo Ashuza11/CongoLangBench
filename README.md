@@ -139,6 +139,13 @@ backlogs, while Northern Ngbandi is not counted twice.
 
 - [Northern DRC top-five record](registry/northern_top5.md)
 
+The Ituri top five are Alur, Ngiti, Kakwa, Komo, and Amba. Every track exceeds
+1,500 pairs. Alur uses an open CC BY 4.0 MT560 source; the other four are
+curated locally from authentic restricted sources and remain Git-ignored.
+Lendu, Hema, and Bila remain documented acquisition backlogs.
+
+- [Ituri top-five record](registry/ituri_top5.md)
+
 ## Repository structure
 
 ```text

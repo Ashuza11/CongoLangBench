@@ -105,3 +105,7 @@ language_resources/komo-kmw/data/raw/*.csv
 language_resources/komo-kmw/data/processed/*.csv
 language_resources/komo-kmw/data/processed/*.jsonl
 language_resources/komo-kmw/scripts/__pycache__/
+language_resources/amba-rwm/data/raw/*.csv
+language_resources/amba-rwm/data/processed/*.csv
+language_resources/amba-rwm/data/processed/*.jsonl
+language_resources/amba-rwm/scripts/__pycache__/
