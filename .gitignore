@@ -73,3 +73,8 @@ language_resources/zande-zne/data/raw/*.csv
 language_resources/zande-zne/data/processed/*.csv
 language_resources/zande-zne/data/processed/*.jsonl
 language_resources/zande-zne/scripts/__pycache__/
+# Restricted Logo/Logoti text is local evaluation data only.
+language_resources/logo-log/data/raw/*.csv
+language_resources/logo-log/data/processed/*.csv
+language_resources/logo-log/data/processed/*.jsonl
+language_resources/logo-log/scripts/__pycache__/
