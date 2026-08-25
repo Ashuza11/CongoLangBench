@@ -131,6 +131,14 @@ is not authorized. Budza and Mbandja remain documented acquisition backlogs.
 
 - [Northwestern Congo Basin top-five record](registry/northwestern_top5.md)
 
+The Northern DRC top five are Zande/Pazande, Logo/Logoti, Mayogo, Budu, and
+Ndo/Kebu. Every language exceeds 1,500 locally curated pairs. Their source text
+is restricted and remains Git-ignored; metadata, hashes, counts, and
+preparation scripts are published. Ngbaka Ma'bo and Mangbetu remain acquisition
+backlogs, while Northern Ngbandi is not counted twice.
+
+- [Northern DRC top-five record](registry/northern_top5.md)
+
 ## Repository structure
 
 ```text

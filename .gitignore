@@ -86,3 +86,7 @@ language_resources/budu-buu/data/raw/*.csv
 language_resources/budu-buu/data/processed/*.csv
 language_resources/budu-buu/data/processed/*.jsonl
 language_resources/budu-buu/scripts/__pycache__/
+language_resources/ndo-ndp/data/raw/*.csv
+language_resources/ndo-ndp/data/processed/*.csv
+language_resources/ndo-ndp/data/processed/*.jsonl
+language_resources/ndo-ndp/scripts/__pycache__/
