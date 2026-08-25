@@ -78,3 +78,7 @@ language_resources/logo-log/data/raw/*.csv
 language_resources/logo-log/data/processed/*.csv
 language_resources/logo-log/data/processed/*.jsonl
 language_resources/logo-log/scripts/__pycache__/
+language_resources/mayogo-mdm/data/raw/*.csv
+language_resources/mayogo-mdm/data/processed/*.csv
+language_resources/mayogo-mdm/data/processed/*.jsonl
+language_resources/mayogo-mdm/scripts/__pycache__/
