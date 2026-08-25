@@ -20,7 +20,7 @@ Ituri,8,Bila,bip,forest-region language,no_sentence_bitext_found,acquisition_bac
 Maniema,1,Lega-Mwenga,lgm,large Maniema-South Kivu language variety,7943_unique_restricted_pairs,selected_restricted,use exact variety locally and do not merge with Lega-Shabunda
 Maniema,2,Kusu,,large local language,source_to_verify,candidate,find a usable bilingual source
 Maniema,3,Bangubangu,,substantial regional community,source_to_verify,candidate,identify source and ISO code
-Maniema,4,Bembe / Kibembe,,substantial regional community,source_to_verify,candidate,find DRC-specific bitext
+Maniema,4,Bembe / Kibembe,bmb,substantial DRC Maniema-South Kivu language with a matching official publication,2984_unique_restricted_pairs,selected_restricted,use locally for evaluation; shared document and paragraph IDs provide deterministic French alignment
 Maniema,5,Songola / Songoora,,regional language,source_to_verify,candidate,identify aligned text and language code
 Tshopo,1,Lokele,,major Kisangani-area language,source_to_verify,candidate,find local or scripture bitext
 Tshopo,2,Topoke / Poke,,regional language,source_to_verify,candidate,identify source and ISO code

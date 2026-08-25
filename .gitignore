@@ -113,3 +113,8 @@ language_resources/lega-mwenga-lgm/data/raw/*.csv
 language_resources/lega-mwenga-lgm/data/processed/*.csv
 language_resources/lega-mwenga-lgm/data/processed/*.jsonl
 language_resources/lega-mwenga-lgm/scripts/__pycache__/
+# Restricted official Kibembe/French publications are local evaluation data only.
+language_resources/bembe-bmb/data/raw/*
+language_resources/bembe-bmb/data/processed/*.csv
+language_resources/bembe-bmb/data/processed/*.jsonl
+language_resources/bembe-bmb/scripts/__pycache__/
