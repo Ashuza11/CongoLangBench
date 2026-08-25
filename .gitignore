@@ -93,3 +93,7 @@ language_resources/ndo-ndp/scripts/__pycache__/
 language_resources/alur-alz/data/processed/*.csv
 language_resources/alur-alz/data/processed/*.jsonl
 language_resources/alur-alz/scripts/__pycache__/
+language_resources/ngiti-niy/data/raw/*.csv
+language_resources/ngiti-niy/data/processed/*.csv
+language_resources/ngiti-niy/data/processed/*.jsonl
+language_resources/ngiti-niy/scripts/__pycache__/
