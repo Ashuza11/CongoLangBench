@@ -118,3 +118,18 @@ language_resources/bembe-bmb/data/raw/*
 language_resources/bembe-bmb/data/processed/*.csv
 language_resources/bembe-bmb/data/processed/*.jsonl
 language_resources/bembe-bmb/scripts/__pycache__/
+# Restricted official YouVersion text used only for local evaluation.
+language_resources/zimba-zmb/data/raw/*
+language_resources/zimba-zmb/data/processed/*.csv
+language_resources/zimba-zmb/data/processed/*.jsonl
+language_resources/buyu-byi/data/raw/*
+language_resources/buyu-byi/data/processed/*.csv
+language_resources/buyu-byi/data/processed/*.jsonl
+language_resources/holoholo-hoo/data/raw/*
+language_resources/holoholo-hoo/data/processed/*.csv
+language_resources/holoholo-hoo/data/processed/*.jsonl
+language_resources/lega-shabunda-lea/data/raw/*
+language_resources/lega-shabunda-lea/data/processed/*.csv
+language_resources/lega-shabunda-lea/data/processed/*.jsonl
+language_resources/lega-shabunda-lea/scripts/__pycache__/
+scripts/__pycache__/

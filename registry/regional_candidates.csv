@@ -18,10 +18,14 @@ Ituri,6,Lendu / Kilendu,led,major Ituri language,no_sentence_bitext_found,acquis
 Ituri,7,Hema,nix,major Ituri language,no_sentence_bitext_found,acquisition_backlog,seek authentic DRC-specific aligned text
 Ituri,8,Bila,bip,forest-region language,no_sentence_bitext_found,acquisition_backlog,locate community publications dictionary examples or aligned source text
 Maniema,1,Lega-Mwenga,lgm,large Maniema-South Kivu language variety,7943_unique_restricted_pairs,selected_restricted,use exact variety locally and do not merge with Lega-Shabunda
-Maniema,2,Kusu,,large local language,source_to_verify,candidate,find a usable bilingual source
-Maniema,3,Bangubangu,,substantial regional community,source_to_verify,candidate,identify source and ISO code
+Maniema,2,Lega-Shabunda,lea,large DRC language of Pangi-Shabunda with a complete official edition,30703_unique_restricted_pairs,selected_restricted,use locally for evaluation and keep separate from Lega-Mwenga
+Maniema,3,Zimba,zmb,DRC Maniema language with sufficient official portions,2434_unique_restricted_pairs,selected_restricted,use locally for evaluation; official copyrighted text remains Git-ignored
 Maniema,4,Bembe / Kibembe,bmb,substantial DRC Maniema-South Kivu language with a matching official publication,2984_unique_restricted_pairs,selected_restricted,use locally for evaluation; shared document and paragraph IDs provide deterministic French alignment
-Maniema,5,Songola / Songoora,,regional language,source_to_verify,candidate,identify aligned text and language code
+Maniema,5,Holoholo,hoo,DRC-spoken Maniema-Tanganyika transition language with sufficient official portions,1531_unique_restricted_pairs,selected_restricted,use locally for evaluation; official edition does not label a narrower subvariety
+Maniema,6,Kusu,ksv,large local language,no_sentence_bitext_found,acquisition_backlog,seek authentic written parallel text; currently identified resources are audio only
+Maniema,7,Bangubangu,bnx,substantial regional community,official_portion_below_1500,acquisition_backlog,obtain more than the currently available limited official portion
+Maniema,8,Songola / Songoora,sod,regional language,official_mark_only_below_1500,acquisition_backlog,obtain additional official books or non-scripture bitext
+Maniema,9,Buyu,byi,DRC Maniema language with an official Luke edition,962_unique_restricted_pairs,acquisition_backlog,add at least 538 pairs from another authentic source
 Tshopo,1,Lokele,,major Kisangani-area language,source_to_verify,candidate,find local or scripture bitext
 Tshopo,2,Topoke / Poke,,regional language,source_to_verify,candidate,identify source and ISO code
 Tshopo,3,Mbole,,regional language,source_to_verify,candidate,locate bilingual text

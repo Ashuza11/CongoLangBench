@@ -15,6 +15,9 @@ and explains why Sanga remains in the acquisition backlog.
 `kasai_top5.md` records the bitext-feasible Kasai/Central DRC set. The national
 Tshiluba resource is reused rather than duplicated as a regional dataset.
 
+`maniema_top5.md` records the completed Maniema set, including the strict
+separation of Lega-Mwenga and Lega-Shabunda and the below-threshold backlog.
+
 Rules:
 
 - Keep ISO codes and varieties explicit.

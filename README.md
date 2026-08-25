@@ -146,6 +146,16 @@ Lendu, Hema, and Bila remain documented acquisition backlogs.
 
 - [Ituri top-five record](registry/ituri_top5.md)
 
+The Maniema top five are Lega-Mwenga, Lega-Shabunda, Zimba, Bembe/Kibembe,
+and Holoholo. They contain 7,943, 30,703, 2,434, 2,984, and 1,531 aligned
+pairs respectively. The two Lega varieties remain separate tracks. All five
+sources are authentic but restricted, so their text is curated locally and
+Git-ignored while reproducible scripts, provenance, counts, and integrity
+results are published. Kusu, Bangubangu, Songola, and below-threshold Buyu
+remain explicit acquisition backlogs.
+
+- [Maniema top-five record](registry/maniema_top5.md)
+
 ## Repository structure
 
 ```text
@@ -153,6 +163,7 @@ docs/                       Project specification and tooling notes
 notebooks/                  Extraction and evaluation notebooks
 language_resources/         Per-language worksheets, data, and sources
 registry/                   Language, source, and regional tracking tables
+scripts/                    Shared reproducible curation utilities
 requirements.txt            Reproducible Python dependency list
 ```
 
