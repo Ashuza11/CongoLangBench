@@ -12,7 +12,7 @@ The project focuses on text and bitext evaluation. Monolingual corpora, dictiona
 
 The initial tracks are:
 
-| Language | Target variety | ISO 639-3 | Minimum reviewed bitext |
+| Language | Target variety | ISO 639-3 | Minimum curated bitext |
 |---|---|---:|---:|
 | Lingala | DRC Lingala | `lin` | 1,500 sentence pairs |
 | Kikongo | Kikongo ya Leta / DRC Kituba | `ktu` | 1,500 sentence pairs |
@@ -31,8 +31,7 @@ The regional shortlist must be based on:
 2. geographic coverage and representation gaps;
 3. availability of at least one credible bitext source;
 4. an identifiable ISO code and language variety;
-5. permission or a compatible open licence; and
-6. feasibility of native-speaker review.
+5. documented licence and publication handling.
 
 The shortlist is a research output, not an assumption. Record candidate languages, rejected candidates, evidence, bitext status, and the reason for each decision in `registry/regional_candidates.csv`.
 
@@ -40,25 +39,25 @@ Potential regional groupings to investigate include Western/Greater Kinshasa, Ko
 
 ### Phase 2 — Kivu expansion
 
-After the national-language benchmark and the broader regional top-five selection are complete, focus specifically on the Kivu regions. Extend the existing Mashi, Nande, Hunde, Fuliiru, Tembo, Havu, Nyanga, and Lega work where data is available, and add additional Kivu languages discovered through the regional process. Kivu additions must use the same 1,500-pair target, review rules, and evaluation protocol; they are an expansion of the benchmark, not a replacement for the national or regional tracks.
+After the national-language benchmark and the broader regional top-five selection are complete, focus specifically on the Kivu regions. Extend the existing Mashi, Nande, Hunde, Fuliiru, Tembo, Havu, Nyanga, and Lega work where data is available, and add additional Kivu languages discovered through the regional process. Kivu additions must use the same 1,500-pair target, source-validation rules, and evaluation protocol; they are an expansion of the benchmark, not a replacement for the national or regional tracks.
 
 ### Phase 3 — Continuous expansion
 
-Add further Congolese languages whenever credible data is found. New languages follow the same intake, licence, schema, review, split, evaluation, and reporting process. No language is excluded merely because it is not in the initial list; it is placed in a documented queue until evidence and data are available.
+Add further Congolese languages whenever credible data is found. New languages follow the same intake, licence, schema, curation, split, evaluation, and reporting process. No language is excluded merely because it is not in the initial list; it is placed in a documented queue until evidence and data are available.
 
 ## 3. Definition of done for a language
 
 A language track is complete when it has:
 
-- at least 1,500 unique, reviewed bilingual sentence pairs, or an explicit documented exception;
+- at least 1,500 unique, curated bilingual sentence pairs, or an explicit documented exception;
 - confirmed language variety, ISO code, and geographic provenance;
 - source URL, edition/version, retrieval date, and licence metadata;
-- source-specific raw and processed files;
+- source-specific raw and processed files locally, or reproducible acquisition scripts when text cannot be redistributed;
 - quality checks for duplicates, empty fields, language identity, alignment, and encoding;
 - train/dev/test splits with no source or verse leakage;
 - a reproducible model-evaluation record in both translation directions where possible;
 - saved metric scores, model outputs, and error notes; and
-- a language README describing limitations and review status.
+- a language README describing limitations and source-validation status.
 
 ## 4. Standard data model
 
@@ -81,13 +80,13 @@ All accepted bitext must use a common JSONL/CSV schema. Recommended fields are:
   "unit_type": "sentence",
   "domain": "biblical/news/education/etc.",
   "licence": "licence or permission reference",
-  "review_status": "reviewed",
+  "review_status": "verified_source",
   "quality_flags": "",
-  "notes": "optional review notes"
+  "notes": "optional curation notes"
 }
 ```
 
-Keep raw source files separate from normalized, reviewed, and benchmark files. Never overwrite raw data during cleaning.
+Keep raw source files separate from normalized, curated, and benchmark files. Never overwrite raw data during cleaning.
 
 ## 5. Common pipeline
 
@@ -100,7 +99,7 @@ Every language follows these stages:
 5. **Align:** align translations using stable IDs where available; otherwise use an auditable alignment method.
 6. **Normalize:** clean whitespace and encoding while preserving meaningful spelling and diacritics.
 7. **Filter:** remove duplicates, empty records, wrong-language records, and clearly invalid alignments.
-8. **Review:** conduct native-speaker or qualified linguistic review where needed, or record authenticated-source validation and quarantine uncertain rows.
+8. **Validate:** accept authentic verified sources as supplied; use native-speaker or qualified linguistic review for unverified, transformed, or uncertain rows and quarantine unresolved material.
 9. **Split:** create leakage-safe train/dev/test or evaluation-only partitions by source and document.
 10. **Freeze:** record the curation version and confirm that the track has passed its source and quality gate.
 11. **Evaluate:** only after the all-language curation milestone, run the same prompts, models, directions, metrics, and sampling rules.
@@ -120,7 +119,7 @@ Every language follows these stages:
   - run a small local smoke test on two known text files;
   - compare its output with the Mashi extraction workflow; and
   - document whether it is used for discovery, extraction, alignment, filtering, or not used.
-- Do not treat package output as validated data without the project’s normal review and provenance checks.
+- Do not treat package output as validated data without source-identity, provenance, licence-handling, alignment, and structural checks.
 
 **Exit criterion:** a short tooling note, a reproducible installation, and a decision on how the package fits the pipeline.
 
@@ -134,8 +133,8 @@ For each language:
 2. collect at least 1,500 candidate sentence pairs;
 3. preserve source and licence metadata;
 4. clean and deduplicate the pairs;
-5. obtain native-speaker review;
-6. freeze a reviewed evaluation set;
+5. record authenticated-source validation and review only uncertain material;
+6. freeze a curated evaluation set;
 7. run model evaluation in both directions where possible; and
 8. save the dataset card, scores, outputs, and error analysis.
 
@@ -144,7 +143,7 @@ For each language:
 ### Phase 1B — Regional top-five selection and collection
 
 1. Build a regional candidate table.
-2. Rank candidates using population/importance, representation gap, source availability, licensing, and review feasibility.
+2. Rank candidates using population/importance, representation gap, source availability, and licensing.
 3. Select up to five feasible languages per region.
 4. Create a worksheet and source inventory for each selected language.
 5. Apply the common pipeline and 1,500-pair target.
@@ -156,7 +155,7 @@ For each language:
 
 1. Consolidate the existing Kivu language tracks and identify their remaining data gaps.
 2. Add new Kivu languages from the regional candidate table where credible bitext exists.
-3. Apply the common pipeline, native-speaker review, and evaluation protocol.
+3. Apply the common pipeline, authenticated-source validation, and evaluation protocol.
 4. Compare Kivu results with the national and other regional tracks.
 
 **Exit criterion:** an evaluated Kivu-focused expansion that clearly documents what was added to the existing Kivu coverage.
@@ -164,7 +163,7 @@ For each language:
 ### Phase 3 — Continuous expansion
 
 - Add newly discovered languages through the same intake form.
-- Version datasets when sources or review decisions change.
+- Version datasets when sources or curation decisions change.
 - Maintain a backlog of contact leads and permission requests.
 - Re-run evaluations when models, prompts, or benchmark versions change.
 - Keep a changelog so results remain interpretable over time.
@@ -224,11 +223,9 @@ The current repository may be migrated toward this layout incrementally. Existin
 
 ## 10. Immediate next actions
 
-1. Add the language registry and common schema.
-2. Explore and smoke-test `africa-bitext-builder`.
-3. Package the current Mashi workflow as the reference adapter.
-4. Start the Lingala source inventory and target 1,500 reviewed pairs.
-5. Repeat for Kikongo ya Leta, Ciluba, and Congo Swahili.
-6. Create and rank the top-five-per-region candidate table while the national tracks are underway.
-7. Collect and evaluate the selected regional languages with verified usable bitext.
-8. Begin the dedicated Kivu expansion only after the national and broader regional tracks are complete.
+1. Consolidate the completed national and regional curation records.
+2. Begin the dedicated Kivu expansion with Havu and other ready tracks.
+3. Continue acquiring data for Hunde and additional high-priority Kivu languages.
+4. Freeze leakage-safe evaluation sets only after the remaining language data is curated.
+5. Run the common model evaluation protocol language by language.
+6. Save comparable results and prepare the final analysis for publication.

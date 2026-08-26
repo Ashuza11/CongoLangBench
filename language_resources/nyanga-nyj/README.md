@@ -4,12 +4,14 @@ Search Kinyanga, “Nyanga language,” Inyanga, Banyanga, Walikale, `nyj`; excl
 
 ## Curation status
 
-The package can technically produce **3,192 Nyanga--French aligned verses**
-from Matthew, Luke, John, and Colossians. Package metadata marks version 4564
-public-domain, but no explicit open redistribution licence was confirmed from
-the authoritative source page. The track is therefore
-**evaluation-only/licence-verification-required** and its text is not published.
-See the [source audit](metadata/source_audit.md).
+The package produced **3,192 Nyanga--French aligned verses** from Matthew, Luke,
+John, and Colossians. The local evaluation track is curated and ready. Package
+metadata marks version 4564 public-domain, but the authoritative source page
+does not state explicit redistribution terms, so the raw and processed text is
+kept Git-ignored. See the [source audit](metadata/source_audit.md).
+
+- CSV SHA-256: `cc474222b0e2558a92c43c78062ccdb3179605dd297159b051aca6983d748d0b`
+- Preparation script: `scripts/prepare_package.py`
 
 ## Verified and evaluated resources
 

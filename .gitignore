@@ -153,3 +153,17 @@ language_resources/lombo-loo/scripts/__pycache__/
 language_resources/pende-pem/data/raw/*
 language_resources/pende-pem/scripts/__pycache__/
 scripts/__pycache__/
+.cache/
+# Restricted Eastern DRC package tracks are local evaluation data only.
+language_resources/fuliiru-flr/data/raw/*
+language_resources/fuliiru-flr/data/processed/*.csv
+language_resources/fuliiru-flr/data/processed/*.jsonl
+language_resources/fuliiru-flr/scripts/__pycache__/
+language_resources/tembo-tbt/data/raw/*
+language_resources/tembo-tbt/data/processed/*.csv
+language_resources/tembo-tbt/data/processed/*.jsonl
+language_resources/tembo-tbt/scripts/__pycache__/
+language_resources/nyanga-nyj/data/raw/*
+language_resources/nyanga-nyj/data/processed/*.csv
+language_resources/nyanga-nyj/data/processed/*.jsonl
+language_resources/nyanga-nyj/scripts/__pycache__/

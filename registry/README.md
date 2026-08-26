@@ -29,13 +29,12 @@ Rules:
 
 ## Regional phase entry
 
-The first regional track is Eastern DRC. Mashi now has a clean 1,500-pair
+The Eastern DRC regional track is complete. Mashi has a clean 1,500-pair
 French--Mashi benchmark selected from 30,911 open aligned candidates. Nande
 (`nnb`) has 14,949 public French--Nande pairs from CLEAR Global. Havu
-has 3,224 public pairs reserved for the later Kivu expansion. Fuliiru has 30,546 technically
-aligned pairs but remains permission-required. Tembo has 7,932 technically
-aligned New Testament pairs and is also permission-required. Nyanga has 3,192
-technically aligned pairs with a licence conflict that must be resolved.
+has 3,224 public pairs reserved for the later Kivu expansion. Fuliiru has 30,546
+curated local pairs, Tembo has 7,932, and Nyanga has 3,192. Their authentic
+package text is ready for local evaluation and remains Git-ignored.
 
 The Southeastern DRC/Katanga track is complete. Kiluba has 197,411
 open English pairs from MT560, and Tabwa has 5,039 open French pairs aligned

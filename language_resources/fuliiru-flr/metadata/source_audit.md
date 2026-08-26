@@ -9,11 +9,13 @@
 - Official Fuliiru Bible status: all rights reserved
 - French status: public domain
 
-The source exceeds the 1,500-pair target, but access through the package does
-not grant public redistribution rights. No text from version 2355 is stored or
-published in this repository. It can become a benchmark source after the
-translation rightsholder provides explicit permission covering redistribution
-and the intended research/model-evaluation use.
+The source exceeds the 1,500-pair target and has been curated locally for model
+evaluation. Access through the package does not grant public redistribution
+rights, so text from version 2355 is Git-ignored and not published.
+
+- Normalized local pairs: 30,546
+- CSV SHA-256:
+  `542c7033e6c4975f18b5216f0d03df0afcacca0a5ec16c1396ce27288802e0f3`
 
 No separate openly licensed, sentence-level Fuliiru parallel corpus was
 confirmed during the audit. Community dictionary and Kifuliiru Lab resources

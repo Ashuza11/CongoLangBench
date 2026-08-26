@@ -1,13 +1,13 @@
 region,rank,language,iso_code,planning_basis,bitext_status,selection_status,next_action
 North Kivu,1,Nande / Kinande,nnb,large regional language,14949_open_pairs,selected,retain complete CC BY 4.0 CLEAR Global track
 North Kivu,2,Hunde / Kihunde,hke,large regional language,source_to_verify,candidate,identify permissioned or open parallel text
-North Kivu,3,Nyanga / Kinyanga,nyj,regional language with Bible materials,3192_licence_conflict_pairs,licence_verification_required,confirm public-domain claim with maintainer or rightsholder
-North Kivu,4,Tembo / Kitembo,tbt,regional Kivu language,7932_restricted_pairs,permission_required,request redistribution and research permission from rightsholder
+North Kivu,3,Nyanga / Kinyanga,nyj,regional language with Bible materials,3192_restricted_local_pairs,selected_complete,use locally for evaluation and keep text Git-ignored
+North Kivu,4,Tembo / Kitembo,tbt,regional Kivu language,7932_restricted_local_pairs,selected_complete,use locally for evaluation and keep text Git-ignored
 North Kivu,5,Kinyarwanda,kin,large bilingual community,source_to_verify,candidate,restrict to DRC-provenanced data and verify variety
 South Kivu,1,Mashi / Shi,shr,large regional language,1500_open_pairs,selected_eastern_top5,target reached; freeze after all-language curation
 South Kivu,2,Havu / Kihavu,hav,large regional language,3224_open_pairs,later_kivu_expansion,retain complete CC BY-SA 4.0 aligned track for later Kivu phase
 South Kivu,3,Bembe / Kibembe,,substantial regional community,source_to_verify,candidate,identify DRC-specific bitext and ISO code
-South Kivu,4,Fuliiru / Kifuliiru,flr,regional language with dictionary and Bible materials,30546_restricted_pairs,permission_required,request redistribution and research permission from rightsholder
+South Kivu,4,Fuliiru / Kifuliiru,flr,regional language with dictionary and Bible materials,30546_restricted_local_pairs,selected_complete,use locally for evaluation and keep text Git-ignored
 South Kivu,5,Lega / Kilega,leg;lea,large language continuum,source_to_verify,candidate,keep Mwenga and Shabunda varieties separate
 Ituri,1,Alur / Dho-Alur,alz,large Ituri and cross-border community,7567_open_drc_labelled_pairs,selected,retain complete CC BY 4.0 MT560 track with mixed-source provenance
 Ituri,2,Ngiti,niy,large Ituri language,7955_unique_restricted_pairs,selected_restricted,use locally for evaluation and preserve joint-country provenance

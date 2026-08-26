@@ -4,11 +4,14 @@ Search Fuliiru, Fuliru, Kifuliiru, Kifuliru, Ibufuliiru, `flr`. The principal DR
 
 ## Curation status
 
-The package can technically produce **30,546 Fuliiru--French aligned verses**
-across 66 books, but Fuliiru version 2355 is marked non-public-domain and the
-official edition is all-rights-reserved. The track is therefore
-**permission-required**: its text is not stored or published in this repository.
-See the [source audit](metadata/source_audit.md).
+The package produced **30,546 Fuliiru--French aligned verses** across 66 books.
+The local evaluation track is curated and ready. Fuliiru version 2355 is marked
+non-public-domain and the official edition is all-rights-reserved, so its raw
+and processed text remains Git-ignored and is not published. See the
+[source audit](metadata/source_audit.md).
+
+- CSV SHA-256: `542c7033e6c4975f18b5216f0d03df0afcacca0a5ec16c1396ce27288802e0f3`
+- Preparation script: `scripts/prepare_package.py`
 
 ## Verified and evaluated resources
 

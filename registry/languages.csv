@@ -42,10 +42,10 @@ Lobala,loq,Lobala (DRC/Congo source),Northwestern DRC,Regional,Northwestern Cong
 Mashi,shr,Mashi / Shi,South Kivu,Regional,Kivu,1,1500,1500,verified_source,freeze deterministic Eastern benchmark after all-language curation
 Nande,nnb,Kinande / Ndandi,North Kivu,Regional,Kivu,2,1500,14949,verified_source,freeze public CLEAR Global track after all-language curation
 Hunde,hke,Kihunde,North Kivu,Regional,Kivu,3,1500,0,source_inventory,identify a verified bitext source
-Fuliiru,flr,Kifuliiru,South Kivu,Regional,Kivu,4,1500,0,permission_required,request rights for package version 2355 with 30546 aligned verses
-Tembo,tbt,Kitembo,North Kivu,Regional,Kivu,5,1500,0,permission_required,request rights for package version 3997 with 7932 aligned verses
+Fuliiru,flr,Kifuliiru,South Kivu,Regional,Kivu,4,1500,30546,curated_restricted,use complete local package track for evaluation and keep text Git-ignored
+Tembo,tbt,Kitembo,North Kivu,Regional,Kivu,5,1500,7932,curated_restricted,use complete local package track for evaluation and keep text Git-ignored
 Havu,hav,Kihavu,South Kivu,Kivu expansion,Kivu,6,1500,3224,kivu_expansion_ready,retain complete CC BY-SA 4.0 track for later Kivu phase
-Nyanga,nyj,Kinyanga,North Kivu,Regional,Kivu,7,1500,0,licence_verification_required,resolve package public-domain flag against source terms for 3192 aligned verses
+Nyanga,nyj,Kinyanga,North Kivu,Regional,Kivu,7,1500,3192,curated_restricted,use complete local package track for evaluation and keep text Git-ignored
 Lega-Shabunda,lea,Kilega Shabunda / Pangi (DRC),Maniema / South Kivu,Regional,Maniema,2,1500,30703,verified_source_restricted,use complete official DRC edition locally and keep it separate from Lega-Mwenga
 Kele / Lokele,khy,Kele / Lokele (DRC),Tshopo,Regional,Tshopo,3,1500,7910,verified_source_restricted,use locally for evaluation while keeping copyrighted text Git-ignored
 Lengola,lej,Lengola (DRC),Tshopo,Regional,Tshopo,4,1500,5774,verified_source,retain complete CC BY-SA 4.0 English track with attribution

@@ -10,10 +10,14 @@
 - Authoritative source page: no explicit open redistribution licence confirmed
 - French status: public domain
 
-The source exceeds the 1,500-pair target and can support local assessment,
-subject to its access terms. The package's public-domain flag conflicts with the
-absence of an explicit open licence on the publisher/source page. No text is
-stored or published until the maintainer or rightsholder confirms the licence.
+The source exceeds the 1,500-pair target and has been curated locally for model
+evaluation. The package's public-domain flag conflicts with the absence of an
+explicit open licence on the publisher/source page, so its text remains
+Git-ignored rather than being published.
+
+- Normalized local pairs: 3,192
+- CSV SHA-256:
+  `cc474222b0e2558a92c43c78062ccdb3179605dd297159b051aca6983d748d0b`
 
 No separate openly licensed Nyanga sentence-level parallel corpus was found.
 The Kinyanga community website, bilingual app, dictionary, and literacy

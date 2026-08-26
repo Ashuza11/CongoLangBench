@@ -7,7 +7,10 @@
 - `LanguageRegistry`: resolves an ISO code and returns available translation versions plus public-domain status.
 - `CorpusBuilder`: downloads aligned verse rows for a source and target language, with optional version IDs, row limits, sampling, and random seeds.
 
-The package retrieves its catalogue and text from external services. Its output is a useful acquisition starting point, not automatically a reviewed benchmark: we still need to validate language identity, source edition, licence, duplicates, alignment, and domain.
+The package retrieves its catalogue and text from external services. Its output
+is a useful acquisition adapter: the project still records language identity,
+source edition, licence handling, duplicates, alignment, and domain. Authentic
+verified editions are accepted as supplied after these structural checks.
 
 ## Installation tested
 
@@ -60,7 +63,10 @@ The output is a CSV with the columns:
 verse_key,shr,fr
 ```
 
-The sample was written to `/tmp/congolang_mashi_smoke.csv` and contains verse keys such as `GEN.29.24`. This confirms that the package can provide a useful Mashi–French acquisition route, but it does not replace the repository’s richer provenance schema or native-speaker review.
+The sample was written to `/tmp/congolang_mashi_smoke.csv` and contains verse
+keys such as `GEN.29.24`. This confirms that the package can provide a useful
+Mashi–French acquisition route, while the repository adds richer provenance and
+curation metadata.
 
 ## Decision
 

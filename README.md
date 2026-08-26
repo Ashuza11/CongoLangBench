@@ -2,7 +2,7 @@
 
 [![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](docs/PROJECT_SPEC.md)
 [![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](docs/PROJECT_SPEC.md)
-[![Coverage](https://img.shields.io/badge/coverage-27_language_tracks-007ec6)](registry/languages.csv)
+[![Coverage](https://img.shields.io/badge/coverage-46_ready_language_tracks-007ec6)](registry/languages.csv)
 [![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](registry/national_sources.csv)
 [![Licence](https://img.shields.io/badge/licensing-source_specific-e05d44)](docs/PROJECT_SPEC.md)
 
@@ -15,7 +15,7 @@ The work is deliberately staged:
 1. Complete the four national-language tracks: Lingala, Kikongo ya Leta, Ciluba/Tshiluba, and Congo Swahili.
 2. Select and document up to five feasible bitext-supported local languages per major DRC region.
 3. Focus on a dedicated Kivu expansion, extending the existing Mashi, Nande, Hunde, Fuliiru, Tembo, Havu, Nyanga, and Lega work.
-4. Add further languages whenever credible bitext, provenance, licensing, and review support become available.
+4. Add further languages whenever credible bitext and documented provenance become available.
 
 The target for each completed language is at least **1,500 curated bilingual sentence pairs**. Model evaluation is intentionally gated until the selected national and regional language datasets have been curated and frozen.
 
@@ -25,7 +25,10 @@ The full plan is in [docs/PROJECT_SPEC.md](docs/PROJECT_SPEC.md).
 
 ### Mashi prototype
 
-The Mashi track demonstrates the extraction and evaluation workflow. It contains candidate Mashi–French material from eBible Exodus, a contextual dictionary PDF, and murhula.com. The candidates still require linguistic review before they become an official benchmark split.
+The Mashi track demonstrates the extraction and evaluation workflow. It now
+contains a deterministic 1,500-pair French--Mashi set selected from 30,911
+authentic aligned candidates. The earlier eBible, dictionary, and murhula.com
+artifacts remain documented as source-development material.
 
 - [Mashi extraction notebook](notebooks/mashi_data_extraction.ipynb)
 - [Open Mashi notebook in Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/notebooks/mashi_data_extraction.ipynb)
@@ -90,11 +93,16 @@ See the [national source table](registry/national_sources.csv) and [national sou
 
 ## Regional selection
 
-The provisional regional table contains up to five priority candidates per major region. A candidate is not counted as an active dataset track until a usable bitext source, exact language variety, DRC provenance, licence, and review route are confirmed.
+The provisional regional table contains up to five priority candidates per major region. A candidate is not counted as an active dataset track until a usable bitext source, exact language variety, DRC provenance, and publication handling are confirmed.
 
 - [Regional candidate shortlist](registry/regional_candidates.csv)
 - [Regional selection rules](registry/regional_candidates.md)
 - [Central language registry](registry/languages.csv)
+
+The Eastern DRC top five are Nande, Mashi, Fuliiru, Tembo, and Nyanga. All are
+now curated above the 1,500-pair minimum. Nande and Mashi have publishable
+tracks; the other three are complete local evaluation tracks whose text remains
+Git-ignored. Havu is reserved for the dedicated Kivu expansion.
 
 The Southeastern DRC/Katanga top five are Kiluba, Tabwa, Bemba, Aushi, and
 Lunda. Each now has usable open bitext. Bemba, Aushi, and Lunda use explicitly
@@ -192,12 +200,12 @@ The notebooks can be run locally or in Google Colab. Raw source files must remai
 
 - Keep ISO codes and language varieties explicit; do not merge related varieties silently.
 - Preserve source URL, edition, retrieval date, licence, attribution, and contributor information.
-- Keep raw, normalized, reviewed, and benchmark files separate.
+- Keep raw, normalized, curated, and benchmark files separate.
 - Keep native, human-translated, mined, machine-translated, and synthetic text labelled separately.
 - Deduplicate overlapping releases before splitting data.
 - Split by source/document where necessary to prevent leakage.
 - Treat automatic BLEU and chrF++ scores as comparisons, not complete quality judgments.
-- Obtain native-speaker or qualified linguistic review for unverified sources; authentic verified datasets may be accepted with documented validation.
+- Accept authentic verified datasets with documented source validation; obtain native-speaker or qualified linguistic review for unverified, transformed, or uncertain material.
 
 ## Evaluation
 
@@ -205,7 +213,7 @@ The notebooks can be run locally or in Google Colab. Raw source files must remai
 
 ## Tooling
 
-Phase 0 investigated [`africa-bitext-builder`](https://pypi.org/project/africa-bitext-builder/). It can discover indexed African-language Bible versions and build verse-aligned CSV corpora, but its output still requires this project’s provenance, licence, language, and human-review checks.
+Phase 0 investigated [`africa-bitext-builder`](https://pypi.org/project/africa-bitext-builder/). It can discover indexed African-language Bible versions and build verse-aligned CSV corpora. Package output is accepted after source identity, provenance, licence handling, alignment, and structural checks; authentic verified text does not require an additional linguistic review gate.
 
 - [Phase 0 tooling note](docs/TOOLING_NOTE.md)
 - [Project specification](docs/PROJECT_SPEC.md)

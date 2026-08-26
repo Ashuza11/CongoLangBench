@@ -4,11 +4,13 @@ Search all three names plus `tbt`, DRC, and Kivu; “Tembo” alone is ambiguous
 
 ## Curation status
 
-The package can technically produce **7,932 Tembo--French aligned verses**
-covering all 27 New Testament books. Tembo version 3997 is marked
-non-public-domain, so this track is **evaluation-only/permission-required** and
-its text is not stored or published here. See the
-[source audit](metadata/source_audit.md).
+The package produced **7,932 Tembo--French aligned verses** covering all 27 New
+Testament books. The local evaluation track is curated and ready. Tembo version
+3997 is marked non-public-domain, so its raw and processed text remains
+Git-ignored and is not published. See the [source audit](metadata/source_audit.md).
+
+- CSV SHA-256: `898285ee2ce1577df63e7344f053dffd56412c7c202849635ac008948fe6d30a`
+- Preparation script: `scripts/prepare_package.py`
 
 ## Verified and evaluated resources
 
