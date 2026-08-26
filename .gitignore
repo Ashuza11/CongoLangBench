@@ -167,3 +167,8 @@ language_resources/nyanga-nyj/data/raw/*
 language_resources/nyanga-nyj/data/processed/*.csv
 language_resources/nyanga-nyj/data/processed/*.jsonl
 language_resources/nyanga-nyj/scripts/__pycache__/
+# Restricted official Hunde New Testament is local evaluation data only.
+language_resources/hunde-hke/data/raw/*
+language_resources/hunde-hke/data/processed/*.csv
+language_resources/hunde-hke/data/processed/*.jsonl
+language_resources/hunde-hke/scripts/__pycache__/

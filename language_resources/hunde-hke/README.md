@@ -1,25 +1,31 @@
 # Hunde / Kihunde (`hke`)
 
-Search Hunde, Kihunde, Luhunde, Kobi, Rukobi, Bahunde, `hke`; reject unrelated results for the common word “Hunde.”
+## Curation status
 
-## Verified and evaluated resources
+Hunde/Kihunde is a North Kivu language centred especially in Masisi and parts
+of Rutshuru and Walikale. An official 2025 Hunde edition on YouVersion now
+provides Mark, Luke, and John. The repository's shared YouVersion extractor
+aligned every available verse with French Louis Segond 1910.
 
-- **DATA — LEXICON + SPEECH — TERMS / permission:** [Kihunde Living Dictionary](https://livingdictionaries.app/kihunde) contains community-created Kihunde entries, French/English gloss fields, and some audio. Its page identifies creators and contacts, but does not grant an open bulk-data licence; request export and consent.
-- **CONVERTIBLE SOURCE — LEXICON — CLOSED:** Jérémie Muhima, *Dictionnaire Kihunde–Français–Swahili* (2011) is a trilingual dictionary. The Scribd copy is marked all rights reserved; use the bibliographic lead to contact the author/rightsholder, not as an open download.
-- **CATALOG RECORD — SPEECH:** [Words of Life Kihunde](https://megavoice.com/media-cloud/m018711-words-of-life-hke-kihunde-audio-bible/) lists about 50 minutes of mother-tongue religious audio. It is a product/catalog page, not a reusable corpus licence.
-- **DATA — MULTILINGUAL DICTIONARY APP:** [Kihunde–Swahili–French–English app listing](https://apkpure.net/kihunde-swahili-fran%C3%A7ais-engl/com.swahili.francais.kinhunde/download) provides an installable Android package and confirms all four languages. The third-party APK host and absent content licence make this an inspection/contact source, not safe bulk data; prefer obtaining the database from the app developer.
-- **DATA — PRINT DICTIONARY:** [*Dictionnaire kihunde–français–swahili*](https://www.thebookedition.com/fr/dictionnaire-kihunde-francais-swahili-p-71261.html) is a direct publisher/book page for the trilingual work.
+- Unique French--Hunde pairs: **2,291**
+- Coverage: Mark (547), Luke (956), John (788)
+- CSV SHA-256: `77f3273dea09fbc05fca1d7e1ada4c6745ca9f605c64fa5b3ebe85764df7a291`
+- Publication handling: local evaluation only; raw and derived text Git-ignored
 
-## Searches and status
+Run from the repository root:
 
-- Scripture catalogs, JESUS Film, radio, primers, grammars, and oral histories are **CONTACT LEADS**; establish text/audio rights and speaker consent.
-- [ACL](https://aclanthology.org/search/?q=Kihunde) · [arXiv](https://arxiv.org/search/?query=Kihunde&searchtype=all) · [Hugging Face](https://huggingface.co/datasets?search=Kihunde) · [GitHub](https://github.com/search?q=Kihunde+dataset&type=repositories) · [Scholar](https://scholar.google.com/scholar?q=%22Kihunde%22+dictionary)
+```bash
+venv/bin/python -u scripts/prepare_youversion_bitext.py hunde
+```
 
-No verified open sentence corpus, Bible text package, or `hke` LDC/Babel, OPUS, OSCAR, CC100, FLORES, TED, OpenSubtitles, or Wikipedia release was found. Contact the Living Dictionary creators, dictionary rightsholders, Bahunde educators/cultural groups, radio/churches, and linguistics/CS faculty serving Masisi, Rutshuru, and Walikale.
+- [Official source metadata](metadata/official_youversion.md)
+- [YouVersion Hunde edition](https://www.bible.com/audio-bible-app-versions/4565-hke-hunde-nouveau-testament)
 
-## Best workflow now
+## Additional expansion leads
 
-1. Use the [Kihunde Living Dictionary](https://livingdictionaries.app/kihunde) for immediate human lookup and audio verification.
-2. Contact its named creators for a CSV/JSON export, licence, and audio-speaker consent.
-3. Contact the print dictionary author/publisher for a digital Kihunde–French–Swahili table.
-4. Inspect the four-language app only to identify its developer/database; do not redistribute an extracted APK database without permission.
+- [Kihunde Living Dictionary](https://livingdictionaries.app/kihunde) contains
+  community-created entries, French/English glosses, and some audio.
+- Jérémie Muhima's *Dictionnaire Kihunde--Français--Swahili* is a useful
+  contact lead for a future non-religious lexical track.
+- Kihunde education, cultural, radio, and community groups remain priorities
+  for adding non-religious domains.

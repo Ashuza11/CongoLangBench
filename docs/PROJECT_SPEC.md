@@ -224,8 +224,8 @@ The current repository may be migrated toward this layout incrementally. Existin
 ## 10. Immediate next actions
 
 1. Consolidate the completed national and regional curation records.
-2. Begin the dedicated Kivu expansion with Havu and other ready tracks.
-3. Continue acquiring data for Hunde and additional high-priority Kivu languages.
+2. Consolidate the ten ready Eastern/Kivu language tracks without duplicating reused data.
+3. Continue acquiring data for additional high-priority Kivu languages.
 4. Freeze leakage-safe evaluation sets only after the remaining language data is curated.
 5. Run the common model evaluation protocol language by language.
 6. Save comparable results and prepare the final analysis for publication.

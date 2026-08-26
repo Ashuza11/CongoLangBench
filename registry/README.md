@@ -9,6 +9,10 @@
 `eastern_top5.md` records the selected Eastern DRC top-five bitext tracks and
 separates them from the later dedicated Kivu expansion.
 
+`kivu_expansion.md` records five additional Kivu-relevant tracks. Havu and the
+new 2,291-pair Hunde track join three already curated datasets reused from the
+Maniema transition area.
+
 `katanga_top5.md` records the completed bitext-feasible Southeastern DRC set
 and explains why Sanga remains in the acquisition backlog.
 

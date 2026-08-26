@@ -1,6 +1,6 @@
 region,rank,language,iso_code,planning_basis,bitext_status,selection_status,next_action
 North Kivu,1,Nande / Kinande,nnb,large regional language,14949_open_pairs,selected,retain complete CC BY 4.0 CLEAR Global track
-North Kivu,2,Hunde / Kihunde,hke,large regional language,source_to_verify,candidate,identify permissioned or open parallel text
+North Kivu,2,Hunde / Kihunde,hke,large regional language,2291_restricted_local_pairs,kivu_expansion_complete,use official Mark-Luke-John track locally and keep text Git-ignored
 North Kivu,3,Nyanga / Kinyanga,nyj,regional language with Bible materials,3192_restricted_local_pairs,selected_complete,use locally for evaluation and keep text Git-ignored
 North Kivu,4,Tembo / Kitembo,tbt,regional Kivu language,7932_restricted_local_pairs,selected_complete,use locally for evaluation and keep text Git-ignored
 North Kivu,5,Kinyarwanda,kin,large bilingual community,source_to_verify,candidate,restrict to DRC-provenanced data and verify variety

@@ -2,7 +2,7 @@
 
 [![Project Status](https://img.shields.io/badge/status-active_development-brightgreen)](docs/PROJECT_SPEC.md)
 [![Task](https://img.shields.io/badge/task-bitext_evaluation-6f42c1)](docs/PROJECT_SPEC.md)
-[![Coverage](https://img.shields.io/badge/coverage-46_ready_language_tracks-007ec6)](registry/languages.csv)
+[![Coverage](https://img.shields.io/badge/coverage-47_ready_language_tracks-007ec6)](registry/languages.csv)
 [![Data](https://img.shields.io/badge/data-bitext_%7C_lexicons_%7C_corpora-f39c12)](registry/national_sources.csv)
 [![Licence](https://img.shields.io/badge/licensing-source_specific-e05d44)](docs/PROJECT_SPEC.md)
 
@@ -103,6 +103,12 @@ The Eastern DRC top five are Nande, Mashi, Fuliiru, Tembo, and Nyanga. All are
 now curated above the 1,500-pair minimum. Nande and Mashi have publishable
 tracks; the other three are complete local evaluation tracks whose text remains
 Git-ignored. Havu is reserved for the dedicated Kivu expansion.
+
+The dedicated Kivu expansion now adds Havu, Hunde, Lega-Shabunda, Lega-Mwenga,
+and Bembe. Hunde contributes 2,291 newly acquired French pairs; the Lega and
+Bembe datasets reuse already curated DRC tracks without duplicating text.
+
+- [Kivu expansion status](registry/kivu_expansion.md)
 
 The Southeastern DRC/Katanga top five are Kiluba, Tabwa, Bemba, Aushi, and
 Lunda. Each now has usable open bitext. Bemba, Aushi, and Lunda use explicitly

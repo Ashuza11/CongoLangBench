@@ -66,6 +66,23 @@ CONFIGS = {
         "abbrev": "KBT",
         "starts": ["MRK.1", "LUK.1"],
     },
+    "hunde": {
+        "language": "Hunde/Kihunde",
+        "iso": "hke",
+        "variety": "Hunde / Kihunde (DRC)",
+        "resource": "hunde-hke",
+        "region": "North Kivu / Masisi--Rutshuru",
+        "version": 4565,
+        "abbrev": "HKE",
+        "retrieved_at": "2026-08-26",
+        "starts": [
+            "MAT.1", "MRK.1", "LUK.1", "JHN.1", "ACT.1", "ROM.1",
+            "1CO.1", "2CO.1", "GAL.1", "EPH.1", "PHP.1", "COL.1",
+            "1TH.1", "2TH.1", "1TI.1", "2TI.1", "TIT.1", "PHM.1",
+            "HEB.1", "JAS.1", "1PE.1", "2PE.1", "1JN.1", "2JN.1",
+            "3JN.1", "JUD.1", "REV.1",
+        ],
+    },
 }
 
 
@@ -121,7 +138,9 @@ def prepare(name: str) -> None:
             target_soup = BeautifulSoup(target_html, "html.parser")
             chapter = target_soup.select_one("div[data-usfm]")
             if chapter is None:
-                raise RuntimeError(f"No chapter content found at {path}")
+                print(f'{config["language"]}: unavailable start {path}')
+                path = None
+                continue
             chapter_ref = chapter.get("data-usfm", "").strip()
             target_verses = verse_texts(target_soup)
             source_url = f"{BASE}/bible/{FRENCH_VERSION}/{chapter_ref}.{FRENCH_ABBREV}"
@@ -148,7 +167,7 @@ def prepare(name: str) -> None:
                         "region": config["region"],
                         "source": "Official YouVersion edition / French Louis Segond 1910",
                         "source_url": BASE + path,
-                        "retrieved_at": "2026-08-25",
+                        "retrieved_at": config.get("retrieved_at", "2026-08-25"),
                         "record_id": record_id,
                         "reference": reference,
                         "source_text": french,
