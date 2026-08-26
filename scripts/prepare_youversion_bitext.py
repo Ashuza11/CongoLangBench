@@ -56,6 +56,16 @@ CONFIGS = {
         "abbrev": "HBT",
         "starts": ["MRK.1", "LUK.1", "1PE.1"],
     },
+    "kete": {
+        "language": "Kete",
+        "iso": "kcv",
+        "variety": "Kete (Kikete)",
+        "resource": "kete-kcv",
+        "region": "Kasai / Kete-Kuba region",
+        "version": 4467,
+        "abbrev": "KBT",
+        "starts": ["MRK.1", "LUK.1"],
+    },
 }
 
 

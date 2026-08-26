@@ -17,11 +17,7 @@ Kikongo (`kon`) remain separate. The African Languages Lab data uses the broad
 target label `kikongo`, so it is relevant to the Western DRC Kongo language
 area but is not relabelled as a specific DRC subvariety.
 
-Pende (`pem`) remains the first Western acquisition-backlog language. Searches
-of OPUS, MaLA, African Languages Lab `multi-open`, GlotLID, ASJP, and the
-installed `africa-bitext-builder` registry found no openly downloadable
-Pende--French or Pende--English sentence corpus. Future searches must continue
-across humanitarian, education, health, localization, government, dictionary,
-subtitle, and community-publication data rather than being limited to Bible
-text.
-
+Pende (`pem`) is now tracked as a Western fallback source rather than a blank
+backlog entry. The repo contains an acquired open Door43 composite track built
+from Gipende Gungu and Gipende Ganga, but it remains outside the Western top
+five because the shortlist is capped at five languages.

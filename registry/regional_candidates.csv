@@ -45,13 +45,13 @@ Kasai,1,Tshiluba / Luba-Kasai,lua,major regional and national language,397971_op
 Kasai,2,Tetela,tll,Sankuru and Kasai transition language,222212_open_pairs,selected,retain complete DRC-labelled MT560 track
 Kasai,3,Songe / Kisonge,sop,major Kasai-Lomami transition language,51069_open_pairs,selected,retain complete DRC-labelled MT560 track
 Kasai,4,Ruund / Uruund,rnd,DRC Kasai-Lualaba language,133626_open_pairs,selected,retain complete DRC-labelled MT560 track
-Kasai,5,Kanyok / Kanyoka,kny,major DRC Kasai-Lomami language,complete_bible_catalogued_no_download,selected_acquisition,send prepared request for KNYFUL text and redistribution permission
+Kasai,5,Kanyok / Kanyoka,kny,major DRC Kasai-Lomami language,4788_restricted_local_pairs,selected_complete,retain reproducible local track while keeping source and derived text Git-ignored
 Western DRC,1,Kituba / Kikongo ya Leta,ktu,national lingua franca,2469_open_pairs,selected_reuse_national,reference the completed national Kituba track without duplicating it
 Western DRC,2,Yaka,yaf,large southwestern DRC and cross-border language,7104_open_drc_angola_pairs,selected,retain complete public-domain track with joint-country provenance
 Western DRC,3,Kikongo / Koongo,kon,major Western DRC language distinct from Kituba,315959_unique_open_subset_pairs,selected,retain all unique rows while preserving unspecified source-variety metadata
 Western DRC,4,Yansi / Yanzi,yns,regional Kwilu-Mai-Ndombe language,7951_open_drc_pairs,selected,retain complete public-domain French-Yansi track
 Western DRC,5,Yombe / Kiyombe,yom,major DRC Kongo variety,10408_open_drc_pairs,selected,retain complete CC BY-SA 4.0 French-Yombe track
-Western DRC,6,Pende / Phende,pem,large Kwango-Kwilu DRC language,no_open_sentence_bitext_found,acquisition_backlog,seek open non-religious French or English bitext; retain religious material only as a licensed fallback
+Western DRC,6,Pende / Phende,pem,large Kwango-Kwilu DRC language,2653_open_pairs,curated_backlog,retain the open Door43 composite track as a Western fallback source, but keep the shortlist capped at five languages
 Northwestern Congo Basin,1,Mongo / Lonkundo,lol,large DRC regional language,38815_unique_restricted_pairs,selected_restricted,use locally for evaluation; publish metadata and scripts pending redistribution permission
 Northwestern Congo Basin,2,Ngombe,ngc,substantial regional DRC community,12735_unique_open_multiedition_pairs,selected,retain all pairs from three public-domain DRC-labelled editions with edition provenance
 Northwestern Congo Basin,3,Northern Ngbandi,ngb,major Ubangi language used in northwestern DRC,7887_unique_restricted_pairs,selected_restricted,use locally for evaluation; do not reuse the national Lingala track

@@ -32,6 +32,10 @@ Find.Bible catalogues Pende editions, including the 1996 `PEMFUL` edition and a
 establish an open licence for extracting and redistributing a sentence dataset.
 No text from them is included here.
 
+Update 2026-08-25: an open Door43 composite track now exists for Pende, built
+from the Gipende Gungu and Gipende Ganga varieties and aligned to English ULT.
+That acquired track is the primary source for this language resource.
+
 ## Acquisition routes
 
 1. Request existing translation memories from DRC education, health,
@@ -54,4 +58,3 @@ must not be presented as the primary curated benchmark.
 - African Languages Lab multi-open: https://huggingface.co/datasets/African-Languages-Lab/multi-open
 - GlotLID corpus: https://huggingface.co/datasets/cis-lmu/glotlid-corpus
 - ASJP: https://asjp.clld.org/
-

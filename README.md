@@ -105,9 +105,10 @@ bitext was found.
 The Kasai/Central DRC top five are Tshiluba, Tetela, Songe, Ruund, and Kanyok.
 Tshiluba reuses the completed national track; Tetela now has 222,212 processed
 English pairs, Songe has 51,069, and Ruund has 133,626. Kanyok is DRC-specific
-and has a documented complete Bible pending text
-acquisition and reuse verification. The Angola-labelled Chokwe resource is no
-longer part of the active top five.
+and now has 4,788 unique French pairs from an official six-book source for
+local evaluation. Its source and derived text remain Git-ignored because they
+are not openly licensed for redistribution. The Angola-labelled Chokwe
+resource is no longer part of the active top five.
 
 - [Kasai top-five plan](registry/kasai_top5.md)
 

@@ -12,8 +12,9 @@ separates them from the later dedicated Kivu expansion.
 `katanga_top5.md` records the completed bitext-feasible Southeastern DRC set
 and explains why Sanga remains in the acquisition backlog.
 
-`kasai_top5.md` records the bitext-feasible Kasai/Central DRC set. The national
-Tshiluba resource is reused rather than duplicated as a regional dataset.
+`kasai_top5.md` records the completed bitext-feasible Kasai/Central DRC set.
+The national Tshiluba resource is reused rather than duplicated as a regional
+dataset.
 
 `maniema_top5.md` records the completed Maniema set, including the strict
 separation of Lega-Mwenga and Lega-Shabunda and the below-threshold backlog.
@@ -44,13 +45,17 @@ the acquisition backlog. Aushi now has 1,900 open cross-border
 pairs from Zambian editions and exceeds the project minimum.
 Lunda now has a complete open MT560 track with 134,568 normalized candidates,
 also labelled as cross-border rather than DRC-specific.
+Pende now has an acquired open Door43 composite track from Gipende Gungu and
+Gipende Ganga, but it remains outside the Western top five because the shortlist
+is capped at five languages.
 
-The Kasai/Central DRC track is now in progress. Its feasible top five are
-Tshiluba, Tetela, Songe, Chokwe, and Ruund. Tshiluba reuses the completed
+The Kasai/Central DRC track is complete. Its top five are
+Tshiluba, Tetela, Songe, Kanyok, and Ruund. Tshiluba reuses the completed
 national track. Tetela is the first newly curated regional resource, with
 222,212 normalized English--Tetela pairs from a DRC-labelled CC BY 4.0 source.
 Songe now has 51,069 normalized DRC-labelled English pairs. The active top five
-are restricted to DRC languages and varieties: Tshiluba, Tetela, Songe, Ruund,
-and Kanyok. Ruund now has 133,626 normalized DRC-labelled English pairs. Kanyok
-has a documented complete DRC Bible whose digital text and reuse terms must be obtained. The curated
-Angola-labelled Chokwe source is retained only in the regional backlog.
+are restricted to DRC languages and varieties: Tshiluba, Tetela, Songe, Kanyok,
+and Ruund. Ruund has 133,626 normalized DRC-labelled English pairs. Kanyok has
+4,788 unique French pairs extracted from an official DRC-language source for
+local evaluation; its text remains Git-ignored. The curated Angola-labelled
+Chokwe source is retained only in the regional backlog.

@@ -12,13 +12,13 @@ Lunda,lun,Lunda (Zambia source / DRC cross-border candidate),Katanga,Regional,So
 Tetela,tll,Tetela,Kasai / Sankuru,Regional,Central DRC,2,1500,222212,verified_source,retain complete MT560 track and freeze after all-language curation
 Songe,sop,Songe / Kisonge,Kasai / Lomami,Regional,Central DRC,3,1500,51069,verified_source,retain complete MT560 track and freeze after all-language curation
 Chokwe,cjk,Chokwe (Angola source / DRC cross-border candidate),Kasai,Regional backlog,Central DRC,6,1500,35765,open_cross_border_backlog,exclude from DRC top five and retain only as a documented comparison source
-Kanyok,kny,Kanyok / Kanyoka,Kasai / Lomami,Regional,Central DRC,5,1500,0,permission_and_text_required,send prepared KNYFUL access and redistribution request
+Kanyok,kny,Kanyok / Kanyoka,Kasai / Lomami,Regional,Central DRC,5,1500,4788,curated_restricted,retain the reproducible local evaluation track and keep raw and aligned text Git-ignored
 Ruund,rnd,Ruund / Uruund,Kasai / Lualaba,Regional,Central DRC,4,1500,133626,verified_source,retain complete DRC-labelled MT560 track and freeze after all-language curation
 Yaka,yaf,Yaka (DRC-Angola source),Western DRC,Regional,Western DRC,2,1500,7104,verified_source_cross_border,retain complete public-domain French track and preserve joint-country provenance
 Kikongo,kon,Kikongo / Koongo (exact source variety unspecified),Western DRC,Regional,Western DRC,3,1500,315959,verified_source_variety_unspecified,retain all unique multi-open pairs and preserve the variety limitation
 Yansi,yns,Yansi / Yanzi,Western DRC,Regional,Western DRC,4,1500,7951,verified_source,retain complete public-domain French track while finalizing Western top five
 Yombe,yom,Kiyombe (DRC),Western DRC,Regional,Western DRC,5,1500,10408,verified_source,retain complete CC BY-SA 4.0 French track while finalizing Western top five
-Pende,pem,Pende / Phende,Western DRC,Regional backlog,Western DRC,6,1500,0,open_source_acquisition_required,seek non-religious open French or English bitext through documented acquisition routes
+Pende,pem,Pende / Phende,Western DRC,Regional backlog,Western DRC,6,1500,2653,verified_source,retain the open Door43 composite track for later Western expansion
 Mongo,lol,Mongo / Nkundo (DRC editions),Northwestern DRC,Regional,Northwestern Congo Basin,1,1500,38815,verified_source_restricted,retain all locally curated pairs for evaluation while keeping text Git-ignored
 Ngombe,ngc,Ngombe (DRC source editions),Northwestern DRC,Regional,Northwestern Congo Basin,2,1500,12735,verified_source,retain all unique pairs from three public-domain editions with edition metadata
 Northern Ngbandi,ngb,Northern Ngbandi (DRC/CAR source),Northwestern DRC,Regional,Northwestern Congo Basin,3,1500,7887,verified_source_restricted,use locally for evaluation while keeping text Git-ignored

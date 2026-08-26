@@ -118,6 +118,17 @@ language_resources/bembe-bmb/data/raw/*
 language_resources/bembe-bmb/data/processed/*.csv
 language_resources/bembe-bmb/data/processed/*.jsonl
 language_resources/bembe-bmb/scripts/__pycache__/
+language_resources/pende-pem/data/raw/*
+language_resources/pende-pem/scripts/__pycache__/
+language_resources/kete-kcv/data/raw/*
+language_resources/kete-kcv/data/processed/*.csv
+language_resources/kete-kcv/data/processed/*.jsonl
+language_resources/kete-kcv/scripts/__pycache__/
+# Restricted official jw.org Kanyok text is local evaluation data only.
+language_resources/kanyok-kny/data/raw/*
+language_resources/kanyok-kny/data/processed/*.csv
+language_resources/kanyok-kny/data/processed/*.jsonl
+language_resources/kanyok-kny/scripts/__pycache__/
 # Restricted official YouVersion text used only for local evaluation.
 language_resources/zimba-zmb/data/raw/*
 language_resources/zimba-zmb/data/processed/*.csv
@@ -139,4 +150,6 @@ language_resources/kele-khy/data/processed/*.jsonl
 language_resources/kele-khy/scripts/__pycache__/
 language_resources/lengola-lej/scripts/__pycache__/
 language_resources/lombo-loo/scripts/__pycache__/
+language_resources/pende-pem/data/raw/*
+language_resources/pende-pem/scripts/__pycache__/
 scripts/__pycache__/
