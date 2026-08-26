@@ -47,9 +47,11 @@ def read_rows():
                 french = clean_text(row["fra"])
                 swc = clean_text(row["swc"])
                 swc_clean = clean_text(row["swc_clean"])
-                if not french or not swc:
+                if not french or not swc or not swc_clean:
                     continue
-                key = (french, swc)
+                # The evaluation target is swc_clean, so deduplicate on the
+                # final exported pair rather than the retained raw variant.
+                key = (french, swc_clean)
                 if key in seen:
                     continue
                 seen.add(key)
@@ -65,7 +67,7 @@ def read_rows():
                         "source": f"CLEAR Global Gamayun {kit}",
                         "source_url": SOURCE_URL,
                         "retrieved_at": RETRIEVED_AT,
-                        "record_id": record_id(french, swc),
+                        "record_id": record_id(french, swc_clean),
                         "reference": f"{kit}:{row_number}",
                         "source_text": french,
                         "target_language": "Congo Swahili",

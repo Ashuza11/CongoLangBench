@@ -223,9 +223,9 @@ The current repository may be migrated toward this layout incrementally. Existin
 
 ## 10. Immediate next actions
 
-1. Consolidate the completed national and regional curation records.
-2. Consolidate the ten ready Eastern/Kivu language tracks without duplicating reused data.
-3. Continue acquiring data for additional high-priority Kivu languages.
-4. Freeze leakage-safe evaluation sets only after the remaining language data is curated.
-5. Run the common model evaluation protocol language by language.
-6. Save comparable results and prepare the final analysis for publication.
+1. Preserve the completed 47-track curation audit and 70,500-pair benchmark freeze.
+2. Select the first cutting-edge model comparison set and record exact versions and costs.
+3. Run small labelled smoke tests before full 1,500-pair evaluations.
+4. Run the common protocol in both translation directions where feasible.
+5. Save comparable results, failures, and limitations language by language.
+6. Continue adding newly discovered languages through the documented backlog.

@@ -4,6 +4,10 @@
 
 `regional_candidates.csv` is the provisional top-five-per-region shortlist. Its `bitext_status` must be changed from `source_to_verify` only after a usable, permissioned or openly licensed bitext source has been confirmed.
 
+`curation_readiness.csv` is the generated structural audit of every active
+above-target track. `benchmark_freeze.csv` records the deterministic 1,500-pair
+evaluation freeze and checksums without publishing restricted text.
+
 `national_sources.csv` and `national_sources.md` track the Phase 1A source verification plan for the four national languages.
 
 `eastern_top5.md` records the selected Eastern DRC top-five bitext tracks and

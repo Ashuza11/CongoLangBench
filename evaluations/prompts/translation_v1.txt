@@ -1,0 +1,6 @@
+Translate the following text from {source_language} to {target_language}.
+
+Return only the translation. Do not add explanations, notes, quotation marks, or labels.
+
+Text:
+{input_text}

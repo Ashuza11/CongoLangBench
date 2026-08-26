@@ -1,0 +1,69 @@
+{
+  "matrix_version": "v1",
+  "selected_at": "2026-08-26",
+  "status": "proposed_not_run",
+  "models": [
+    {
+      "provider": "OpenAI",
+      "model_id": "gpt-5.6-sol",
+      "track": "hosted_frontier",
+      "request_settings": {
+        "reasoning_effort": "none",
+        "temperature": 0,
+        "max_output_tokens": 512
+      },
+      "pricing_usd_per_million_tokens": {
+        "input": 4.0,
+        "output": 20.0,
+        "as_of": "2026-08-26"
+      },
+      "run_status": "blocked_pending_credentials_and_budget"
+    },
+    {
+      "provider": "Google",
+      "model_id": "gemini-3.7-flash",
+      "track": "hosted_cost_efficient",
+      "request_settings": {
+        "thinking_level": "low",
+        "max_output_tokens": 512,
+        "sampling_parameters": "omit_provider_rejects_custom_temperature_top_p_top_k"
+      },
+      "pricing_usd_per_million_tokens": {
+        "input": 0.75,
+        "output": 3.75,
+        "as_of": "2026-08-26",
+        "note": "promotional standard-tier pricing through 2026-12-31"
+      },
+      "run_status": "blocked_pending_credentials_and_budget"
+    },
+    {
+      "provider": "Anthropic",
+      "model_id": "claude-sonnet-5",
+      "track": "hosted_frontier_balanced",
+      "request_settings": {
+        "thinking": {
+          "type": "disabled"
+        },
+        "max_tokens": 512,
+        "sampling_parameters": "omit_provider_rejects_non_default_temperature_top_p_top_k"
+      },
+      "pricing_usd_per_million_tokens": {
+        "input": 2.0,
+        "output": 10.0,
+        "as_of": "2026-08-26"
+      },
+      "run_status": "blocked_pending_credentials_and_budget"
+    },
+    {
+      "provider": "Google",
+      "model_id": "google/gemma-4-12B",
+      "track": "open_weight_local_baseline",
+      "request_settings": {
+        "do_sample": false,
+        "max_new_tokens": 512
+      },
+      "pricing_usd_per_million_tokens": null,
+      "run_status": "blocked_pending_gpu_capacity"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "run_id": "provider-model-date-language-direction",
+  "provider": "provider name",
+  "model": "exact model identifier",
+  "model_version": "version or snapshot when available",
+  "accessed_at": "YYYY-MM-DD",
+  "prompt_version": "translation_v1",
+  "temperature": 0,
+  "max_output_tokens": 512,
+  "notes": "Record provider-specific deterministic settings and limitations."
+}

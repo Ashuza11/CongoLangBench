@@ -2,7 +2,7 @@ language,iso_code,variety,scope_region,track,region_group,priority,target_pairs,
 Lingala,lin,DRC Lingala,National,National,DRC-wide,1,4999,4999,verified_source,complete source curation and freeze national dataset
 Kikongo ya Leta,ktu,DRC Kituba,National,National,DRC-wide,2,2469,2469,verified_source,complete source curation and freeze national dataset
 Ciluba,lua,Tshiluba / Luba-Kasai,National,National,DRC-wide,3,1500,397971,verified_source,freeze normalized multi-open candidates before evaluation
-Congo Swahili,swc,DRC Congo Swahili,National,National,DRC-wide,4,25214,25214,verified_source,freeze benchmark split and evaluate
+Congo Swahili,swc,DRC Congo Swahili,National,National,DRC-wide,4,25213,25213,verified_source,freeze benchmark split and evaluate
 Luba-Katanga,lub,Kiluba,Katanga,Regional,Southeastern DRC,1,1500,197411,verified_source,retain complete MT560 track and freeze after all-language curation
 Tabwa,tap,Tabwa / Kitabwa,Katanga,Regional,Southeastern DRC,2,1500,5039,verified_source,retain complete CC BY-SA 4.0 track and freeze after all-language curation
 Bemba,bem,Bemba (Zambia source / DRC cross-border candidate),Katanga,Regional,Southeastern DRC,3,1500,381259,verified_source_cross_border,retain complete MT560 track and seek DRC-specific comparison data

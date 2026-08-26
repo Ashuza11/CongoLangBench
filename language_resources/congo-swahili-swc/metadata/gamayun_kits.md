@@ -33,6 +33,12 @@ The source is accepted as an authentic, professionally/volunteer-translated data
 
 ## Processed candidate export
 
-`data/processed/congo-swahili-french_candidates.jsonl` and `.csv` contain **25,214** unique candidates after Unicode/whitespace normalization and cross-kit exact-pair deduplication. The processed rows use the repository-wide metadata schema and are marked `verified_source`. The `swc_clean` field is used as the evaluation target while the original `swc` value is retained as `target_text_raw`.
+`data/processed/congo-swahili-french_candidates.jsonl` and `.csv` contain
+**25,213** unique evaluation pairs after Unicode/whitespace normalization and
+cross-kit deduplication. Deduplication uses French plus the exported `swc_clean`
+target; the original `swc` value is retained as `target_text_raw`. This removes
+one additional collision where two raw rows normalize to the same final pair.
+The processed rows use the repository-wide metadata schema and are marked
+`verified_source`.
 
 The preparation script is [scripts/prepare_gamayun.py](../scripts/prepare_gamayun.py). Run it from the repository root with `venv/bin/python` to regenerate the processed files.

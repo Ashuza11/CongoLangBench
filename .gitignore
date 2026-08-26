@@ -172,3 +172,8 @@ language_resources/hunde-hke/data/raw/*
 language_resources/hunde-hke/data/processed/*.csv
 language_resources/hunde-hke/data/processed/*.jsonl
 language_resources/hunde-hke/scripts/__pycache__/
+# Frozen benchmark text stays local; manifests and checksums are tracked.
+language_resources/*/data/benchmark/*
+# Local evaluation jobs and raw run artifacts may contain restricted text.
+evaluations/jobs/*
+evaluations/runs/*

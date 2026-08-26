@@ -67,10 +67,10 @@ The first national-language acquisition is the CLEAR Global Gamayun Congo Swahil
 - 10,305-row kit
 - 25,305 raw French–`swc` pairs in total
 - 25,217 unique exact pairs after initial duplicate inspection
-- 25,214 normalized, cross-kit deduplicated verified rows
+- 25,213 normalized, cross-kit deduplicated verified rows
 - CC BY 4.0, with CLEAR Global attribution required
 
-These rows are accepted as supplied from an authentic source and validated by a Congo Swahili speaker. Leakage-safe splitting and evaluation still remain.
+These rows are accepted as supplied from an authentic source and validated by a Congo Swahili speaker. The corrected 25,213-pair source has now passed the common curation audit and contributed a frozen 1,500-pair evaluation set.
 
 - [Raw Congo Swahili bitext](language_resources/congo-swahili-swc/data/raw/)
 - [Processed Congo Swahili candidates](language_resources/congo-swahili-swc/data/processed/)
@@ -87,7 +87,7 @@ The four national tracks are:
 | Lingala | `lin` | 1,500 curated pairs | Verified source; 4,999 processed |
 | Kikongo ya Leta / DRC Kituba | `ktu` | 1,500 curated pairs | Verified source; 2,469 processed |
 | Ciluba / Tshiluba | `lua` | 1,500 curated pairs | Verified source; 397,971 processed |
-| Congo Swahili | `swc` | 1,500 curated pairs | Verified source; 25,214 processed |
+| Congo Swahili | `swc` | 1,500 curated pairs | Verified source; 25,213 processed |
 
 See the [national source table](registry/national_sources.csv) and [national source plan](registry/national_sources.md).
 
@@ -215,7 +215,20 @@ The notebooks can be run locally or in Google Colab. Raw source files must remai
 
 ## Evaluation
 
-[llm_bitext_evaluation.ipynb](notebooks/llm_bitext_evaluation.ipynb) provides the initial model-evaluation workflow. After the curation milestone, each completed language track should save its model version, prompts, predictions, references, BLEU/chrF++ scores, and error analysis.
+The all-language curation milestone is complete: 47 tracks passed the structural
+audit across 2,233,244 processed pairs. Benchmark `v1` freezes 1,500 pairs per
+track, giving 70,500 evaluation examples. Benchmark text stays local while
+publication-safe counts and checksums are tracked.
+
+- [Curation audit](docs/CURATION_STATUS.md)
+- [Benchmark freeze](docs/BENCHMARK_FREEZE.md)
+- [Evaluation model selection](docs/MODEL_SELECTION.md)
+- [Evaluation volume](docs/EVALUATION_VOLUME.md)
+- [Evaluation workflow](evaluations/README.md)
+- [Initial evaluation notebook](notebooks/llm_bitext_evaluation.ipynb)
+
+Each model run must save its exact model version, prompt version, predictions,
+references, BLEU/chrF++ scores, failures, and limitations.
 
 ## Tooling
 
