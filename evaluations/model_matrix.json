@@ -56,7 +56,7 @@
     },
     {
       "provider": "Google",
-      "model_id": "google/gemma-4-12B",
+      "model_id": "google/gemma-4-12B-it",
       "track": "open_weight_local_baseline",
       "request_settings": {
         "do_sample": false,

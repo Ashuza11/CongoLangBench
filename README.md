@@ -226,6 +226,7 @@ publication-safe counts and checksums are tracked.
 - [Evaluation volume](docs/EVALUATION_VOLUME.md)
 - [Evaluation workflow](evaluations/README.md)
 - [Initial evaluation notebook](notebooks/llm_bitext_evaluation.ipynb)
+- [Gemma 4 all-language smoke-test Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/notebooks/gemma4_all_languages_smoke_test.ipynb)
 
 Each model run must save its exact model version, prompt version, predictions,
 references, BLEU/chrF++ scores, failures, and limitations.

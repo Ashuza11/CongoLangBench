@@ -16,7 +16,7 @@ models.
 | Hosted frontier | `gpt-5.6-sol` | OpenAI's current flagship Sol variant, avoiding the routing alias `gpt-5.6` |
 | Hosted cost-efficient | `gemini-3.7-flash` | A stable Google production model suitable for a large matrix |
 | Hosted frontier balanced | `claude-sonnet-5` | A pinned Anthropic release with strong multilingual capability |
-| Open-weight local | `google/gemma-4-12B` | A reproducible baseline that can run outside a hosted API |
+| Open-weight local | `google/gemma-4-12B-it` | The instruction-tuned reproducible baseline used by the all-language Colab |
 
 The machine-readable settings are in
 `evaluations/model_matrix.json`. The matrix intentionally does not use
@@ -61,5 +61,5 @@ No paid API request is authorized merely by selecting this matrix.
 - Anthropic model identifiers and model overview:
   <https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions>
   and <https://platform.claude.com/docs/en/about-claude/models/overview>
-- Gemma 4 model card:
-  <https://huggingface.co/google/gemma-4-12B>
+- Gemma 4 instruction-tuned model card:
+  <https://huggingface.co/google/gemma-4-12B-it>

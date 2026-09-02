@@ -177,3 +177,5 @@ language_resources/*/data/benchmark/*
 # Local evaluation jobs and raw run artifacts may contain restricted text.
 evaluations/jobs/*
 evaluations/runs/*
+# Private Colab bundles contain restricted benchmark text.
+private_data/
