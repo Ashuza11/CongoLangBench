@@ -1,0 +1,95 @@
+language,iso_code,direction,examples,empty_predictions,bleu_smoke,chrf_plus_plus_smoke
+Alur,alz,congolese_to_reference,3,0,6.314549828828807,17.573258050779195
+Alur,alz,reference_to_congolese,3,0,1.606498530108638,7.906961096509743
+Amba,rwm,congolese_to_reference,3,0,2.4761230261561766,21.462445757817854
+Amba,rwm,reference_to_congolese,3,0,0.7103659098395031,8.615381340243665
+Aushi,auh,congolese_to_reference,3,0,3.438425373290319,29.35483822502621
+Aushi,auh,reference_to_congolese,3,0,0.6363493788267035,11.812936832913348
+Bemba,bem,congolese_to_reference,3,0,8.131683967888232,21.581341138073046
+Bemba,bem,reference_to_congolese,3,0,1.139852685801994,13.22157260123126
+Bembe / Kibembe,bmb,congolese_to_reference,3,0,4.100365733426618,24.490196719070074
+Bembe / Kibembe,bmb,reference_to_congolese,3,0,1.7076118004566125,11.73353157085498
+Budu,buu,congolese_to_reference,3,0,1.2463781455186127,22.394070365302746
+Budu,buu,reference_to_congolese,3,0,0.4770138313186983,6.202204253582421
+Ciluba,lua,congolese_to_reference,3,0,4.749262933870049,22.532607983128987
+Ciluba,lua,reference_to_congolese,3,0,0.4083163856336698,5.503981448550357
+Congo Swahili,swc,congolese_to_reference,3,0,28.253893006668058,58.950999323146334
+Congo Swahili,swc,reference_to_congolese,3,0,5.519250717125111,37.506331137106066
+Fuliiru,flr,congolese_to_reference,3,0,2.2302241034924553,23.006835698584446
+Fuliiru,flr,reference_to_congolese,3,0,2.065309962175712,14.092048635222513
+Havu,hav,congolese_to_reference,3,0,3.226295857152442,23.932602792511794
+Havu,hav,reference_to_congolese,3,0,1.70491157548809,11.397011709586828
+Holoholo,hoo,congolese_to_reference,3,0,1.8924405378202485,21.021454933144764
+Holoholo,hoo,reference_to_congolese,3,0,0.6255055735427928,6.370280887469909
+Hunde,hke,congolese_to_reference,3,0,2.057522359778863,15.672443826251994
+Hunde,hke,reference_to_congolese,3,0,0.35060146567750705,2.018022819034583
+Kakwa,keo,congolese_to_reference,3,0,0.8118913954503997,13.829211685346948
+Kakwa,keo,reference_to_congolese,3,0,0.15602255120824265,3.9507018475610374
+Kanyok,kny,congolese_to_reference,3,0,3.2200010744489265,23.82179048374449
+Kanyok,kny,reference_to_congolese,3,0,0.27988237480444467,4.6186209034236825
+Kele / Lokele,khy,congolese_to_reference,3,0,1.8076618385688845,17.082104060965158
+Kele / Lokele,khy,reference_to_congolese,3,0,0.16182840129059212,3.2391725530258855
+Kikongo,kon,congolese_to_reference,3,0,2.186180522892529,15.86454013791539
+Kikongo,kon,reference_to_congolese,3,0,0.2945549750809914,4.994043991375071
+Kikongo ya Leta,ktu,congolese_to_reference,3,0,13.157891531906591,33.9690587562242
+Kikongo ya Leta,ktu,reference_to_congolese,3,0,0.4056335368280971,11.693379825751897
+Komo,kmw,congolese_to_reference,3,0,1.1535106589702873,14.533621607268858
+Komo,kmw,reference_to_congolese,3,0,0.20775306647725403,4.295781083652788
+Lega-Mwenga,lgm,congolese_to_reference,3,0,2.007240230493242,25.750097207194578
+Lega-Mwenga,lgm,reference_to_congolese,3,0,0.8226434822254513,11.757734993297126
+Lega-Shabunda,lea,congolese_to_reference,3,0,1.4723955179099166,15.164774038294329
+Lega-Shabunda,lea,reference_to_congolese,3,0,1.3784633875372614,14.238417471364832
+Lengola,lej,congolese_to_reference,3,0,2.637311269246862,18.66149503866506
+Lengola,lej,reference_to_congolese,3,0,0.7857712280817446,11.204982182910255
+Lingala,lin,congolese_to_reference,3,0,2.145212622895644,20.016790474738684
+Lingala,lin,reference_to_congolese,3,0,4.919359373505756,34.03667379278225
+Lobala,loq,congolese_to_reference,3,0,2.6385544679280595,21.51384623501076
+Lobala,loq,reference_to_congolese,3,0,0.14025866246594274,2.8250283732223953
+Logo,log,congolese_to_reference,3,0,1.2855927255762836,21.762416170776063
+Logo,log,reference_to_congolese,3,0,0.29710757098908647,5.86251206161701
+Lombo / Turumbu,loo,congolese_to_reference,3,0,1.155802230800013,13.898769723484412
+Lombo / Turumbu,loo,reference_to_congolese,3,0,1.1651220160223648,10.39590612265553
+Luba-Katanga,lub,congolese_to_reference,3,0,13.396291801069001,28.525716184424926
+Luba-Katanga,lub,reference_to_congolese,3,0,7.643920744168409,19.867803376156612
+Lunda,lun,congolese_to_reference,3,0,1.895280322479207,17.68318482199242
+Lunda,lun,reference_to_congolese,3,0,0.13217988333450434,4.086455272038563
+Mashi,shr,congolese_to_reference,3,0,1.6142006523453247,24.26664582685359
+Mashi,shr,reference_to_congolese,3,0,2.039146081714982,19.137842992994706
+Mayogo,mdm,congolese_to_reference,3,0,1.7243945943080496,20.200172966990053
+Mayogo,mdm,reference_to_congolese,3,0,0.6686116254598752,10.73469071878519
+Mongo,lol,congolese_to_reference,3,0,1.7873019478407963,27.034252426492415
+Mongo,lol,reference_to_congolese,3,0,0.5573424803384227,1.8204889541587697
+Nande,nnb,congolese_to_reference,3,0,2.464219410218603,9.335884814642077
+Nande,nnb,reference_to_congolese,3,0,0.0,2.0373433906296423
+Ndo,ndp,congolese_to_reference,3,0,1.5001304983781067,17.35034044297839
+Ndo,ndp,reference_to_congolese,3,0,0.2550811071598499,7.535077187798765
+Ngbaka,nga,congolese_to_reference,3,0,5.943450759992407,35.15405687052346
+Ngbaka,nga,reference_to_congolese,3,0,1.2141609129475612,17.19300951860879
+Ngiti,niy,congolese_to_reference,3,0,1.7288265526282767,18.310992916246775
+Ngiti,niy,reference_to_congolese,3,0,0.24820101516894655,1.8053670438946394
+Ngombe,ngc,congolese_to_reference,3,0,1.505625010389859,16.48529090870634
+Ngombe,ngc,reference_to_congolese,3,0,0.3240887860735312,8.818617198009235
+Northern Ngbandi,ngb,congolese_to_reference,3,0,0.8408857411544339,10.554012059345467
+Northern Ngbandi,ngb,reference_to_congolese,3,0,0.12092296257170604,2.2361342464338843
+Nyanga,nyj,congolese_to_reference,3,0,1.134241889064715,19.303398400980136
+Nyanga,nyj,reference_to_congolese,3,0,0.7734113811581377,9.52996014366984
+Ruund,rnd,congolese_to_reference,3,0,1.5454114166334012,20.00416813009499
+Ruund,rnd,reference_to_congolese,3,0,1.023587255013559,1.2361088828116469
+Songe,sop,congolese_to_reference,3,0,5.542285565200442,24.07982153670148
+Songe,sop,reference_to_congolese,3,0,5.970777690818024,12.218892358851633
+Tabwa,tap,congolese_to_reference,3,0,1.6991395458844225,14.494998429396977
+Tabwa,tap,reference_to_congolese,3,0,0.0,2.759454739630912
+Tembo,tbt,congolese_to_reference,3,0,4.165407042319314,24.477840375678614
+Tembo,tbt,reference_to_congolese,3,0,0.3849474083661841,7.624046288458515
+Tetela,tll,congolese_to_reference,3,0,11.76944116672206,20.196351772324192
+Tetela,tll,reference_to_congolese,3,0,0.10507309236620269,2.278371624186601
+Yaka,yaf,congolese_to_reference,3,0,6.197994428874992,24.51134063169772
+Yaka,yaf,reference_to_congolese,3,0,0.15038359167186766,4.023262389391015
+Yansi,yns,congolese_to_reference,3,0,2.011747465745572,20.197517891393264
+Yansi,yns,reference_to_congolese,3,0,0.6771200304810537,8.124390229445234
+Yombe,yom,congolese_to_reference,3,0,2.2256328182793186,21.505994475522268
+Yombe,yom,reference_to_congolese,3,0,0.1269583609017764,3.6648966954475717
+Zande,zne,congolese_to_reference,3,0,1.6230012111575458,18.64153907961089
+Zande,zne,reference_to_congolese,3,0,0.4087708834203408,9.189725898496393
+Zimba,zmb,congolese_to_reference,3,0,2.3452180507325497,19.00379464891356
+Zimba,zmb,reference_to_congolese,3,0,0.23153938776102234,7.60823526587942

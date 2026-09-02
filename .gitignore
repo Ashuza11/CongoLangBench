@@ -4,6 +4,8 @@ venv/
 *.log
 outputs/
 results/
+!docs/results/
+!docs/results/**
 # Large generated curation exports; regenerate from the tracked Parquet.
 language_resources/ciluba-lua/data/processed/*.jsonl
 language_resources/ciluba-lua/data/processed/*.csv
@@ -179,3 +181,6 @@ evaluations/jobs/*
 evaluations/runs/*
 # Private Colab bundles contain restricted benchmark text.
 private_data/
+# Downloaded private model-run archives and Windows metadata streams.
+*_results.zip
+*:Zone.Identifier
