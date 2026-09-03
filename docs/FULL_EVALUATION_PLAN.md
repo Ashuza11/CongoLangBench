@@ -78,6 +78,10 @@ re-uploads the benchmark, reloads the model, and skips every completed record.
 If the Colab allocation ends before 141,000 predictions, resume later; do not
 replace completed outputs.
 
+Gemma 4 uses the `AutoModelForMultimodalLM` loader and therefore runs with
+Transformers 5.x in this notebook. The separate Kaggle workflow retains its
+Transformers 4.x environment for the translation-model implementations.
+
 ### Kaggle — four models, one at a time
 
 Open `notebooks/kaggle_local_models_full_evaluation.ipynb` and select one
