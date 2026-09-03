@@ -1,69 +1,59 @@
 {
-  "matrix_version": "v1",
-  "selected_at": "2026-08-26",
-  "status": "proposed_not_run",
+  "matrix_version": "v2-local-five",
+  "selected_at": "2026-09-03",
+  "benchmark_version": "v1",
+  "prompt_version": "translation_v1",
+  "status": "production_ready",
   "models": [
     {
-      "provider": "OpenAI",
-      "model_id": "gpt-5.6-sol",
-      "track": "hosted_frontier",
-      "request_settings": {
-        "reasoning_effort": "none",
-        "temperature": 0,
-        "max_output_tokens": 512
-      },
-      "pricing_usd_per_million_tokens": {
-        "input": 4.0,
-        "output": 20.0,
-        "as_of": "2026-08-26"
-      },
-      "run_status": "blocked_pending_credentials_and_budget"
-    },
-    {
-      "provider": "Google",
-      "model_id": "gemini-3.7-flash",
-      "track": "hosted_cost_efficient",
-      "request_settings": {
-        "thinking_level": "low",
-        "max_output_tokens": 512,
-        "sampling_parameters": "omit_provider_rejects_custom_temperature_top_p_top_k"
-      },
-      "pricing_usd_per_million_tokens": {
-        "input": 0.75,
-        "output": 3.75,
-        "as_of": "2026-08-26",
-        "note": "promotional standard-tier pricing through 2026-12-31"
-      },
-      "run_status": "blocked_pending_credentials_and_budget"
-    },
-    {
-      "provider": "Anthropic",
-      "model_id": "claude-sonnet-5",
-      "track": "hosted_frontier_balanced",
-      "request_settings": {
-        "thinking": {
-          "type": "disabled"
-        },
-        "max_tokens": 512,
-        "sampling_parameters": "omit_provider_rejects_non_default_temperature_top_p_top_k"
-      },
-      "pricing_usd_per_million_tokens": {
-        "input": 2.0,
-        "output": 10.0,
-        "as_of": "2026-08-26"
-      },
-      "run_status": "blocked_pending_credentials_and_budget"
-    },
-    {
-      "provider": "Google",
       "model_id": "google/gemma-4-12B-it",
-      "track": "open_weight_local_baseline",
-      "request_settings": {
-        "do_sample": false,
-        "max_new_tokens": 512
-      },
-      "pricing_usd_per_million_tokens": null,
-      "run_status": "blocked_pending_gpu_capacity"
+      "family": "instruction_causal",
+      "execution": "colab_then_modal_or_kaggle_resume",
+      "scope": "all_47_tracks",
+      "precision": "bitsandbytes_nf4_4bit",
+      "licence": "Apache-2.0",
+      "run_status": "smoke_complete_full_pending"
+    },
+    {
+      "model_id": "swiss-ai/Apertus-8B-Instruct-2509",
+      "family": "instruction_causal",
+      "execution": "kaggle",
+      "scope": "all_47_tracks",
+      "precision": "bitsandbytes_nf4_4bit",
+      "licence": "Apache-2.0",
+      "run_status": "full_pending"
+    },
+    {
+      "model_id": "google/madlad400-10b-mt",
+      "family": "translation_seq2seq",
+      "execution": "kaggle",
+      "scope": "exact_tokenizer_language_tags",
+      "precision": "bitsandbytes_nf4_4bit",
+      "licence": "Apache-2.0",
+      "run_status": "full_pending"
+    },
+    {
+      "model_id": "facebook/nllb-200-3.3B",
+      "family": "translation_seq2seq",
+      "execution": "kaggle",
+      "scope": "exact_flores_200_language_tags",
+      "precision": "fp16",
+      "licence": "CC-BY-NC-4.0",
+      "run_status": "full_pending"
+    },
+    {
+      "model_id": "bigscience/bloomz-7b1-mt",
+      "family": "instruction_causal",
+      "execution": "kaggle",
+      "scope": "all_47_tracks_zero_shot",
+      "precision": "bitsandbytes_nf4_4bit",
+      "licence": "BigScience-BLOOM-RAIL-1.0",
+      "run_status": "full_pending"
     }
-  ]
+  ],
+  "shared_decoding": {
+    "do_sample": false,
+    "initial_max_new_tokens": 512,
+    "retry_only_if_truncated_max_new_tokens": 768
+  }
 }

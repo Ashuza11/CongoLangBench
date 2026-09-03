@@ -1,65 +1,68 @@
 # Evaluation model selection
 
-Status: **proposed, not yet run**
+Status: **five-model local matrix selected; full runs pending**
 
-Matrix version: `v1`
+Matrix version: `v2-local-five`
 
-Selection date: 2026-08-26
+Selection date: 2026-09-03
 
-The first benchmark comparison uses three hosted model families and one
-open-weight baseline. This gives a useful capability/cost/reproducibility
-comparison without treating a single provider as representative of all modern
-models.
+The benchmark uses five downloadable models so the full evaluation can run on
+controlled Colab and Kaggle GPU sessions without hosted inference APIs.
 
-| Track | Exact model identifier | Purpose |
+| Model | Role | Evaluation scope |
 |---|---|---|
-| Hosted frontier | `gpt-5.6-sol` | OpenAI's current flagship Sol variant, avoiding the routing alias `gpt-5.6` |
-| Hosted cost-efficient | `gemini-3.7-flash` | A stable Google production model suitable for a large matrix |
-| Hosted frontier balanced | `claude-sonnet-5` | A pinned Anthropic release with strong multilingual capability |
-| Open-weight local | `google/gemma-4-12B-it` | The instruction-tuned reproducible baseline used by the all-language Colab |
+| `google/gemma-4-12B-it` | Current instruction-model baseline | All 47 tracks |
+| `swiss-ai/Apertus-8B-Instruct-2509` | Massively multilingual open model | All 47 tracks |
+| `google/madlad400-10b-mt` | Translation specialist | Exact tokenizer tags |
+| `facebook/nllb-200-3.3B` | Established low-resource MT baseline | Exact NLLB tags |
+| `bigscience/bloomz-7b1-mt` | Older multilingual instruction baseline | All 47 tracks zero-shot |
 
-The machine-readable settings are in
-`evaluations/model_matrix.json`. The matrix intentionally does not use
-`latest` aliases. Model access, exact API response metadata, token usage, and
-run date must still be captured when inference is executed.
+The exact machine-readable settings are in `evaluations/model_matrix.json`.
+The model revision resolved during download must be saved in every run.
+
+## Selection rationale
+
+- Gemma preserves continuity with the completed 47-language smoke test.
+- Apertus tests whether unusually broad multilingual pretraining improves DRC
+  language coverage.
+- MADLAD and NLLB provide translation-specific comparisons rather than only
+  general instruction models.
+- BLOOMZ supplies a historically useful multilingual instruction baseline and
+  explicitly includes Lingala and Swahili among its declared languages.
+- The licences differ and must be reported: NLLB is non-commercial and BLOOMZ
+  uses the BLOOM RAIL licence; the remaining selected models declare Apache 2.0.
 
 ## Fair-comparison configuration
 
-- Use prompt `translation_v1` for every model and language.
-- Run both directions for all 47 tracks: reference-to-Congolese and
-  Congolese-to-reference.
-- Use all 1,500 frozen examples for final results.
-- Disable sampling or thinking where the provider supports that control.
-- Do not force a universal `temperature=0`: current Claude Sonnet 5 and Gemini
-  APIs reject custom sampling fields. Omit those fields and record the
-  provider-specific behavior.
-- Limit output to 512 tokens and retain only the translation text for scoring.
-- Save retries, refusals, empty outputs, token counts, latency, and provider
-  request IDs. Never replace a failed request with a different model.
+- Use benchmark `v1` and both directions.
+- Use all 1,500 frozen examples for every included language.
+- Disable sampling.
+- Use `translation_v1` semantically for causal instruction models.
+- Use native target/source tags rather than natural-language prompts for
+  translation-specific models.
+- Generate at most 512 tokens initially; retry only length-capped outputs once
+  with a 768-token ceiling.
+- Report unsupported MT language tags as coverage results.
+- Never substitute a related standard or regional language tag silently.
+- Record model revision, precision, hardware, input/output tokens, elapsed time,
+  empty output, and truncation status.
 
 ## Execution order
 
-1. Run a 10-example smoke test on Lingala (`lin`), Congo Swahili (`swc`), and
-   Hunde (`hke`) in both directions.
-2. Check output-only compliance, encoding, retries, and scoring coverage.
-3. Estimate hosted cost from actual smoke-test token usage.
-4. Obtain explicit approval for credentials and budget.
-5. Run the full 47-language matrix, one model at a time.
-6. Score BLEU and chrF++, then add structured error analysis and speaker review
-   before making quality claims.
+1. Complete Gemma on Colab using resumable private Drive checkpoints.
+2. Complete NLLB on its exact supported subset on Kaggle.
+3. Complete BLOOMZ over all 47 tracks on Kaggle.
+4. Complete MADLAD over its exact supported subset on Kaggle.
+5. Complete Apertus over all 47 tracks on Kaggle.
+6. Validate and score locally, then publish only aggregate and licence-cleared
+   artifacts.
 
-No paid API request is authorized merely by selecting this matrix.
+See `docs/FULL_EVALUATION_PLAN.md` for operational details.
 
 ## Primary references
 
-- OpenAI current model comparison and GPT-5.6 guidance:
-  <https://developers.openai.com/api/docs/models/compare> and
-  <https://developers.openai.com/api/docs/guides/latest-model>
-- Google Gemini model and pricing documentation:
-  <https://ai.google.dev/gemini-api/docs/models> and
-  <https://ai.google.dev/gemini-api/docs/pricing>
-- Anthropic model identifiers and model overview:
-  <https://platform.claude.com/docs/en/about-claude/models/model-ids-and-versions>
-  and <https://platform.claude.com/docs/en/about-claude/models/overview>
-- Gemma 4 instruction-tuned model card:
-  <https://huggingface.co/google/gemma-4-12B-it>
+- <https://huggingface.co/google/gemma-4-12B-it>
+- <https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509>
+- <https://huggingface.co/google/madlad400-10b-mt>
+- <https://huggingface.co/facebook/nllb-200-3.3B>
+- <https://huggingface.co/bigscience/bloomz-7b1-mt>

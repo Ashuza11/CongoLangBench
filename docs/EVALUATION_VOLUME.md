@@ -1,15 +1,19 @@
 # Evaluation volume
 
 Generated from the frozen `v1` benchmark and prompt `translation_v1`.
-These are exact record/character/whitespace-token counts, not provider
-billing-token estimates. Provider tokenizers must be measured during the
-smoke test before approving a full-run budget.
+These are exact record/character/whitespace-token counts, not model-tokenizer
+counts. Input and generated token counts are captured during production.
 
 - Language tracks: **47**
 - Directions per track: **2**
 - Requests per model: **141,000**
 - Prompt characters per model: **36,897,141**
 - Prompt whitespace tokens per model: **5,906,338**
+- Five-model theoretical maximum: **705,000 requests**
+
+The theoretical maximum assumes every model supports every track. Gemma,
+Apertus, and BLOOMZ run 141,000 requests each; MADLAD and NLLB run smaller
+matrices determined by exact model language-code coverage.
 
 ## Frozen pairs by reference language
 

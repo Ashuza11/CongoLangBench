@@ -24,6 +24,18 @@ prompt. Jobs are Git-ignored because some tracks contain restricted text.
 
 ## 2. Run a model
 
+The production notebooks are:
+
+- `notebooks/gemma4_all_languages_full_evaluation.ipynb` for the resumable
+  141,000-request Gemma run on Colab;
+- `notebooks/kaggle_local_models_full_evaluation.ipynb` for NLLB, BLOOMZ,
+  MADLAD, and Apertus, one model at a time on Kaggle.
+
+Both workflows validate the private benchmark ZIP against the tracked freeze
+manifest. They checkpoint by `(iso_code, direction, record_id)` and refuse to
+mix model or benchmark versions. NLLB and MADLAD additionally write an exact
+language-tag coverage manifest.
+
 Use the proposed, exact identifiers and provider-specific controls in
 `evaluations/model_matrix.json`. Send each job's `prompt` to the selected model
 with deterministic decoding where the provider supports it. Save one JSONL
@@ -66,3 +78,18 @@ Scores are comparative signals, not complete linguistic judgments.
 
 See `docs/MODEL_SELECTION.md` for the proposed matrix and execution order, and
 `docs/EVALUATION_VOLUME.md` for the exact request volume per model.
+
+## 4. Validate and score a full run
+
+After a model reports completion, score it locally without publishing raw text:
+
+```bash
+venv/bin/python scripts/score_full_run.py \
+  --repo-root . \
+  --data-root private_data/extracted-benchmark-v1 \
+  --run-root evaluations/runs/<model>-full-v1 \
+  --output-root evaluations/runs/<model>-full-v1/scored
+```
+
+Only the aggregate `scores.csv` and `validation.json` are publication-safe by
+default. Review source licences before publishing any example or prediction.

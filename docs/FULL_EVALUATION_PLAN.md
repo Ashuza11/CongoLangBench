@@ -1,185 +1,146 @@
-# Full multilingual evaluation plan
+# Five-model full evaluation plan
 
-Planning date: 2026-09-02
+Planning date: 2026-09-03
 
 Benchmark: `v1`
 
 Prompt: `translation_v1`
 
-## Scope
+## Objective
 
-The frozen benchmark contains 47 language tracks, 1,500 pairs per track, and
-two translation directions. A complete run therefore requires:
+Complete reproducible translation evaluations for five locally executable
+models. This is a production plan, not another pilot. The completed Gemma smoke
+test supplies the pipeline evidence; production inference uses every one of the
+1,500 frozen pairs in both directions for every valid model-language track.
+
+## Workload
+
+The benchmark contains 47 language tracks and 70,500 bilingual pairs.
 
 | Unit | Requests |
 |---|---:|
 | One language, one direction | 1,500 |
 | One language, both directions | 3,000 |
 | All 47 languages, one model | 141,000 |
-| Four-model core matrix | 564,000 |
+| Five-model theoretical maximum | 705,000 |
 
-The exact prompt volume per model is 36,897,141 characters or 5,906,338
-whitespace-delimited tokens. Billing tokens depend on each provider tokenizer
-and must be measured in the next pilot.
+Gemma, Apertus, and BLOOMZ evaluate all 47 tracks. NLLB and MADLAD evaluate
+only tracks with exact model language codes. Unsupported tracks are coverage
+results, not failed translations, and must never be assigned a related code
+silently.
 
-## What the first Gemma run established
+## Model matrix
 
-The three-row Gemma smoke test completed all 282 requests on a Tesla T4 in 58
-summed generation minutes. Direct linear scaling gives approximately **483 T4
-GPU-hours** for the 141,000-request full run before batching, optimization, or
-hardware changes. That is about 20 continuous days and is not suitable for a
-single ordinary Colab session.
+| Order | Model | Architecture | Scope | Runtime |
+|---:|---|---|---|---|
+| 1 | `google/gemma-4-12B-it` | instruction causal | all 47 | Colab, resumable |
+| 2 | `facebook/nllb-200-3.3B` | translation seq2seq | exact NLLB tags | Kaggle |
+| 3 | `bigscience/bloomz-7b1-mt` | instruction causal | all 47 zero-shot | Kaggle |
+| 4 | `google/madlad400-10b-mt` | translation seq2seq | exact `<2...>` tags | Kaggle |
+| 5 | `swiss-ai/Apertus-8B-Instruct-2509` | instruction causal | all 47 | Kaggle |
 
-The smoke test also produced 47 outputs at the 256-token ceiling: 45 occurred
-in reference-to-Congolese generation. The full run must not start until private
-inspection identifies whether these are valid long translations, repetition,
-format leakage, or decoding failures. The next pilot should use a 512-token
-ceiling, report both output length and finish reason, and require a cap rate
-below 1% or a documented language-specific explanation.
+The tracked machine-readable configuration is
+`evaluations/model_matrix.json`.
 
-## Core model matrix
+## What the Gemma smoke test established
 
-| Track | Exact model | Execution | Core settings |
-|---|---|---|---|
-| Open-weight | `google/gemma-4-12B-it` | Private GPU | 4-bit NF4, thinking off, `do_sample=false`, 512 output tokens |
-| Google hosted | `gemini-3.7-flash` | Batch API | low thinking, omit unsupported sampling fields, 512 output tokens |
-| Anthropic hosted | `claude-sonnet-5` | Message Batches | thinking disabled, omit non-default sampling fields, 512 output tokens |
-| OpenAI hosted | `gpt-5.6-sol` | Batch/Responses API | reasoning effort `none`, deterministic setting where supported, 512 output tokens |
+The smoke run completed 282/282 predictions over every language and
+direction with no empty outputs. Sequential T4 inference took 58 summed
+generation minutes, proving the data, prompt, authentication, scoring, and
+private-upload path.
 
-An optional cost-sensitivity extension can compare `gpt-5.6-luna` with Sol.
-Do not add it until the core four-model matrix is complete.
+Forty-seven outputs reached the old 256-token ceiling. Production therefore
+uses a 512-token initial ceiling and one deterministic 768-token retry only for
+an output that reaches 512. Anything still capped at 768 remains in the result
+and is reported as truncated.
 
-## Data-governance gate
+## Production protocol
 
-Twenty-four tracks contain restricted local text. They can be evaluated by a
-locally loaded model because the text remains inside the controlled runtime.
-Do **not** upload those tracks to a hosted provider merely because API access
-exists. For every hosted run, confirm that the source licence permits external
-processing and that the chosen provider account has acceptable retention and
-training controls. If that gate is not met:
+- Frozen benchmark `v1`; exactly 1,500 rows per supported track.
+- Both `reference_to_congolese` and `congolese_to_reference` directions.
+- Sampling disabled.
+- Model-native chat formatting for Gemma and Apertus.
+- Plain multilingual instruction for BLOOMZ.
+- Native `<2target>` prefixes for MADLAD.
+- Native source and forced target tags for NLLB.
+- Batched inference ordered by approximate input length.
+- Automatic batch division after a CUDA out-of-memory error.
+- Immediate append-only checkpoints keyed by language, direction, and record ID.
+- Resume validation refuses another model, benchmark version, or unexpected key.
 
-1. run Gemma locally on all 47 tracks;
-2. run hosted models only on explicitly cleared tracks; and
-3. report the two scopes separately instead of presenting them as the same
-   language matrix.
+## Platform sequence
 
-Raw prompts, references, and predictions from restricted tracks remain private.
-Only aggregate metrics and text-free diagnostics enter Git.
+### Colab — Gemma
 
-## Cost envelope for hosted models
+Open `notebooks/gemma4_all_languages_full_evaluation.ipynb`. Upload the private
+benchmark ZIP and save predictions directly to private Google Drive. A restart
+re-uploads the benchmark, reloads the model, and skips every completed record.
+If the Colab allocation ends before 141,000 predictions, resume later; do not
+replace completed outputs.
 
-Before provider tokenization is measured, use a transparent planning scenario
-of **10 million input plus 10 million output tokens per model**. This is close
-to the Gemma smoke output extrapolation (about 9.7 million generated tokens),
-but it is not a quotation or spending authorization.
+### Kaggle — four models, one at a time
 
-| Model | Current standard input/output per MTok | Scenario standard cost | Batch planning cost |
-|---|---:|---:|---:|
-| `gemini-3.7-flash` | $0.75 / $3.75 | $45 | $22.50 |
-| `claude-sonnet-5` | $2 / $10 | $120 | about $60 at the documented 50% batch discount |
-| `gpt-5.6-sol` | $4 / $20 | $240 | Verify the account's Batch rate before approval |
+Open `notebooks/kaggle_local_models_full_evaluation.ipynb` and select one
+`MODEL_KEY` in this order:
 
-Prices are USD, exclude retries and taxes, and can change. Google promotional
-pricing is documented through 2026-12-31; OpenAI describes current Sol pricing
-as promotional through at least 2026-11-21. Claude batch cost is derived from
-its $2/$10 standard price and documented 50% Message Batches discount. Actual
-approval must use token counts returned by a 50-row pilot.
+1. `nllb`
+2. `bloomz`
+3. `madlad`
+4. `apertus`
 
-Gemma has no per-token API fee, but GPU time is a real cost. The observed
-sequential T4 requirement is roughly 483 hours. Record the actual cloud or
-Colab price rather than assigning an artificial zero cost.
+The runner stops cleanly after ten inference hours so the notebook output can
+be saved before the session limit. If incomplete, save the private notebook
+version, attach its output to the next private session, and rerun the same model
+key. Change model keys only after `run_metadata.json` confirms completion.
 
-## Execution phases
+## Language-tag policy
 
-### Phase 1 — Diagnose the current Gemma output ceiling
+The exact NLLB matches in benchmark `v1` are Lingala (`lin_Latn`), Ciluba
+(`lua_Latn`), Bemba (`bem_Latn`), and Kikongo (`kon_Latn`). English and French
+are the corresponding reference tags. Congo Swahili is not silently mapped to
+generic `swh_Latn`, and Kikongo ya Leta is not mapped to `kon_Latn`.
 
-- Privately inspect all 47 capped predictions without copying their text into
-  documentation.
-- Classify each as valid length, repetition, prompt leakage, wrong language,
-  or other generation failure.
-- Add finish reason, input tokens, output tokens, and repetition detection to
-  the runner.
-- Retain prompt `translation_v1`; version any prompt change as a new protocol.
+MADLAD coverage is derived from the downloaded tokenizer: the runner accepts a
+track only when its exact BCP-47/ISO candidate has a real `<2...>` vocabulary
+entry. Lingala uses its BCP-47 code `ln` and Kikongo uses `kg`; no regional
+proxy is introduced for Congo Swahili.
 
-**Exit gate:** no unexplained truncation and a validated output parser.
+## Completion gate
 
-### Phase 2 — Fifty-row all-language pilot
+A model completes only when:
 
-- Run 50 rows × 47 languages × two directions = **4,700 requests per model**.
-- On the measured T4 path, Gemma would take roughly 16 GPU-hours before
-  optimization.
-- Test safe batching sizes of 2, 4, and 8; do not assume linear speedup.
-- For hosted models, record provider billing tokens, failures, refusals,
-  latency, finish reasons, and exact cost.
-- Compare deterministic reruns on a small fixed subset.
+- predictions exactly match all expected supported record keys;
+- each included language-direction group has 1,500 unique predictions;
+- model revision, precision, benchmark, and prompt metadata are consistent;
+- empty and truncated output counts are recorded; and
+- `scripts/score_full_run.py` accepts the result without missing, duplicate, or
+  extra keys.
 
-**Exit gate:** 100% record coverage, less than 1% unexplained cap/failure rate,
-stable parsing, and an approved full-run budget.
+## Scoring and reporting
 
-### Phase 3 — Full local Gemma run
+Primary automatic metrics are corpus BLEU and chrF++ with SacreBLEU signatures.
+Report language-level results, macro averages, direction, reference language,
+national/regional/Kivu group, failures, truncations, coverage, runtime, and GPU
+metadata. Add paired bootstrap intervals before comparative publication claims.
 
-- Split the workload into 94 language-direction shards of 1,500 records.
-- Checkpoint every prediction and maintain a shard manifest with pending,
-  running, complete, failed, and scored states.
-- Resume by record ID; never regenerate completed rows silently.
-- Prefer a persistent A100/H100 or equivalent job environment over ephemeral
-  free Colab. Benchmark throughput before selecting hardware.
-- Merge only after each shard has 1,500 unique record IDs and matching dataset,
-  prompt, model-revision, and decoding metadata.
+Use three comparison views:
 
-### Phase 4 — Hosted batch runs
+1. Gemma, Apertus, and BLOOMZ over all 47 tracks.
+2. All five models over their exact common supported subset.
+3. NLLB and MADLAD coverage and scores over their complete valid subsets.
 
-- Submit only licence-cleared tracks.
-- Use provider batch endpoints for cost and operational stability where their
-  data-handling terms are acceptable.
-- Keep one language-direction per logical shard even if several shards share a
-  provider batch file.
-- Set spending limits and stop submission when projected cost exceeds the
-  approved budget by 10%.
-- Save provider request IDs, model IDs, usage, errors, refusals, and raw outputs
-  privately.
+## Data governance
 
-### Phase 5 — Scoring and analysis
+Twenty-four tracks contain restricted local text. Private benchmark ZIPs, raw
+references, predictions, and result archives remain outside Git. Git may contain
+checksums, configurations, aggregate metrics, timing, failure counts, and
+publication-cleared examples. A private Kaggle input or notebook output must
+never be made public merely to simplify resumption.
 
-- Require exact prediction coverage before scoring.
-- Report BLEU and chrF++ using saved SacreBLEU signatures.
-- Add paired bootstrap confidence intervals and direction-level comparisons.
-- Separate national, regional, Kivu, reference-language, source-domain, and
-  publication-handling analyses.
-- Select blinded error-analysis samples before reading model identities.
-- Use speaker review for final claims, beginning with Congo Swahili and the
-  languages for which qualified reviewers are available.
+## Official model references
 
-## Required implementation before full execution
-
-- A batched, sharded Gemma runner suitable for persistent GPU jobs.
-- Provider-specific batch exporters/importers for Google, Anthropic, and
-  OpenAI, with no credentials stored in the repository.
-- A shared run manifest and exact-coverage validator.
-- Token/cost accounting based on provider response metadata.
-- Finish-reason, refusal, repetition, language-ID, and truncation diagnostics.
-- A result merger that refuses mixed model revisions, prompts, or benchmark
-  checksums.
-
-## Publication artifacts
-
-Git may contain:
-
-- aggregate score tables;
-- model, prompt, benchmark, hardware, and quantization metadata;
-- counts, checksums, timing, token usage, cost, and failure categories; and
-- text examples only from sources whose licences explicitly allow publication.
-
-Keep private:
-
-- restricted source/reference text;
-- raw hosted batch files containing restricted text;
-- model outputs derived from restricted inputs; and
-- API credentials and provider account identifiers.
-
-## Current official pricing references
-
-- OpenAI GPT-5.6 Sol: <https://developers.openai.com/api/docs/models/gpt-5.6-sol>
-- Google Gemini pricing: <https://ai.google.dev/gemini-api/docs/pricing>
-- Claude Sonnet 5 pricing: <https://platform.claude.com/docs/en/models/sonnet-5/whats-new-sonnet-5>
-- Claude batch processing: <https://platform.claude.com/docs/en/build-with-claude/batch-processing>
+- Gemma: <https://huggingface.co/google/gemma-4-12B-it>
+- Apertus: <https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509>
+- MADLAD: <https://huggingface.co/google/madlad400-10b-mt>
+- NLLB: <https://huggingface.co/facebook/nllb-200-3.3B>
+- BLOOMZ: <https://huggingface.co/bigscience/bloomz-7b1-mt>
