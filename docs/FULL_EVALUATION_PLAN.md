@@ -81,6 +81,8 @@ replace completed outputs.
 Gemma 4 uses the `AutoModelForMultimodalLM` loader and therefore runs with
 Transformers 5.x in this notebook. The separate Kaggle workflow retains its
 Transformers 4.x environment for the translation-model implementations.
+The run/resume cell displays the existing checkpoint count before launch and
+streams model-loading and inference progress live into the Colab output.
 
 ### Kaggle — four models, one at a time
 
