@@ -6,6 +6,7 @@ are uploaded to a named private Volume and are never included in the image.
 from __future__ import annotations
 
 import json
+import os
 import subprocess
 import tempfile
 import zipfile
@@ -25,9 +26,22 @@ PREDICTIONS = RUN_ROOT / "predictions.jsonl"
 VOLUME_NAME = "congolang-benchmark-private"
 MODEL_CACHE_NAME = "congolang-huggingface-cache"
 
-REPOSITORY_COMMIT = subprocess.check_output(
-    ["git", "-C", str(LOCAL_ROOT), "rev-parse", "HEAD"], text=True
-).strip()
+
+
+def resolve_repository_commit() -> str:
+    baked = os.environ.get("CONGOLANG_REPOSITORY_COMMIT")
+    if baked:
+        return baked
+    try:
+        return subprocess.check_output(
+            ["git", "-C", str(LOCAL_ROOT), "rev-parse", "HEAD"], text=True
+        ).strip()
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        # The lightweight status container has no repository or git binary.
+        return "unavailable-in-status-container"
+
+
+REPOSITORY_COMMIT = resolve_repository_commit()
 
 image = (
     modal.Image.from_registry(
@@ -42,6 +56,7 @@ image = (
         "sacrebleu",
         "pandas==2.2.3",
     )
+    .env({"CONGOLANG_REPOSITORY_COMMIT": REPOSITORY_COMMIT})
     .add_local_dir(LOCAL_ROOT / "scripts", str(REMOTE_ROOT / "scripts"), copy=True)
     .add_local_dir(LOCAL_ROOT / "registry", str(REMOTE_ROOT / "registry"), copy=True)
     .add_local_dir(
@@ -54,7 +69,7 @@ image = (
 app = modal.App("congolang-gemma-full")
 private_volume = modal.Volume.from_name(VOLUME_NAME, create_if_missing=True)
 model_cache = modal.Volume.from_name(MODEL_CACHE_NAME, create_if_missing=True)
-hf_secret = modal.Secret.from_name("congolang-huggingface", required_keys=["HF_TOKEN"])
+hf_secret = modal.Secret.from_name("hugging_face_secret", required_keys=["HF_TOKEN"])
 
 
 def count_jsonl(path: Path) -> int:

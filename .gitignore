@@ -155,6 +155,7 @@ language_resources/lombo-loo/scripts/__pycache__/
 language_resources/pende-pem/data/raw/*
 language_resources/pende-pem/scripts/__pycache__/
 scripts/__pycache__/
+deployment/__pycache__/
 .cache/
 # Restricted Eastern DRC package tracks are local evaluation data only.
 language_resources/fuliiru-flr/data/raw/*

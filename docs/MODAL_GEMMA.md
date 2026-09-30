@@ -59,7 +59,7 @@ Use `python -m pip` here because this repository's legacy `venv/bin/pip`
 launcher may still contain a path from the environment in which it was first
 created.
 
-In the Modal dashboard, create a secret named `congolang-huggingface` containing
+In the Modal dashboard, create a secret named `hugging_face_secret` containing
 one key, `HF_TOKEN`, with a Hugging Face read token that can access Gemma 4.
 
 Create an environment budget capped at $30 before running paid inference.
