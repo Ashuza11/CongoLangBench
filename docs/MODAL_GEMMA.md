@@ -98,19 +98,30 @@ Colab. Stop if it is smaller.
 
 ```bash
 venv/bin/modal run deployment/modal_gemma_full.py \
+  --detach \
   --action run \
   --batch-size 32 \
   --max-runtime-minutes 600
 ```
 
-The runner streams progress, retries smaller batches after CUDA out-of-memory,
-and writes each completed batch to the private Volume. Modal also performs
-background Volume commits, and the wrapper commits explicitly before exit.
+The command submits an independent function call, prints its call ID and
+dashboard URL, and then returns. Both the detached CLI flag and the independent
+function call are required: this prevents a terminal or automation-session
+disconnect from cancelling paid inference. Do not remove `--detach`.
+
+The runner retries smaller batches after CUDA out-of-memory and writes each
+completed batch to the private Volume. Follow progress in the printed dashboard
+or with `modal app logs`. Modal also performs background Volume commits, and
+the wrapper commits explicitly before exit.
 
 The job stops in either of two states:
 
 - complete at 141,000 predictions with `run_metadata.json`; or
 - safely incomplete with `session_state.json`, ready for a later resume.
+
+In either state, Modal destroys the GPU container when the function exits. The
+inner 600-minute limit stops inference cleanly before the function's absolute
+660-minute timeout, and no warm container is configured.
 
 Do not launch another run while one is active because both processes would
 append to the same prediction file.

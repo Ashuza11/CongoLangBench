@@ -250,7 +250,22 @@ def main(
             raise ValueError("--batch-size must be between 1 and 128")
         if not 1 <= max_runtime_minutes <= 600:
             raise ValueError("--max-runtime-minutes must be between 1 and 600")
-        print(run_gemma.remote(batch_size, max_runtime_minutes))
+        # Submit the paid function independently of this short-lived CLI process.
+        # With `modal run --detach`, the call survives terminal/runner disconnects;
+        # Modal still destroys its GPU container when it exits or times out.
+        call = run_gemma.spawn(batch_size, max_runtime_minutes)
+        print(
+            json.dumps(
+                {
+                    "state": "submitted",
+                    "function_call_id": call.object_id,
+                    "dashboard_url": call.get_dashboard_url(),
+                    "max_runtime_minutes": max_runtime_minutes,
+                    "hard_container_timeout_minutes": 11 * 60,
+                },
+                indent=2,
+            )
+        )
     elif action == "status":
         print(json.dumps(status.remote(), indent=2))
     else:
