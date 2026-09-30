@@ -53,6 +53,7 @@ image = (
         "accelerate",
         "bitsandbytes",
         "huggingface_hub",
+        "pillow",
         "sacrebleu",
         "pandas==2.2.3",
     )
