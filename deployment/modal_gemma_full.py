@@ -49,6 +49,7 @@ image = (
     )
     .pip_install(
         "torch==2.11.0",
+        "torchvision==0.26.0",
         "transformers>=5,<6",
         "accelerate",
         "bitsandbytes",
