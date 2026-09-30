@@ -226,6 +226,7 @@ publication-safe counts and checksums are tracked.
 - [Evaluation volume](docs/EVALUATION_VOLUME.md)
 - [Gemma 4 smoke-test results](docs/results/GEMMA4_SMOKE_V1.md)
 - [Full multi-model evaluation plan](docs/FULL_EVALUATION_PLAN.md)
+- [Resume the Gemma full run on Modal](docs/MODAL_GEMMA.md)
 - [Evaluation workflow](evaluations/README.md)
 - [Initial evaluation notebook](notebooks/llm_bitext_evaluation.ipynb)
 - [Gemma 4 all-language smoke-test Colab](https://colab.research.google.com/github/Ashuza11/CongoLangBench/blob/main/notebooks/gemma4_all_languages_smoke_test.ipynb)

@@ -183,4 +183,5 @@ evaluations/runs/*
 private_data/
 # Downloaded private model-run archives and Windows metadata streams.
 *_results.zip
+gemma4-12b-it-full-v1-*.zip
 *:Zone.Identifier

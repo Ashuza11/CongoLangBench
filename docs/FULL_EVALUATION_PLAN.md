@@ -84,6 +84,15 @@ Transformers 4.x environment for the translation-model implementations.
 The run/resume cell displays the existing checkpoint count before launch and
 streams model-loading and inference progress live into the Colab output.
 
+### Modal — Gemma continuation
+
+When Colab compute is insufficient, use `deployment/modal_gemma_full.py` to
+upload the existing private `predictions.jsonl` and benchmark ZIP to persistent
+Modal Volumes. The default job uses one L40S, batch size 32, and a 10-hour
+inference ceiling selected to stay below the $30 Starter compute allowance with
+a safety margin for CPU, memory, and storage. Follow `docs/MODAL_GEMMA.md`;
+never run concurrent writers against the same prediction file.
+
 ### Kaggle — four models, one at a time
 
 Open `notebooks/kaggle_local_models_full_evaluation.ipynb` and select one

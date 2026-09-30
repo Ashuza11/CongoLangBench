@@ -140,9 +140,19 @@ def main() -> None:
     parser.add_argument("--repo-root", type=Path, required=True)
     parser.add_argument("--data-root", type=Path, required=True)
     parser.add_argument("--output-root", type=Path, required=True)
+    parser.add_argument(
+        "--repository-commit",
+        help="Explicit source commit for packaged/cloud runs without a .git directory",
+    )
     parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--max-new-tokens", type=int, default=512)
     parser.add_argument("--retry-max-new-tokens", type=int, default=768)
+    parser.add_argument(
+        "--max-runtime-minutes",
+        type=int,
+        default=0,
+        help="Stop cleanly after this much inference time; zero means no time limit",
+    )
     args = parser.parse_args()
     if args.batch_size < 1:
         raise ValueError("batch-size must be positive")
@@ -294,6 +304,27 @@ def main() -> None:
                 f"{elapsed_hours:.2f} h this session"
             )
 
+        elapsed_minutes = (time.perf_counter() - started_run) / 60
+        if args.max_runtime_minutes and elapsed_minutes >= args.max_runtime_minutes:
+            session_state = {
+                "model_id": MODEL_ID,
+                "model_revision": revision,
+                "benchmark_version": BENCHMARK_VERSION,
+                "prompt_version": PROMPT_VERSION,
+                "repository_commit": args.repository_commit,
+                "complete": len(completed),
+                "expected": len(jobs),
+                "remaining": len(jobs) - len(completed),
+                "stopped_cleanly_at_runtime_limit": True,
+                "max_runtime_minutes": args.max_runtime_minutes,
+                "updated_at_utc": datetime.now(timezone.utc).isoformat(),
+            }
+            (output_root / "session_state.json").write_text(
+                json.dumps(session_state, indent=2) + "\n", encoding="utf-8"
+            )
+            print(json.dumps(session_state, indent=2), flush=True)
+            return
+
     missing = expected_keys - set(completed)
     if missing:
         raise RuntimeError(f"Run ended with {len(missing):,} missing predictions")
@@ -304,7 +335,8 @@ def main() -> None:
         "run_type": "full_benchmark",
         "model_id": MODEL_ID,
         "model_revision": revision,
-        "repository_commit": subprocess.check_output(
+        "repository_commit": args.repository_commit
+        or subprocess.check_output(
             ["git", "-C", str(repo_root), "rev-parse", "HEAD"], text=True
         ).strip(),
         "benchmark_version": BENCHMARK_VERSION,
